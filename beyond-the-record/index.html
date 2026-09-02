@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond the Record — Communicating SOFIA 2026 | Yuxi Zhou</title>
+<meta name="description" content="A communication case study based on SOFIA 2026, adapting technical evidence for senior management, web and social audiences.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGJ2X4MSQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EGJ2X4MSQ9');
+</script>
+
+<style>
+  :root{
+    --navy:#1C2B3A;
+    --ink:#33363C;
+    --grey:#6B6E75;
+    --teal:#1D5A61;
+    --gold:#B8862F;
+    --line:#D8D3C3;
+    --paper:#F6F3EC;
+    --sea:#E8EFED;
+    --card:#FFFFFF;
+
+    --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+    --sans: Calibri, 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --measure: 700px;
+    --measure-wide: 880px;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--teal);}
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--teal);
+    outline-offset:3px;
+  }
+
+  .wrap-wide{max-width:var(--measure-wide); margin:0 auto; padding:0 24px;}
+  .rule{border:none; border-top:1px solid var(--line); margin:0;}
+
+  /* ---------- top bar ---------- */
+  .topbar{padding:20px 0 0;}
+  .topbar .wrap-wide{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap;}
+  .topbar a{color:var(--grey); text-decoration:none; font-size:13.5px; border-bottom:1px solid transparent;}
+  .topbar a:hover{border-bottom-color:var(--grey);}
+  .kicker{font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); font-weight:600;}
+
+  /* ---------- hero (now includes the three signals) ---------- */
+  .hero{padding:22px 0 30px;}
+  .hero h1{
+    font-family:var(--serif); font-weight:700; color:var(--navy);
+    font-size:clamp(34px, 4.6vw, 50px); line-height:1.1;
+    margin:14px 0 6px; letter-spacing:-0.01em;
+  }
+  .hero .subtitle{font-family:var(--serif); font-style:italic; color:var(--teal); font-size:18px; margin:0 0 16px;}
+  .hero .lede{font-size:17px; color:var(--ink); max-width:58ch; margin:0;}
+
+  .signal-row{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+    margin-top:28px; padding-top:22px; border-top:1px solid rgba(184,134,47,.30);
+  }
+  .signal-label{font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); font-weight:700; margin:0 0 8px;}
+  .signal-num{font-family:var(--serif); color:var(--navy); font-weight:700; font-size:clamp(26px, 3.2vw, 34px); line-height:1; margin:0 0 8px;}
+  .signal-cap{font-size:13px; color:var(--grey); line-height:1.4; margin:0;}
+  @media (max-width:640px){ .signal-row{grid-template-columns:1fr; gap:18px;} }
+
+  /* ---------- evidence (pale sea wash) ---------- */
+  .evidence-section{background:var(--sea); padding:32px 0 34px;}
+  .eyebrow{font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); font-weight:600; margin:0 0 10px;}
+  h2{font-family:var(--serif); color:var(--navy); font-size:25px; margin:0 0 18px; font-weight:700;}
+
+  .figure{border:0; background:var(--card); box-shadow:0 8px 28px rgba(28,43,58,.07);}
+  .figure-inner{padding:14px 16px 2px;}
+  .figure .dwrapper{min-height:250px;}
+  .figure figcaption{padding:12px 16px 15px; font-size:13px; color:var(--grey); margin-top:8px;}
+  .figure figcaption .takeaway{display:block; color:var(--ink); font-size:15px; margin-bottom:6px;}
+  .figure figcaption .note{display:block; margin-bottom:6px;}
+
+  /* ---------- audience adaptation ---------- */
+  .audience-section{background:var(--paper); padding:40px 0;}
+  .dek{color:var(--grey); font-size:15px; max-width:60ch; margin:0 0 22px;}
+
+  .audience-canvas{background:var(--card); border:1px solid var(--line); padding:20px 26px 26px;}
+
+  .tabs-nav{display:flex; gap:4px; border-bottom:1px solid var(--line); margin-bottom:22px; flex-wrap:wrap;}
+  .tab-btn{
+    appearance:none; background:none; border:none; cursor:pointer;
+    font-family:var(--sans); font-size:14.5px; color:var(--grey);
+    padding:9px 4px; margin-right:20px; border-bottom:2px solid transparent;
+    transform:translateY(1px);
+  }
+  .tab-btn:hover{color:var(--ink);}
+  .tab-btn[aria-selected="true"]{color:var(--navy); font-weight:600; border-bottom-color:var(--gold);}
+  .tab-panel{display:none;}
+  .tab-panel[data-active="true"]{display:block;}
+
+  .panel-label{font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:0 0 16px; font-weight:600;}
+
+  /* senior brief */
+  .brief-block{padding:16px 0; border-top:1px solid var(--line);}
+  .brief-block:first-child{border-top:none; padding-top:0;}
+  .brief-label{font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--gold); font-weight:700; margin:0 0 12px;}
+  .brief-block ul{list-style:none; margin:0; padding:0;}
+  .brief-block li{font-size:15px; margin:0 0 10px; padding-left:18px; position:relative;}
+  .brief-block li:last-child{margin-bottom:0;}
+  .brief-block li::before{content:"—"; color:var(--teal); position:absolute; left:0;}
+
+  /* web story */
+  .web-story .headline{
+    font-family:var(--serif); color:var(--navy); font-weight:700;
+    font-size:clamp(20px, 2.4vw, 24px); line-height:1.25; margin:0 0 12px;
+  }
+  .web-story .standfirst{color:var(--grey); font-size:15.5px; line-height:1.55; max-width:58ch; margin:0 0 16px;}
+  .web-story .divider{border:none; border-top:1px solid var(--line); margin:0 0 16px; max-width:70px;}
+  .web-story p.body-p{font-size:15.5px; margin:0 0 14px; max-width:60ch;}
+  .web-story .cta{display:inline-block; font-size:14.5px; font-weight:600;}
+
+  /* social post */
+  .social-package{display:grid; grid-template-columns:40% 1fr; gap:32px; align-items:start;}
+  @media (max-width:680px){ .social-package{grid-template-columns:1fr;} }
+  .social-slot{
+    width:100%; aspect-ratio:4/5;
+    border:1px dashed var(--line);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    color:var(--grey); font-size:13px; padding:22px;
+    background:repeating-linear-gradient(135deg, rgba(0,0,0,0.02) 0 10px, transparent 10px 20px);
+  }
+  .social-slot code{display:block; margin-top:10px; font-size:11.5px; color:var(--teal); line-height:1.5;}
+  .social-card{width:100%; display:block; height:auto; border:1px solid var(--line);}
+  .social-copy p{font-size:15.5px; margin:0 0 14px;}
+  .social-copy .cta{display:inline-block; font-size:14.5px; font-weight:600;}
+  .social-copy .hashtags{font-size:13.5px; color:var(--teal); margin:0;}
+
+  /* ---------- footer ---------- */
+  footer{padding:32px 0 52px;}
+  footer .source{font-size:13.5px; color:var(--ink); margin:0 0 14px;}
+  footer .scope-note{font-size:12.5px; color:var(--grey); margin:0 0 16px; max-width:72ch; line-height:1.55;}
+  footer .scope-note strong{color:var(--ink); font-weight:600;}
+  footer .disclaimer{font-size:12px; color:var(--grey); font-style:italic; padding-top:16px; border-top:1px solid var(--line); margin:0 0 18px;}
+  footer .back{font-size:13px;}
+
+  @media (max-width:600px){
+    .evidence-section{padding:26px 0 28px;}
+    .audience-section{padding:32px 0;}
+    .audience-canvas{padding:18px 18px 22px;}
+    .tab-btn{margin-right:14px; font-size:13.5px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap-wide">
+    <span class="kicker">Independent communication case study</span>
+    <a href="https://yuxizhou2177.github.io/">← yuxizhou2177.github.io</a>
+  </div>
+</div>
+
+<!-- ================= HERO + THREE SIGNALS (merged) ================= -->
+<header class="hero">
+  <div class="wrap-wide">
+    <h1>Beyond the record</h1>
+    <p class="subtitle">Communicating SOFIA 2026</p>
+    <p class="lede">A communication case study based on SOFIA 2026, adapting technical evidence for senior management, web and social audiences.</p>
+
+    <div class="signal-row">
+      <div>
+        <p class="signal-label">Record</p>
+        <p class="signal-num">195M tonnes</p>
+        <p class="signal-cap">Aquatic animal production · 2024</p>
+      </div>
+      <div>
+        <p class="signal-label">Aquaculture shift</p>
+        <p class="signal-num">103M tonnes</p>
+        <p class="signal-cap">53% of aquatic animal production · 2024</p>
+      </div>
+      <div>
+        <p class="signal-label">Food relevance</p>
+        <p class="signal-num">89%</p>
+        <p class="signal-cap">Destined for human consumption · 2024</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= THE EVIDENCE ================= -->
+<section class="evidence-section" id="evidence">
+  <div class="wrap-wide">
+    <p class="eyebrow">The evidence</p>
+    <h2>Record growth, uneven availability</h2>
+
+    <figure class="figure">
+      <div class="figure-inner">
+        <!-- Yuxi's own Datawrapper chart -->
+        <div class="dwrapper">
+          <div style="min-height:200px" id="datawrapper-vis-hi6UO"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/hi6UO/embed.js" charset="utf-8" data-target="#datawrapper-vis-hi6UO"></script><noscript><img src="https://datawrapper.dwcdn.net/hi6UO/full.png" alt="Horizontal bar chart comparing per-capita aquatic animal food availability in 2023. Asia recorded the highest level at 26.3 kg per person, followed by Northern America at 22.1 kg, Europe at 21.2 kg and Oceania at 20.6 kg. Latin America and the Caribbean recorded 10.1 kg per person, while Africa had the lowest level at 9.1 kg. The global average was 21.1 kg per person." /></noscript></div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="takeaway">Africa's per-capita aquatic animal food availability was less than half the global average in 2023.</span>
+        <span class="note">Note: Availability should not be interpreted as actual individual intake.</span>
+        Source: FAO, <em>The State of World Fisheries and Aquaculture 2026</em>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= AUDIENCE ADAPTATION ================= -->
+<section class="audience-section" id="audiences">
+  <div class="wrap-wide">
+    <p class="eyebrow">Audience adaptation</p>
+    <h2>From evidence to communication</h2>
+    <p class="dek">The same evidence, shaped for social, web and senior-management audiences.</p>
+
+    <div class="audience-canvas">
+      <div class="tabs-nav" role="tablist" aria-label="Audience versions">
+        <button class="tab-btn" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="true">Social post</button>
+        <button class="tab-btn" role="tab" id="tab-web" aria-controls="panel-web" aria-selected="false">Web story</button>
+        <button class="tab-btn" role="tab" id="tab-brief" aria-controls="panel-brief" aria-selected="false">Senior brief</button>
+      </div>
+
+      <div class="tab-panel" id="panel-social" role="tabpanel" aria-labelledby="tab-social" data-active="true">
+        <p class="panel-label">For a social channel</p>
+        <div class="social-package">
+          <img src="images/sofia-social-card.png"
+               alt="Social media graphic comparing aquatic animal food availability in Africa, 9.1 kg per person, with the global average of 21.1 kg in 2023. Headline reads 'Record production. Uneven availability.' over a photo of a fishing harbour."
+               class="social-card">
+          <div class="social-copy">
+            <p>Global aquatic animal production reached a record 195 million tonnes in 2024, with aquaculture now supplying more than half of the world's aquatic animals.</p>
+            <p>Aquatic foods are helping nourish billions of people, but access remains uneven across regions.</p>
+            <p>Discover the latest insights from #SOFIA2026 and learn how #BlueTransformation is supporting sustainable, resilient and inclusive aquatic food systems.</p>
+            <p><a class="cta" href="https://www.fao.org/3/cd8357en/online/sofia-2026/global-fisheries-aquaculture.html" target="_blank" rel="noopener">🔗 Read the report</a></p>
+            <p class="hashtags">#Aquaculture #Fisheries #FoodSecurity #BlueTransformation #SOFIA2026</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel web-story" id="panel-web" role="tabpanel" aria-labelledby="tab-web" data-active="false">
+        <p class="panel-label">For a web article</p>
+        <p class="headline">Record aquatic animal production, but availability remains uneven across regions</p>
+        <p class="standfirst">SOFIA 2026 reports a new high in global aquatic animal production, with aquaculture now accounting for 53% of the total, while per-capita availability in Africa remains less than half the global average.</p>
+        <hr class="divider">
+        <p class="body-p">Global aquatic animal production reached 195 million tonnes in 2024, with aquaculture now producing the majority for the first time — 103 million tonnes, or 53% of the total. Yet the regional picture remains uneven: in 2023, aquatic animal food availability averaged 9.1 kg per person in Africa, compared with a global average of 21.1 kg.</p>
+        <a class="cta" href="https://www.fao.org/3/cd8357en/online/sofia-2026/global-fisheries-aquaculture.html" target="_blank" rel="noopener">Read the report →</a>
+      </div>
+
+      <div class="tab-panel" id="panel-brief" role="tabpanel" aria-labelledby="tab-brief" data-active="false">
+        <p class="panel-label">For a DDG-level briefing note</p>
+
+        <div class="brief-block">
+          <p class="brief-label">Key messages</p>
+          <ul>
+            <li>Global aquatic animal production reached a record 195 million tonnes in 2024. Aquaculture surpassed 100 million tonnes for the first time and now accounts for 53 percent of total production.</li>
+            <li>Aquatic animal foods continue to make a major contribution to food security and nutrition. 89 percent of production is used for human consumption, and aquatic foods provide at least one-fifth of animal protein intake for 3.1 billion people.</li>
+          </ul>
+        </div>
+
+        <div class="brief-block">
+          <p class="brief-label">Issues to raise</p>
+          <ul>
+            <li>Scaling up Blue Transformation to deliver not only higher production, but also better nutrition, livelihoods and resilience.</li>
+            <li>Supporting sustainable aquaculture, effective fisheries management and stronger implementation of the Small-Scale Fisheries Guidelines.</li>
+          </ul>
+        </div>
+
+        <div class="brief-block">
+          <p class="brief-label">Watch points</p>
+          <ul>
+            <li>Record production should not be equated with resolved sustainability challenges. Capture fisheries production has largely plateaued.</li>
+            <li>Access remains uneven across regions. Per capita aquatic animal food availability remains well below the global average in Africa and Latin America and the Caribbean, and availability does not necessarily reflect actual consumption.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<footer>
+  <div class="wrap-wide">
+    <p class="source">Source: FAO. 2026. <em>The State of World Fisheries and Aquaculture 2026 — Blue Transformation: turning vision into impact.</em> Rome. <a href="https://www.fao.org/3/cd8357en/online/sofia-2026/global-fisheries-aquaculture.html" target="_blank" rel="noopener">Read the full report →</a></p>
+    <p class="scope-note"><strong>Scope &amp; data note —</strong> This case study draws on selected SOFIA 2026 findings for communication purposes and is not intended as a comprehensive summary of the report. Production figures are from 2024; regional availability figures are from 2023.</p>
+    <p class="disclaimer">Independent communication case study, built for portfolio purposes. Not an official FAO product and not endorsed by FAO.</p>
+    <p class="back"><a href="https://yuxizhou2177.github.io/">Back to yuxizhou2177.github.io →</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.tab-btn');
+  var panels = {
+    'tab-social': document.getElementById('panel-social'),
+    'tab-web': document.getElementById('panel-web'),
+    'tab-brief': document.getElementById('panel-brief')
+  };
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.setAttribute('aria-selected', 'false'); });
+      Object.keys(panels).forEach(function(id){ panels[id].setAttribute('data-active', 'false'); });
+      btn.setAttribute('aria-selected', 'true');
+      panels[btn.id].setAttribute('data-active', 'true');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
