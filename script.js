@@ -14,17 +14,15 @@ es:{
  'mast.line':"Mi pequeño rincón en internet, donde comparto mi trabajo, los lugares a los que me lleva y los proyectos e historias que voy creando por el camino.",
  'map.label':'Adónde me lleva mi trabajo','map.tour':'▶ Ver recorrido','map.fmis':'Misiones','map.fsids':'PEID acompañados',
  'map.cap':'Cinco misiones desde 2024; los PEID de mi cartera del Convenio en este bienio (2024–2025).',
- 'tool.label':'Herramientas',
+ 'tool.label':'Habilidades',
  'sec.about':'Sobre mí','sec.project':'Proyectos','sec.comms':'Comunicación','sec.exp':'Experiencia','sec.bg':'Formación',
  'about.h2':'Trabajo en la intersección entre políticas, implementación y comunicación.',
- 'about.p1':'Soy Yuxi. Trabajo en la UNESCO en París, en la Convención Internacional contra el Dopaje en el Deporte (2005). Buena parte de mi trabajo empieza con un informe nacional: entender qué ha puesto en marcha un país, dónde está la brecha en la implementación y qué tipo de apoyo podría ayudar de forma realista a avanzar.',
- 'about.p2':'Junto con mi colega Rinrada, hacemos el seguimiento de cómo los Estados Partes aplican la Convención y ayudamos a convertir esos hallazgos en un acompañamiento práctico: desde orientación técnica y desarrollo de capacidades hasta diálogo sobre políticas públicas, productos de conocimiento y herramientas de comunicación.',
- 'about.p3':'Algo que he aprendido es que <strong class="mark">una brecha en la implementación no significa necesariamente falta de compromiso.</strong> En mi trabajo con los PEID y los PMA, las limitaciones suelen ser prácticas: personal reducido, responsabilidades fragmentadas, prioridades que compiten entre sí y capacidad de implementación limitada. Eso me ha vuelto curiosa sobre qué es lo que realmente ayuda a convertir los compromisos en algo que funcione en la práctica.',
- 'about.p4':'También traduzco información compleja de políticas, técnica y basada en datos a <strong class="mark-c">paneles de datos, resúmenes, infografías, contenido web y vídeos</strong>, porque la información es más útil cuando es clara, accesible y práctica.',
- 'about.bubble':'Me encanta el momento en que los números empiezan a contar una historia, y cuando una buena imagen dice lo que un párrafo largo no puede.',
+ 'about.p1':'En la UNESCO, en París, apoyo la aplicación de la Convención Internacional contra el Dopaje en el Deporte, trabajando en el seguimiento del cumplimiento, el acompañamiento a los países, el desarrollo de capacidades y la coordinación internacional. Buena parte de mi trabajo consiste en convertir los informes de los Estados Partes y la información técnica en pasos prácticos para quienes formulan políticas y sus contrapartes nacionales.',
+ 'about.p2':'Junto con el trabajo de programa, elaboro informes, comunicación visual, contenido web y narrativa digital que hacen que la información compleja sea más fácil de entender y utilizar. Mi formación en ciencias biológicas y lingüística ha marcado la forma en que abordo tanto la evidencia como la comunicación.',
+ 'about.bubble':'Me interesa especialmente el punto de encuentro entre los datos, las políticas públicas y la comunicación.',
  'comms.h2':'Productos de comunicación seleccionados',
  'comms.intro':'Lo que he producido: escrito, visual, filmado y publicado.',
- 'exp.h2':'Dónde he trabajado','fold.title':'Misiones seleccionadas, 2024–2026','fold.hint':'Haz clic para desplegar',
+ 'exp.h2':'Trayectoria internacional seleccionada','fold.title':'Misiones seleccionadas, 2024–2026','fold.hint':'Haz clic para desplegar',
  'fold.note':'Pasa el cursor sobre un marcador en el mapa del inicio de la página para destacar la nota correspondiente aquí abajo, y al revés.',
  'bg.h2':'Formación, certificaciones y publicaciones',
  'bg.bubble':'Formación científica · Investigadora en ciencias sociales · Curiosa y siempre aprendiendo',
@@ -43,8 +41,7 @@ es:{
  'c.p2':'Si algo de aquí te ha llamado la atención, o simplemente quieres saludar, escríbeme sin problema. ☕',
  'f.left':'Yuxi Zhou — París · hecho y mantenido por mí',
  'p1.k':'Explorador de políticas agroalimentarias para 8 PEID · agosto de 2026',
- 'p1.a':'Un miniproyecto independiente que construí a partir de una pregunta práctica: si mañana tuviera una reunión bilateral con la Misión Permanente de un PEID, ¿qué querría entender esta noche?',
- 'p1.b':'SIDSight reúne 8 PEID del Pacífico, el Caribe y la región AIS, combinando indicadores sobre dependencia de importaciones de alimentos, agricultura y pesca, disponibilidad de tierras, vulnerabilidad climática y conectividad digital en una herramienta sencilla para comparar países y preparar reuniones.',
+ 'p1.a':'Un explorador de políticas agroalimentarias que reúne 8 PEID del Pacífico, el Caribe y la región AIS. Combina indicadores de la FAO y el Banco Mundial sobre importaciones de alimentos, agricultura, pesca, vulnerabilidad climática y conectividad para apoyar la comparación entre países y la preparación de reuniones.',
  'p1.nl':'Un poco más',
  'p1.n':'Un conjunto de datos más pequeño y verificado; sin estimar valores faltantes; años de referencia visibles; e indicadores descartados cuando la calidad del dato no era fiable.',
  'p1.lnk':'Repositorio y notas metodológicas →',
@@ -57,6 +54,11 @@ es:{
  'p3.a':'Un vídeo breve que conmemora los veinte años de la Convención, recorriendo los hitos principales en orden cronológico. Desarrollé el concepto, el guion y el montaje completo, condensando dos décadas en un formato conciso y accesible.',
  'p3.b':'Se proyectó en la ceremonia de apertura de la COP10, que reunió a más de 500 representantes de más de 140 países, incluidos más de 30 ministros.',
  'p3.lnk':'Ver el vídeo →',
+ 'p4.t':'Más allá del récord','p4.bg':'Comunicación',
+ 'p4.k':'Estudio de caso de comunicación independiente · septiembre de 2026',
+ 'p4.a':'Un estudio de caso de comunicación independiente basado en el informe SOFIA 2026 de la FAO, que adapta la evidencia técnica para públicos sociales, web y de alta dirección mediante visualización de datos, redacción editorial y narrativa visual.',
+ 'p4.c1':'Datawrapper','p4.c2':'Figma','p4.c3':'HTML/CSS','p4.c4':'GA4',
+ 'p4.lnk':'Ver el estudio de caso →',
  'p1.n':"A lo largo de tres páginas, pasa de una comparación entre países a una ficha de país y, finalmente, a los programas pertinentes de la FAO: de «cuál es la situación» a «hacia dónde puede ir la conversación».",
  'p1.c1':"Power BI",
  'p1.c2':"Python · pandas",
@@ -90,6 +92,7 @@ es:{
  'bg.t1m':"Academia de aprendizaje en línea de la FAO, 2026",
  'bg.t3':"IELTS Academic — banda global 8.0",
  'bg.t4':"Microsoft Power Platform Fundamentals (PL-900)",
+ 'bg.t5':"Certificación de Google Analytics",'bg.t5m':"Google Skillshop, 2026",
  'bg.a2m':"Universidad de Estudios Extranjeros de Pekín, 2021",
  'bg.a3m':"14.º Foro Académico de Posgrado de la Capital, 2020",
  'bg.p1m':"Revista de Humanidades y Ciencias Sociales de Asia-Pacífico, 2021",
@@ -104,17 +107,15 @@ fr:{
  'mast.line':"Mon petit coin sur Internet, où je partage mon travail, les chemins qu’il m’ouvre, ainsi que les projets et les histoires que je construis au fil du temps.",
  'map.label':'Là où mon travail me mène','map.tour':'▶ Lancer la visite','map.fmis':'Missions','map.fsids':'PEID accompagnés',
  'map.cap':'Cinq missions depuis 2024 ; les PEID de mon portefeuille au titre de la Convention pour cet exercice biennal (2024–2025).',
- 'tool.label':'Outils',
+ 'tool.label':'Compétences',
  'sec.about':'À propos','sec.project':'Projets','sec.comms':'Communication','sec.exp':'Expérience','sec.bg':'Parcours',
  'about.h2':'Je travaille à l’intersection des politiques, de leur mise en œuvre et de la communication.',
- 'about.p1':'Je m’appelle Yuxi. Je travaille à l’UNESCO à Paris sur la Convention internationale contre le dopage dans le sport (2005). Une grande partie de mon travail commence par un rapport national : comprendre ce qu’un pays a mis en place, où se situe l’écart de mise en œuvre et quel type d’appui pourrait réellement faire avancer les choses.',
- 'about.p2':'Avec ma collègue Rinrada, nous suivons la manière dont les États parties appliquent la Convention et nous aidons à transformer ces constats en accompagnement concret : conseils techniques, renforcement des capacités, dialogue sur les politiques, produits de connaissance et outils de communication.',
- 'about.p3':'Une chose que j’ai apprise, c’est qu’<strong class="mark">un écart de mise en œuvre ne signifie pas nécessairement un manque d’engagement.</strong> Dans mon travail avec les PEID et les PMA, les contraintes sont souvent pratiques : effectifs limités, responsabilités fragmentées, priorités concurrentes et capacités de mise en œuvre restreintes. Cela m’a rendue curieuse de ce qui aide réellement à transformer les engagements en quelque chose qui fonctionne sur le terrain.',
- 'about.p4':'Je traduis aussi des informations complexes — politiques, techniques et fondées sur des données — en <strong class="mark-c">tableaux de bord, notes de synthèse, infographies, contenus web et vidéos</strong>, car l’information n’est vraiment utile que lorsqu’elle est claire, accessible et exploitable.',
- 'about.bubble':'J’aime le moment où les chiffres commencent à raconter une histoire, et où une bonne image dit ce qu’un long paragraphe ne peut pas dire.',
+ 'about.p1':'À l’UNESCO, à Paris, j’appuie la mise en œuvre de la Convention internationale contre le dopage dans le sport, en travaillant sur le suivi de la conformité, l’accompagnement des pays, le renforcement des capacités et la coordination internationale. Une grande partie de mon travail consiste à transformer les rapports des États parties et l’information technique en étapes concrètes pour les décideurs et les homologues nationaux.',
+ 'about.p2':'Parallèlement au travail de programme, je conçois des notes d’information, de la communication visuelle, des contenus web et des récits numériques qui rendent l’information complexe plus facile à comprendre et à utiliser. Ma formation en sciences biologiques et en linguistique a façonné ma manière d’aborder à la fois les données et la communication.',
+ 'about.bubble':'Je m’intéresse particulièrement à l’intersection entre les données, les politiques publiques et la communication.',
  'comms.h2':'Productions de communication choisies',
  'comms.intro':'Ce que j’ai réellement produit : écrit, visuel, filmé et publié.',
- 'exp.h2':'Où j’ai travaillé','fold.title':'Missions choisies, 2024–2026','fold.hint':'Cliquez pour déplier',
+ 'exp.h2':'Engagements internationaux sélectionnés','fold.title':'Missions choisies, 2024–2026','fold.hint':'Cliquez pour déplier',
  'fold.note':'Survolez un marqueur sur la carte en haut de la page pour mettre en évidence la note correspondante ci-dessous, et inversement.',
  'bg.h2':'Formation, certifications et publications',
  'bg.bubble':'Formation scientifique · Chercheuse en sciences sociales · Curieuse et toujours en apprentissage',
@@ -133,8 +134,7 @@ fr:{
  'c.p2':'Si quelque chose ici a retenu votre attention, ou si vous voulez simplement dire bonjour, n’hésitez pas à m’écrire. ☕',
  'f.left':'Yuxi Zhou — Paris · conçu et maintenu par mes soins',
  'p1.k':'Explorateur des politiques agroalimentaires pour 8 PEID · août 2026',
- 'p1.a':'Un mini-projet indépendant né d’une question pratique : si j’avais demain une réunion bilatérale avec la Mission permanente d’un PEID, que voudrais-je comprendre ce soir ?',
- 'p1.b':'SIDSight rassemble 8 PEID du Pacifique, des Caraïbes et de la région AIS, en combinant des indicateurs sur la dépendance aux importations alimentaires, l’agriculture et la pêche, la disponibilité des terres, la vulnérabilité climatique et la connectivité numérique, dans un outil simple de comparaison entre pays et de préparation de réunions.',
+ 'p1.a':'Un explorateur de politiques agroalimentaires couvrant 8 PEID du Pacifique, des Caraïbes et de la région AIS. Il rassemble des indicateurs de la FAO et de la Banque mondiale sur les importations alimentaires, l’agriculture, la pêche, la vulnérabilité climatique et la connectivité, pour appuyer la comparaison entre pays et la préparation de réunions.',
  'p1.nl':'Pour aller plus loin',
  'p1.n':'Un jeu de données plus restreint et vérifié ; aucune estimation des valeurs manquantes ; années de référence visibles ; et indicateurs écartés lorsque la qualité des données était incertaine.',
  'p1.lnk':'Dépôt et notes méthodologiques →',
@@ -147,6 +147,11 @@ fr:{
  'p3.a':'Une courte vidéo marquant les vingt ans de la Convention, retraçant les jalons principaux dans l’ordre chronologique. J’en ai conçu le principe, écrit le scénario et réalisé le montage complet, condensant deux décennies dans un format concis et accessible.',
  'p3.b':'Projetée lors de la cérémonie d’ouverture de la COP10, qui a réuni plus de 500 représentants de plus de 140 pays, dont plus de 30 ministres.',
  'p3.lnk':'Voir la vidéo →',
+ 'p4.t':'Au-delà du record','p4.bg':'Communication',
+ 'p4.k':'Étude de cas de communication indépendante · septembre 2026',
+ 'p4.a':'Une étude de cas de communication indépendante fondée sur le rapport SOFIA 2026 de la FAO, adaptant des données techniques pour des publics sociaux, web et de haute direction à travers la visualisation de données, la rédaction éditoriale et la narration visuelle.',
+ 'p4.c1':'Datawrapper','p4.c2':'Figma','p4.c3':'HTML/CSS','p4.c4':'GA4',
+ 'p4.lnk':'Voir l’étude de cas →',
  'p1.n':"En trois pages, il passe d’une vue comparative entre pays à une fiche pays, puis aux programmes pertinents de la FAO : de « quelle est la situation ? » à « où la conversation peut-elle mener ? ».",
  'p1.c1':"Power BI",
  'p1.c2':"Python · pandas",
@@ -180,6 +185,7 @@ fr:{
  'bg.t1m':"Académie d’apprentissage en ligne de la FAO, 2026",
  'bg.t3':"IELTS Academic — score global 8,0",
  'bg.t4':"Microsoft Power Platform Fundamentals (PL-900)",
+ 'bg.t5':"Certification Google Analytics",'bg.t5m':"Google Skillshop, 2026",
  'bg.a2m':"Université des langues étrangères de Pékin, 2021",
  'bg.a3m':"14e Forum académique des étudiants de troisième cycle de la capitale, 2020",
  'bg.p1m':"Revue des sciences humaines et sociales d’Asie-Pacifique, 2021",
@@ -212,16 +218,13 @@ zh:{
  "sec.exp":"经历",
  "sec.bg":"教育背景",
  "about.h2":"我的工作在政策、落地与传播的交叉处。",
- "about.p1":"我是羽西，在联合国教科文组织总部工作，负责《国际反对在体育运动中使用兴奋剂公约》（2005）的相关事务。我的工作经常从一份国家报告开始：了解一个国家已经实施了什么、短板在哪里，以及什么样的支持才真正可能帮助到这个国家。",
- "about.p2":"我和同事 Rinrada 一起监测缔约国的履约情况，并把这些情况转化为可落地的后续支持——可以是技术指导、能力建设，抑或是政策对话、知识产品和传播工具。",
- "about.p3":"我在工作中逐渐意识到，<strong class=\"mark\">落实上的差距，并不一定意味着缺乏意愿。</strong>在与小岛屿发展中国家（SIDS）和最不发达国家（LDCs）合作的过程中，我发现很多时候阻力其实非常现实：人手有限、职责分散、各项优先事务相互挤压，以及整体执行能力不足。也正因为如此，我越来越想弄清楚：究竟什么样的支持，才能真正把纸面上的承诺转化为现实中行得通、落得下去的行动。",
- "about.p4":"我也把复杂的政策、技术和数据信息转化成<strong class=\"mark-c\">仪表盘、简报、信息图、网页内容和视频</strong>，因为信息只有在清晰易读、易用的时候才真正有价值。",
- "about.bubble":"我喜欢数字开始讲故事的那一刻，也喜欢一张好图说出长篇段落说不清的东西~",
+ "about.p1":"我在巴黎的联合国教科文组织总部，支持《国际反对在体育运动中使用兴奋剂公约》的履约工作，涉及履约监测、国家层面跟进、能力建设与国际协调。我很大一部分工作，是把缔约国的报告和技术信息，转化成决策者和各国对口单位可以直接使用的下一步行动建议。",
+ "about.p2":"在项目工作之外，我也制作简报、视觉传播内容、网页内容和数字叙事作品，让复杂的信息更容易被理解和使用。我在生物科学和语言学方面的背景，塑造了我看待证据和沟通这两件事的方式。",
+ "about.bubble":"我尤其感兴趣的，是数据、政策与传播交汇的地方。",
  "p1.t":"SIDSight",
  "p1.bg":"看板",
  "p1.k":"面向 8 个小岛屿国家的农业食品政策探索工具 · 2026 年 8 月",
- "p1.a":"这是我自己做的小项目，起点是一个很实际的问题：如果明天要和一个小岛屿国家的常驻代表团开双边会，今晚我最想知道什么？",
- "p1.b":"SIDSight 汇集了太平洋、加勒比和 AIS 三个区域的 8 个小岛屿发展中国家，把粮食进口依赖度、农业与渔业、土地资源、气候脆弱性和数字连通性等指标整合成一个便于横向比较和会前准备的简单工具。",
+ "p1.a":"一个覆盖太平洋、加勒比和 AIS 三个区域共 8 个小岛屿发展中国家的农业食品政策探索工具，整合了粮农组织与世界银行在粮食进口、农业、渔业、气候脆弱性与数字连通性方面的指标，支持国别比较与会前准备。",
  "p1.nl":"再多说几句",
  "p1.n":"三个页面依次展开：先是跨国比较，再到单一国家简报，最后落到相关的粮农组织项目——从“现状是什么”走向“这场对话可以往哪里去”。",
  "p1.c1":"Power BI",
@@ -251,9 +254,14 @@ zh:{
  "p3.c3":"视频剪辑",
  "p3.c4":"官媒传播",
  "p3.lnk":"观看短片 →",
+ "p4.t":"纪录之外","p4.bg":"传播",
+ "p4.k":"独立传播案例研究 · 2026年9月",
+ "p4.a":"一个基于FAO《世界渔业和水产养殖状况》2026年报告（SOFIA 2026）的独立传播案例研究，通过数据可视化、编辑写作与视觉叙事，把同一份技术证据分别转化为面向社交媒体、网页读者和高层管理者的传播内容。",
+ "p4.c1":"Datawrapper","p4.c2":"Figma","p4.c3":"HTML/CSS","p4.c4":"GA4",
+ "p4.lnk":"查看案例研究 →",
  "comms.h2":"部分传播作品",
  "comms.intro":"一些我做过的东西——写过、设计过、拍过，或者发布过的。",
- "exp.h2":"工作经历",
+ "exp.h2":"精选国际工作经历",
  "fold.title":"部分出差记录，2024–2026",
  "fold.hint":"点击展开",
  "fold.note":"把鼠标移到页面顶部地图上的标记，就可以跳转到下方对应的记录；反过来也一样。",
@@ -273,6 +281,7 @@ zh:{
  "bg.t2m":"中国教育部，2021",
  "bg.t3":"雅思学术类 — 总分 8.0",
  "bg.t4":"Microsoft Power Platform 基础认证（PL-900）",
+ "bg.t5":"Google Analytics 认证","bg.t5m":"Google Skillshop，2026",
  "bg.awards":"奖项",
  "bg.a1":"国家奖学金（前 2%）",
  "bg.a1m":"中国教育部，2020",
@@ -420,9 +429,9 @@ zh:{budapest:{when:"2026年5月",event:"多方参与研究工作坊（TALE）",b
  cannes:{when:"2024年2月",event:"研究研讨会与全球教育大会",body:"在世界反兴奋剂机构的研究与教育讨论之外，我和同事 Camila 与加勒比区域组织（RADO）及新西兰的参会方就岛屿国家的能力建设需求、履约跟进以及基金会支持等方面进行了交流。"}}};
 
 const COMMS_T={
- es:['Escritos','Campañas y narrativa','Visual','Plataformas','Vídeo y multimedia','Redes sociales','Publicación'],
- fr:['Écrits','Campagnes et récits','Visuel','Plateformes','Vidéo et multimédia','Réseaux sociaux','Publication'],
- zh:["文字","传播活动与叙事","视觉","平台","视频与多媒体","社交媒体","发表"]};
+ es:['Escritos','Campañas y narrativa','Visual','Plataformas','Vídeo y multimedia','Redes sociales'],
+ fr:['Écrits','Campagnes et récits','Visuel','Plateformes','Vidéo et multimédia','Réseaux sociaux'],
+ zh:["文字","传播活动与叙事","视觉","平台","视频与多媒体","社交媒体"]};
 
 
 /* 传播产出 · 逐条译文（顺序与 COMMS 一致）*/
@@ -433,24 +442,21 @@ es:[
  ['Infografías','Folletos y dípticos de impacto','Publicaciones digitales','Carteles de eventos','Fondos para eventos','Logotipos','Certificados','Distintivos','Presentaciones','Cuestionarios en Mentimeter'],
  ['Tablero interactivo de narrativa para la COP10','Paneles de visualización de datos','Gestión de páginas web de la UNESCO (Drupal)','Gestión de la plataforma de seguimiento ADLogic'],
  ['Vídeo del aniversario de la COP10 (concepto, guion, edición)','Campaña de visibilidad del 20.º aniversario (COP10)','Tutoriales en vídeo multilingües','Vídeos de momentos destacados de las COP (coedición)'],
- ['Contenido institucional en redes sociales (LinkedIn, YouTube)','Estrategia y contenido multiplataforma en WeChat, Weibo y RedNote'],
- ['Artículo académico publicado sobre análisis del discurso mediático (Zhou, 2021)']],
+ ['Contenido institucional en redes sociales (LinkedIn, YouTube)','Estrategia y contenido multiplataforma en WeChat, Weibo y RedNote']],
 fr:[
  ['Notes conceptuelles','Notes d’information','Éléments de langage','Contenus web','Lettres d’information','Supports de renforcement des capacités','Ressources de connaissance'],
  ['Campagne de visibilité du 20e anniversaire (COP10)','Collecte, visualisation et mise en récit des données d’impact','Série d’entretiens avec les parties prenantes (concept, montage)'],
  ['Infographies','Dépliants et brochures d’impact','Publications numériques','Affiches d’événements','Fonds visuels d’événements','Logos','Certificats','Badges','Présentations','Quiz Mentimeter'],
  ['Tableau interactif narratif pour la COP10','Tableaux de bord de visualisation','Gestion des pages web de l’UNESCO (Drupal)','Gestion de la plateforme de suivi ADLogic'],
  ['Vidéo anniversaire de la COP10 (concept, scénario, montage)','Campagne de visibilité du 20e anniversaire (COP10)','Tutoriels vidéo multilingues','Vidéos des temps forts des COP (co-montage)'],
- ['Contenus institutionnels sur les réseaux sociaux (LinkedIn, YouTube)','Stratégie et contenus multiplateformes sur WeChat, Weibo et RedNote'],
- ['Article académique publié sur l’analyse du discours médiatique (Zhou, 2021)']],
+ ['Contenus institutionnels sur les réseaux sociaux (LinkedIn, YouTube)','Stratégie et contenus multiplateformes sur WeChat, Weibo et RedNote']],
 zh:[
  ["概念说明","简报","发言要点","网页内容","新闻稿","能力建设材料","知识资源"],
  ["COP10 二十周年宣传活动","影响力数据的收集、可视化与叙事","利益相关方访谈系列（策划、剪辑）"],
  ["信息页","折页与传单","数字出版物","活动海报","活动背景板","标识设计","证书","标志设计","演示文稿","Mentimeter 互动问答"],
  ["COP10 交互式叙事展板","数据可视化仪表盘","教科文组织网页维护（Drupal）","ADLogic 监测平台管理"],
  ["COP10 周年短片（概念、脚本、剪辑）","COP10 二十周年宣传活动","多语种视频教程","缔约方大会精彩集锦（联合剪辑）"],
- ["官方社交媒体内容（LinkedIn、YouTube）","微信、微博、小红书多平台策略与内容"],
- ["已发表的媒体话语分析学术论文（Zhou, 2021）"]]};
+ ["官方社交媒体内容（LinkedIn、YouTube）","微信、微博、小红书多平台策略与内容"]]};
 
 const READ_LABEL={en:'Reading',es:'Detalle',fr:'Aperçu',zh:'详情'};
 const READ_HINT={
@@ -577,11 +583,13 @@ const EXPERIENCE=[
   points:['Provided consecutive interpretation for a bilateral meeting at a diplomatic mission.']},
 ];
 
-/* ═══ 地图 ═══ */
+/* ═══ 地图 ═══
+   CARTO 底图需要 API key（已配置好你的 key，每月 500 万次瓦片请求内免费）。 */
+const CARTO_KEY='cb1_2tj6_1_def4fd640c99a676cfb4e5e7';
 const map=L.map('map',{center:[22,44],zoom:2.2,zoomSnap:.2,scrollWheelZoom:false,
   zoomControl:false,worldCopyJump:true});
 L.control.zoom({position:'bottomleft'}).addTo(map);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key='+CARTO_KEY,
   {attribution:'© OpenStreetMap · © CARTO',subdomains:'abcd',maxZoom:18}).addTo(map);
 
 const grat=L.layerGroup().addTo(map);
@@ -728,7 +736,6 @@ const COMMS=[
  {cat:'Platforms', items:['Interactive storytelling board for COP10','Data visualisation dashboards','UNESCO webpage management (Drupal)','ADLogic monitoring platform management']},
  {cat:'Video &amp; multimedia', items:['COP10 anniversary video (concept, script, editing)','COP10 20th-anniversary visibility campaign','Multilingual video tutorials','COP highlights videos (co-editing)']},
  {cat:'Social media channels', items:['Institutional social media content (LinkedIn, YouTube)','Multi-platform strategy and content across WeChat, Weibo and RedNote']},
- {cat:'Publication', items:['Published academic paper on media discourse analysis (Zhou, 2021)']},
 ];
 
 function renderComms(){
@@ -751,6 +758,13 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.targe
   {threshold:.1,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rev').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,5)*.05)+'s';io.observe(el)});
 
+/* GA4：记录首页项目点击去向 */
+document.querySelectorAll('.proj .lnk[data-project]').forEach(a=>{
+  a.addEventListener('click',()=>{
+    if(typeof gtag==='function') gtag('event','project_click',{project:a.dataset.project});
+  });
+});
+
 /* 左侧章节导航：滚动到哪一节就点亮哪一个 */
 const secIO=new IntersectionObserver(es=>{
   es.forEach(e=>{
@@ -766,6 +780,25 @@ addEventListener('scroll',()=>{
   prog.style.width=(total>0?Math.min(scrollY/total*100,100):0)+'%';
   nav.classList.toggle('edge',scrollY>50);
 },{passive:true});
+
+/* 移动端汉堡菜单 */
+(function(){
+  const toggle=document.getElementById('menuToggle');
+  const navList=document.getElementById('navList');
+  if(!toggle||!navList) return;
+  toggle.addEventListener('click',()=>{
+    const open=navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open);
+    toggle.textContent=open?'×':'☰';
+  });
+  navList.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      navList.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.textContent='☰';
+    });
+  });
+})();
 
 const toMap=document.querySelector('a.jump');
 if(toMap) toMap.addEventListener('click',()=>{
