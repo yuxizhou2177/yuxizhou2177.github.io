@@ -25,6 +25,15 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 <link rel="stylesheet" href="style.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGJ2X4MSQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EGJ2X4MSQ9');
+</script>
 </head>
 <body>
 
@@ -32,9 +41,10 @@
 
 <nav id="nav" aria-label="Main navigation">
   <div class="who"><i aria-hidden="true"></i>Yuxi Zhou</div>
-  <ul>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navList">☰</button>
+  <ul id="navList">
     <li><a href="#about" data-t="nav.about">About</a></li>
-    <li><a href="#project" data-t="nav.project">Project</a></li>
+    <li><a href="#project" data-t="nav.project">Projects</a></li>
     <li><a href="#comms" data-t="nav.comms">Communications</a></li>
     <li><a href="#experience" data-t="nav.exp">Experience</a></li>
     <li><a href="#background" data-t="nav.bg">Background</a></li>
@@ -93,11 +103,15 @@
 </div>
 
 <div class="toolbar">
-  <span class="label" data-t="tool.label">Toolkit</span>
+  <span class="label" data-t="tool.label">Skills</span>
   <span class="tool t1">Power BI</span>
   <span class="tool t1">Python (pandas)</span>
   <span class="tool t1">ArcGIS</span>
+  <span class="tool t1">Datawrapper</span>
+  <span class="tool t1">Flourish</span>
+  <span class="tool t1">Google Analytics</span>
   <span class="tool t1">GitHub</span>
+  <span class="tool t2">Figma</span>
   <span class="tool t2">Canva</span>
   <span class="tool t2">Adobe Premiere Pro</span>
   <span class="tool t2">Adobe Photoshop</span>
@@ -118,14 +132,12 @@
   <div>
     <h2 class="rev" data-t="about.h2">I work at the intersection of <em class="sea">policy, implementation and communication.</em></h2>
     <div class="body">
-      <p class="rev" data-t="about.p1">I am Yuxi. I work at UNESCO in Paris on the International Convention against Doping in Sport (2005). Much of my work starts with a national report — understanding what a country has put in place, where the implementation gap is, and what kind of support could realistically help move things forward.</p>
-      <p class="rev" data-t="about.p2">Together with my colleague Rinrada, we monitor how States Parties implement the Convention and help turn those findings into practical follow-up — from technical guidance and capacity-building to policy dialogue, knowledge products and communication tools.</p>
-      <p class="rev" data-t="about.p3">One thing I have learned is that <strong class="mark">an implementation gap does not necessarily mean a lack of commitment.</strong> In my work with SIDS and LDCs, constraints are often practical: limited staff, fragmented responsibilities, competing priorities and limited implementation capacity. This has made me curious about what actually helps turn commitments into something that works in practice.</p>
-      <p class="rev" data-t="about.p4">I also translate complex policy, technical and data-driven information into <strong class="mark-c">dashboards, briefs, infographics, web content and videos</strong> — because information is most useful when it is clear, accessible and actionable.</p>
+      <p class="rev" data-t="about.p1">At UNESCO in Paris, I support implementation of the International Convention against Doping in Sport, working across compliance monitoring, country follow-up, capacity-building and international coordination. A large part of my work involves turning State Party reporting and technical information into practical next steps for policymakers and national counterparts.</p>
+      <p class="rev" data-t="about.p2">Alongside programme work, I develop briefings, visual communication, web content and digital storytelling that make complex information easier to understand and use. My background in biological sciences and linguistics has shaped the way I approach both evidence and communication.</p>
     </div>
 
     <div class="bubble rev">
-      <p data-t="about.bubble">I love the moment when numbers start to tell a story, and when a good visual says what a long paragraph cannot.</p>
+      <p data-t="about.bubble">I am especially interested in where data, policy and communication meet.</p>
     </div>
   </div>
  </div>
@@ -136,15 +148,14 @@
 <!-- ════ 02 PROJECT ════ -->
 <section id="project">
  <div class="sec-grid">
-  <div class="sec-no a-och" data-sec><span class="num">02</span><span class="nm" data-t="sec.project">Project</span></div>
+  <div class="sec-no a-och" data-sec><span class="num">02</span><span class="nm" data-t="sec.project">Projects</span></div>
   <div>
 
     <div class="proj rev">
       <div class="top"><h3 data-t="p1.t">SIDSight</h3><span class="badge sea" data-t="p1.bg">Data</span></div>
       <div class="kicker" data-t="p1.k">Agrifood policy explorer for 8 SIDS · August 2026</div>
       <div class="body">
-        <p data-t="p1.a">An independent mini-project I built around a practical question: if I had a bilateral meeting with a SIDS Permanent Mission tomorrow, what would I want to understand tonight?</p>
-        <p data-t="p1.b">SIDSight brings together 8 SIDS across the Pacific, Caribbean and AIS regions, combining indicators on food import exposure, agriculture and fisheries, land availability, climate vulnerability and digital connectivity into a simple tool for country comparison and meeting preparation.</p>
+        <p data-t="p1.a">An agrifood policy explorer covering eight SIDS across the Pacific, Caribbean and AIS regions. It brings together FAO and World Bank indicators on food imports, agriculture, fisheries, climate vulnerability and connectivity to support country comparison and meeting preparation.</p>
               </div>
       <div class="note">
         <span class="label" data-t="p1.nl">A little more</span>
@@ -155,7 +166,21 @@
         <span class="chip" data-t="p1.c4">GitHub</span><span class="chip" data-t="p1.c5">World Bank &amp; FAO data</span>
       </div>
       <!-- ★ 换成你的仓库地址 -->
-      <a class="lnk" href="https://yuxizhou2177.github.io/sidsight/" target="_blank" rel="noopener" data-t="p1.lnk">Repository &amp; method notes →</a>
+      <a class="lnk" href="https://yuxizhou2177.github.io/sidsight/" target="_blank" rel="noopener" data-project="sidsight" data-t="p1.lnk">Repository &amp; method notes →</a>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="p4.t">Beyond the Record</h3><span class="badge sea" data-t="p4.bg">Communication</span></div>
+      <div class="kicker" data-t="p4.k">Independent communication case study · September 2026</div>
+      <div class="body">
+        <p data-t="p4.a">An independent communication case study based on FAO's SOFIA 2026, adapting technical evidence for social, web and senior-management audiences through data visualization, editorial writing and visual storytelling.</p>
+      </div>
+      <div class="stack">
+        <span class="chip" data-t="p4.c1">Datawrapper</span><span class="chip" data-t="p4.c2">Figma</span>
+        <span class="chip" data-t="p4.c3">HTML/CSS</span><span class="chip" data-t="p4.c4">GA4</span>
+      </div>
+      <!-- ★ 换成你的 case study 部署地址 -->
+      <a class="lnk sea" href="https://yuxizhou2177.github.io/beyond-the-record/" target="_blank" rel="noopener" data-project="sofia_case" data-t="p4.lnk">Open the case study →</a>
     </div>
 
     <div class="proj rev">
@@ -170,7 +195,7 @@
         <span class="chip" data-t="p2.c1">Content drafting</span><span class="chip" data-t="p2.c2">Interactive design</span>
         <span class="chip" data-t="p2.c3">Government partnership</span><span class="chip" data-t="p2.c4">Digital communications</span>
       </div>
-      <a class="lnk" href="https://www.nsf.yas.gov.in/antidoping-COP10/index.php" target="_blank" rel="noopener" data-t="p2.lnk">Open the board →</a>
+      <a class="lnk" href="https://www.nsf.yas.gov.in/antidoping-COP10/index.php" target="_blank" rel="noopener" data-project="convention_journey" data-t="p2.lnk">Open the board →</a>
     </div>
 
     <div class="proj rev">
@@ -184,7 +209,7 @@
         <span class="chip" data-t="p3.c1">Concept &amp; script</span><span class="chip" data-t="p3.c2">Visual storytelling</span>
         <span class="chip" data-t="p3.c3">Video editing</span><span class="chip" data-t="p3.c4">Institutional communications</span>
       </div>
-      <a class="lnk och" href="https://canva.link/nrk2j6dxb0ljjvd" target="_blank" rel="noopener" data-t="p3.lnk">Watch the short video →</a>
+      <a class="lnk och" href="https://canva.link/nrk2j6dxb0ljjvd" target="_blank" rel="noopener" data-project="anniversary_video" data-t="p3.lnk">Watch the short video →</a>
     </div>
 
   </div>
@@ -212,7 +237,7 @@
  <div class="sec-grid">
   <div class="sec-no a-clay" data-sec><span class="num">04</span><span class="nm" data-t="sec.exp">Experience</span></div>
   <div>
-    <h2 class="rev" data-t="exp.h2">Where I have worked</h2>
+    <h2 class="rev" data-t="exp.h2">Selected international engagements</h2>
     <div id="exp"></div>
 
     <details class="fold rev" id="missionfold">
@@ -235,28 +260,27 @@
   <div>
     <h2 class="rev" data-t="bg.h2">Education, certification, and things written down</h2>
 
-    <div class="bubble small rev" style="margin-top:0;margin-bottom:2.2rem">
+    <div class="bubble small rev" style="margin-top:0;margin-bottom:1.4rem">
       <p data-t="bg.bubble">Science-trained · Social science researcher · Curious lifelong learner</p>
     </div>
 
-    <div class="two rev" style="margin-bottom:2.4rem">
+    <div class="two rev" style="margin-bottom:1.6rem">
       <div>
         <span class="label" data-t="bg.edu">Education</span>
         <div class="mini">
           <h5 data-t="bg.d1">MA, Applied Linguistics (Social Sciences)</h5>
           <div class="meta" data-t="bg.m1">Beijing Foreign Studies University · 2019–2022</div>
-          <p data-t="bg.ma">Language teaching and assessment, second-language acquisition, discourse analysis, international politics, research design and quantitative methods.</p>
         </div>
         <div class="mini">
           <h5 data-t="bg.d2">BSc, Biological Sciences</h5>
           <div class="meta" data-t="bg.m2">Ludong University · 2014–2018</div>
-          <p data-t="bg.bsc">Ecology, biodiversity, botany, biostatistics, IT in biology and nature conservation.</p>
         </div>
       </div>
       <div>
         <span class="label" data-t="bg.train">Training &amp; certification</span>
         <ul class="list">
           <li><b data-t="bg.t1">Food security &amp; livelihoods; biodiversity &amp; agrifood systems; agriculture in regional trade agreements</b><span data-t="bg.t1m">FAO eLearning Academy, 2026</span></li>
+          <li><b data-t="bg.t5">Google Analytics Certification</b><span data-t="bg.t5m">Google Skillshop, 2026</span></li>
           <li><b data-t="bg.t2">Senior Secondary School Teacher Qualification</b><span data-t="bg.t2m">Ministry of Education, China, 2021</span></li>
           <li><b data-t="bg.t3">IELTS Academic — Overall Band 8.0</b></li>
           <li><b data-t="bg.t4">Microsoft Power Platform Fundamentals (PL-900)</b></li>
@@ -284,7 +308,7 @@
       </div>
     </div>
 
-    <div class="langs rev">
+    <div class="langs rev" style="margin-top:1.1rem">
       <span class="pill p-sea" data-t="lg1">Chinese — mother tongue</span>
       <span class="pill p-sea" data-t="lg2">English — IELTS 8.0</span>
       <span class="pill p-och" data-t="lg3">Spanish — B2</span>
@@ -299,8 +323,7 @@
   <div class="card-contact">
     <span class="label" data-t="c.label">06 — Contact</span>
     <h2 class="rev" style="margin-top:1rem" data-t="c.h2">Say hello 👋</h2>
-    <p class="rev" data-t="c.p1">I am always happy to connect — whether you work in international organizations, tech, education, the private sector, or something completely different. 🌍</p>
-    <p class="rev" data-t="c.p2">If something here caught your attention, or you simply want to say hello, feel free to reach out. ☕</p>
+    <p class="rev" data-t="c.p1">Always happy to connect — international organizations, tech, education, private sector, or something else entirely. Feel free to reach out. 🌍</p>
     <a class="mailbtn rev" href="mailto:yuxi.zhou2177@gmail.com">✉ yuxi.zhou2177@gmail.com</a>
   </div>
 </div>
