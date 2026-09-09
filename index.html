@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yuxi Zhou | Work, Places &amp; Curiosities</title>
+<meta name="description" content="UNESCO professional working across institutional communication, Member State monitoring and SIDS support, with strengths in digital storytelling, data visualization and science-policy coordination." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Yuxi Zhou | Communication, Policy &amp; Multilateral Programmes" />
+<meta property="og:description" content="Selected work across communication, SIDS support and monitoring." />
+<meta property="og:url" content="https://yuxizhou2177.github.io/" />
+<meta property="og:image" content="https://yuxizhou2177.github.io/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Yuxi Zhou — Communication, Policy and Multilateral Programmes" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Yuxi Zhou | Communication, Policy &amp; Multilateral Programmes" />
+<meta name="twitter:description" content="Selected work across communication, SIDS support and monitoring." />
+<meta name="twitter:image" content="https://yuxizhou2177.github.io/og.jpg" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGJ2X4MSQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EGJ2X4MSQ9');
+</script>
+</head>
+<body>
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<nav id="nav" aria-label="Main navigation">
+  <div class="who"><i aria-hidden="true"></i>Yuxi Zhou</div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navList">☰</button>
+  <ul id="navList">
+    <li><a href="#about" data-t="nav.about">About</a></li>
+    <li><a href="#work" data-t="nav.project">Selected Work</a></li>
+    <li><a href="#policy" data-t="nav.policy">Policy &amp; SIDS</a></li>
+    <li><a href="#experience" data-t="nav.exp">Experience</a></li>
+    <li><a href="#background" data-t="nav.bg">Background</a></li>
+    <li class="langs-nav" role="group" aria-label="Language / Idioma / Langue / 语言">
+      <button class="lg on" data-lang="en">EN</button><span class="lgsep">·</span><button class="lg" data-lang="es">ES</button><span class="lgsep">·</span><button class="lg" data-lang="fr">FR</button><span class="lgsep">·</span><button class="lg" data-lang="zh">中</button>
+    </li>
+  </ul>
+</nav>
+
+<header class="masthead">
+  <div class="name-row">
+    <div class="nameplate">
+      <span class="tiny" data-t="mast.tiny">Paris · UNESCO</span>
+      <h1><span class="hi" data-t="mast.hi">Hi, I am</span> Yuxi <em>Zhou</em></h1>
+      <div class="tags">
+        <a class="pill p-sea" href="#work" data-t="mast.pill1">Institutional Communication</a>
+        <a class="pill p-och" href="#policy" data-t="mast.pill2">Multilateral Programmes</a>
+      </div>
+    </div>
+    <p class="mast-line" data-t="mast.line">This is my own corner of the internet — a place to share selected work, the places it takes me, and the stories I build along the way.</p>
+  </div>
+</header>
+
+<div class="plate" id="map-plate">
+  <div class="plate-top">
+    <span class="label" data-t="map.label">Where the work took me</span>
+    <div class="filters">
+      <button class="f tour" id="tour" aria-label="Play an automatic tour of the five missions" data-t="map.tour">▶ Play tour</button>
+      <button class="f on" data-f="mission" aria-pressed="true"><span class="sw" style="background:#B0532C"></span><span data-t="map.fmis">Missions</span></button>
+      <button class="f on" data-f="sids" aria-pressed="true"><span class="sw" style="background:#1D5A61"></span><span data-t="map.fsids">Supported SIDS</span></button>
+    </div>
+  </div>
+  <p class="map-sub" data-t="map.sub">Selected missions (2024–2026) in communication and policy dialogue — alongside SIDS supported through monitoring this biennium.</p>
+
+  <div class="map-frame" role="region" aria-label="Interactive map of missions and supported Small Island Developing States">
+    <div id="map" aria-label="World map showing mission cities and supported Small Island Developing States"></div>
+    <svg class="rose" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#16191B" stroke-width=".7"/>
+      <circle cx="50" cy="50" r="34" fill="none" stroke="#B8862F" stroke-width=".5"/>
+      <path d="M50 6 L55 44 L50 50 L45 44 Z" fill="#B0532C"/>
+      <path d="M50 94 L55 56 L50 50 L45 56 Z" fill="#1D5A61" opacity=".6"/>
+      <path d="M6 50 L44 45 L50 50 L44 55 Z" fill="#16191B" opacity=".3"/>
+      <path d="M94 50 L56 45 L50 50 L56 55 Z" fill="#16191B" opacity=".3"/>
+      <text x="50" y="15" font-size="9" text-anchor="middle" fill="#16191B" font-family="Georgia,serif">N</text>
+    </svg>
+    <div class="map-vig"></div>
+    <aside class="readout" id="readout" aria-live="polite" aria-label="Map information panel">
+      <span class="label" data-t="read.label">Reading</span>
+      <p class="hint" data-t="read.hint">Explore the map by hovering over a marker, starting the tour, or scrolling down to the mission notes below.</p>
+    </aside>
+  </div>
+
+  <div class="plate-cap">
+    <span>Base map © OpenStreetMap contributors, © CARTO</span>
+  </div>
+</div>
+
+<div class="toolbar">
+  <span class="label" data-t="tool.label">Selected Tools</span>
+  <span class="tool t2">Adobe InDesign</span>
+  <span class="tool t2">Premiere Pro</span>
+  <span class="tool t2">Canva</span>
+  <span class="tool t2">Figma</span>
+  <span class="tool-sep" aria-hidden="true">｜</span>
+  <span class="tool t3">Drupal</span>
+  <span class="tool t3">Mailchimp</span>
+  <span class="tool t3">GitHub</span>
+  <span class="tool t3">GA4</span>
+  <span class="tool-sep" aria-hidden="true">｜</span>
+  <span class="tool t1">Datawrapper</span>
+  <span class="tool t1">Power BI</span>
+  <span class="tool t1">ArcGIS</span>
+</div>
+
+<div class="orn" aria-hidden="true"><i></i></div>
+
+<!-- ════ 01 ABOUT ════ -->
+<section id="about">
+ <div class="sec-grid">
+  <div class="sec-no a-sea" data-sec><span class="num">01</span><span class="nm" data-t="sec.about">About me</span></div>
+  <div>
+    <h2 class="rev" data-t="about.h2">I turn substance into communication.</h2>
+    <div class="body">
+      <p class="rev" data-t="about.p1">At UNESCO in Paris, my work spans Member State monitoring under the International Convention against Doping in Sport, alongside coordination of a global initiative on Traditional Pharmacopoeia. Communication runs across both: I develop briefing notes, articles, web content, visuals and digital products for senior management, Member States and international audiences.</p>
+    </div>
+
+    <div class="bubble rev">
+      <p data-t="about.bubble">I enjoy turning complex information into clear, useful communication — finding the right angle, shaping the message and adapting it to the audience.</p>
+    </div>
+  </div>
+ </div>
+</section>
+
+<div class="orn c" aria-hidden="true"><i></i></div>
+
+<!-- ════ 02 SELECTED WORK ════ -->
+<section id="work">
+ <div class="sec-grid">
+  <div class="sec-no a-och" data-sec><span class="num">02</span><span class="nm" data-t="sec.project">Selected Work</span></div>
+  <div>
+    <div class="mini-process rev" data-desc-scope>
+      <span class="mp-item hoverdesc" tabindex="0" data-t="mp.1" data-desc-t="mp.1d" data-desc="Technical / country-level information">Evidence</span>
+      <span class="mp-arrow">→</span>
+      <span class="mp-item hoverdesc" tabindex="0" data-t="mp.2" data-desc-t="mp.2d" data-desc="Senior management · Member States · public">Audience</span>
+      <span class="mp-arrow">→</span>
+      <span class="mp-item hoverdesc" tabindex="0" data-t="mp.3" data-desc-t="mp.3d" data-desc="Editorial · visual · digital">Story</span>
+      <span class="mp-arrow">→</span>
+      <span class="mp-item hoverdesc" tabindex="0" data-t="mp.4" data-desc-t="mp.4d" data-desc="Understand · engage · follow up">Action</span>
+      <div class="desc-area"></div>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="p4.t">Beyond the Record</h3><span class="badge" data-t="p4.bg">Communication</span></div>
+      <div class="kicker" data-t="p4.k">Independent case study · September 2026</div>
+      <div class="body">
+        <p data-t="p4.a">An independent communication case study based on FAO's SOFIA 2026, exploring how the same technical evidence can be adapted for senior-management, web and social audiences through editorial writing, data visualization and visual storytelling.</p>
+      </div>
+      <div class="stack">
+        <span class="chip" data-t="p4.c1">Audience adaptation</span><span class="chip" data-t="p4.c2">Editorial</span>
+        <span class="chip" data-t="p4.c3">Data storytelling</span><span class="chip" data-t="p4.c4">GA4</span>
+      </div>
+      <!-- ★ 换成你的 case study 部署地址 -->
+      <a class="lnk" href="https://yuxizhou2177.github.io/beyond-the-record/" target="_blank" rel="noopener" data-project="sofia_case" data-t="p4.lnk">Open the case study →</a>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="p1.t">SIDSight</h3><span class="badge sea" data-t="p1.bg">Data</span></div>
+      <div class="kicker" data-t="p1.k">Independent agrifood policy explorer · August 2026</div>
+      <div class="body">
+        <p data-t="p1.a">An independent agrifood policy explorer for 8 SIDS, bringing together FAO and World Bank indicators on food imports, agriculture, fisheries, climate vulnerability and connectivity for country comparison and bilateral preparation.</p>
+              </div>
+      <div class="note">
+        <span class="label" data-t="p1.nl">A little more</span>
+        <p data-t="p1.n">Across three views, it moves from regional comparison to a country brief and relevant FAO connections — from understanding the context to identifying where the conversation could go next.</p>
+      </div>
+      <div class="stack">
+        <span class="chip" data-t="p1.c1">Power BI</span><span class="chip" data-t="p1.c2">Python · pandas</span><span class="chip" data-t="p1.c3">ArcGIS</span>
+        <span class="chip" data-t="p1.c4">GitHub</span><span class="chip" data-t="p1.c5">World Bank &amp; FAO data</span>
+      </div>
+      <!-- ★ 换成你的仓库地址 -->
+      <a class="lnk" href="https://yuxizhou2177.github.io/sidsight/" target="_blank" rel="noopener" data-project="sidsight" data-t="p1.lnk">Explore SIDSight →</a>
+    </div>
+
+    <div class="proj rev" id="strategy-card">
+      <div class="top"><h3 data-t="p5.t">Convention Communication Strategy</h3><span class="badge" data-t="p5.bg">Strategy</span></div>
+      <div class="kicker" data-t="p5.k">Institutional communication strategy · 2025</div>
+      <div class="body">
+        <p data-t="p5.a">Developed the Convention’s first dedicated communication strategy, translating institutional objectives into defined audiences, message priorities, deliverables, responsibilities, an implementation timeline and KPIs.</p>
+      </div>
+      <div class="stack">
+        <span class="chip" data-t="p5.c1">Communication strategy</span><span class="chip" data-t="p5.c2">Audience planning</span>
+        <span class="chip" data-t="p5.c3">Content planning</span><span class="chip" data-t="p5.c4">KPIs</span>
+      </div>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="p2.t">The Journey of the Anti-Doping Convention</h3><span class="badge" data-t="p2.bg">Interactive Storytelling</span></div>
+      <div class="kicker" data-t="p2.k">Interactive board · July – October 2025</div>
+      <div class="body">
+        <p data-t="p2.a">An interactive storytelling platform developed for COP10 to make 20 years of institutional history, milestones and results accessible to an international audience. I served as UNESCO’s focal point for content architecture, drafting, coordination, testing and launch with the Government of India and technical partners.</p>
+      </div>
+      <div class="stack">
+        <span class="chip" data-t="p2.c1">Content drafting</span><span class="chip" data-t="p2.c2">Interactive design</span>
+        <span class="chip" data-t="p2.c3">Government partnership</span><span class="chip" data-t="p2.c4">Digital communications</span>
+      </div>
+      <a class="lnk" href="https://www.nsf.yas.gov.in/antidoping-COP10/index.php" target="_blank" rel="noopener" data-project="convention_journey" data-t="p2.lnk">Open the board →</a>
+    </div>
+
+    <div class="more-comms rev">
+      <span class="label" data-t="more.label">More Communication Work</span>
+      <div class="more-grid" id="moregrid"></div>
+    </div>
+
+  </div>
+ </div>
+</section>
+
+<div class="orn c" aria-hidden="true"><i></i></div>
+
+<!-- ════ 03 POLICY & SIDS ════ -->
+<section id="policy">
+ <div class="sec-grid">
+  <div class="sec-no a-sea" data-sec><span class="num">03</span><span class="nm" data-t="sec.policy">Policy &amp; SIDS</span></div>
+  <div>
+    <div class="policy-grid">
+    <div class="proj rev">
+      <div class="top"><h3 data-t="pol1.t">Monitoring &amp; Member State Follow-up</h3></div>
+      <div class="body"><p data-t="pol1.a">Support the Convention’s monitoring and follow-up with Member States, reviewing national reports, identifying implementation gaps, tracking progress and preparing tailored next steps.</p></div>
+      <div class="stack">
+        <span class="chip" data-t="pol1.c1">Member States</span><span class="chip" data-t="pol1.c2">Country evidence</span>
+        <span class="chip" data-t="pol1.c3">Follow-up</span>
+      </div>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="pol2.t">SIDS Support &amp; Regional Engagement</h3></div>
+      <div class="body"><p data-t="pol2.a">Support close monitoring and follow-up with 9 SIDS across the Pacific, Caribbean and AIS, alongside regional engagement and capacity-building, including the Pacific SIDS programme.</p></div>
+      <div class="stack">
+        <span class="chip" data-t="pol2.c1">SIDS</span><span class="chip" data-t="pol2.c3">Regional engagement</span><span class="chip" data-t="pol2.c4">Capacity-building</span>
+      </div>
+    </div>
+
+    <div class="proj rev">
+      <div class="top"><h3 data-t="pol3.t">Traditional Pharmacopoeia &amp; Sport Values</h3></div>
+      <div class="body"><p data-t="pol3.a">Support coordination of a global science-policy initiative bringing together academics, experts and regional coordinators, including consolidation of expert inputs into communication outputs.</p></div>
+      <div class="stack">
+        <span class="chip" data-t="pol3.c1">Science-policy</span><span class="chip" data-t="pol3.c3">Expert coordination</span><span class="chip" data-t="pol3.c4">Knowledge exchange</span>
+      </div>
+    </div>
+    </div>
+
+  </div>
+ </div>
+</section>
+
+<div class="orn b" aria-hidden="true"><i></i></div>
+
+<!-- ════ 04 EXPERIENCE ════ -->
+<section id="experience">
+ <div class="sec-grid">
+  <div class="sec-no a-clay" data-sec><span class="num">04</span><span class="nm" data-t="sec.exp">Experience</span></div>
+  <div>
+    <h2 class="rev" data-t="exp.h2">Selected engagements</h2>
+
+    <div class="current-role rev">
+      <div class="cr-head">
+        <span class="cr-title" data-t="cr.title">Project Assistant · UNESCO</span>
+        <span class="cr-when" data-t="cr.when">Paris · Jan 2025 – present</span>
+      </div>
+      <p class="cr-summary" data-t="cr.summary">Member State monitoring · institutional communication · science-policy coordination · international outreach</p>
+    </div>
+
+    <details class="fold rev" id="expfold">
+      <summary><i aria-hidden="true"></i><span class="ftitle" data-t="fold.exptitle">All Experiences</span><span class="fhint" data-t="fold.hint">Click to expand</span><span class="fcount">07</span></summary>
+      <div class="foldbody">
+        <div id="exp"></div>
+      </div>
+    </details>
+
+    <details class="fold rev" id="missionfold">
+      <summary><i aria-hidden="true"></i><span class="ftitle" data-t="fold.title">Selected missions, 2024–2026</span><span class="fhint" data-t="fold.hint">Click to expand</span><span class="fcount">05</span></summary>
+      <div class="foldbody">
+        <p class="foldnote" data-t="fold.note">Hover a marker on <a class="jump" href="#map-plate">the map at the top of the page</a> to light up the note down here — and the other way round.</p>
+        <div class="mgrid" id="mlist"></div>
+      </div>
+    </details>
+  </div>
+ </div>
+</section>
+
+<div class="orn c" aria-hidden="true"><i></i></div>
+
+<!-- ════ 05 BACKGROUND ════ -->
+<section id="background">
+ <div class="sec-grid">
+  <div class="sec-no a-och" data-sec><span class="num">05</span><span class="nm" data-t="sec.bg">Background</span></div>
+  <div>
+    <h2 class="rev" data-t="bg.h2">Education &amp; Learning</h2>
+
+    <div class="bubble small rev" style="margin-top:0;margin-bottom:1.4rem">
+      <p data-t="bg.bubble">Science-trained · Social science researcher · Curious lifelong learner</p>
+    </div>
+
+    <div class="two rev" style="margin-bottom:1.6rem">
+      <div>
+        <span class="label" data-t="bg.edu">Education</span>
+        <div class="mini">
+          <h5 data-t="bg.d1">MA, Linguistics</h5>
+          <div class="meta" data-t="bg.m1">Beijing Foreign Studies University · 2019–2022</div>
+          <div class="subj" data-t="bg.s1">Discourse Analysis · Stylistics · International Politics · Research Methods · SLA</div>
+        </div>
+        <div class="mini">
+          <h5 data-t="bg.d2">BSc, Biological Sciences</h5>
+          <div class="meta" data-t="bg.m2">Ludong University · 2014–2018</div>
+          <div class="subj" data-t="bg.s2">Ecology · Biodiversity · Biostatistics · Botany · Zoology · IT in Biology</div>
+        </div>
+      </div>
+      <div>
+        <span class="label" data-t="bg.train">Selected Learning &amp; Certifications</span>
+        <p class="dense" data-t="bg.t1">FAO eLearning Academy (2026) — Communication for rural development · Food security &amp; livelihoods · Biodiversity &amp; agrifood systems · Agriculture in regional trade agreements</p>
+        <p class="dense" data-t="bg.t2">Google Analytics · Microsoft Power Platform Fundamentals (PL-900) · IELTS Academic 8.0 · Senior Secondary School Teacher Qualification</p>
+      </div>
+    </div>
+
+    <div class="two rev">
+      <div>
+        <span class="label" data-t="bg.awards">Awards</span>
+        <p class="dense" data-t="bg.a1">National Scholarship (Top 2%) · Special-Level Scholarship · Merit Student ×2</p>
+        <p class="dense" data-t="bg.a2">Outstanding Thesis Award · National College Students’ English Debate Competition — First Prize</p>
+      </div>
+      <div>
+        <span class="label" data-t="bg.pub">Selected Research &amp; Publications</span>
+        <p class="dense" data-t="bg.p1">China’s International Discourse Construction of “Poverty Alleviation” (2021) · Phonological Awareness and Children’s English Acquisition (2020)</p>
+        <p class="dense"><b data-t="bg.pthl">MA thesis:</b> <span data-t="bg.p2">Written Corrective Feedback and Explicit/Implicit Knowledge (2022)</span></p>
+      </div>
+    </div>
+
+    <div class="langs rev" style="margin-top:1.1rem">
+      <span class="pill p-sea" data-t="lg1">Chinese — mother tongue</span>
+      <span class="pill p-sea" data-t="lg2">English — IELTS 8.0</span>
+      <span class="pill p-och" data-t="lg3">Spanish — B2</span>
+      <span class="pill p-och" data-t="lg4">French — B1</span>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- ════ 06 CONTACT ════ -->
+<div class="endwrap" id="contact">
+  <div class="card-contact">
+    <span class="label" data-t="c.label">06 — Contact</span>
+    <h2 class="rev" style="margin-top:1rem" data-t="c.h2">Say hello 👋</h2>
+    <p class="rev" data-t="c.p1">Always happy to connect around communication, international cooperation and the ideas behind the work. 🌍</p>
+    <a class="mailbtn rev" href="mailto:yuxi.zhou2177@gmail.com">✉ yuxi.zhou2177@gmail.com</a>
+  </div>
+</div>
+
+<footer>
+  <span data-t="f.left">My little corner of the internet, still taking shape.</span>
+  <span><span id="hits"></span>© 2026 Yuxi Zhou</span>
+</footer>
+
+<div class="cur cur-frame" id="curFrame" aria-hidden="true"></div>
+<div class="cur cur-core" id="curCore" aria-hidden="true"></div>
+<div class="coord" id="coord" aria-hidden="true"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script data-goatcounter="https://yuxizhou.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
