@@ -230,6 +230,43 @@ h2{font-weight:400;font-size:clamp(1.75rem,3.8vw,2.5rem);line-height:1.18;letter
 .bubble.small p{font-size:.98rem}
 
 /* ── 项目卡 ─────────────────────────────────────────── */
+/* ── Work groups: labeled section within Selected Work ─────────── */
+.work-group{margin-bottom:2rem}
+.wg-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:.6rem}
+.wg-label{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);font-weight:600}
+.wg-meta{font-size:.76rem;color:var(--ink-soft);font-style:italic}
+.wg-rule{border:none;border-top:1px solid var(--rule);margin:0 0 1.1rem}
+
+/* ── Row 1: Independent case studies (compact showcase cards) ──── */
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:900px){.case-grid{grid-template-columns:1fr}}
+.mini-card{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:14px;
+  padding:1.1rem 1.15rem 1.2rem;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s}
+.mini-card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(60,50,35,.05),0 14px 32px rgba(60,50,35,.09)}
+.card-new{position:absolute;top:1rem;right:1.1rem;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay);border:1px solid var(--clay);border-radius:999px;padding:.1rem .5rem;background:transparent}
+.card-type{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ochre);margin:0 0 .35rem;font-weight:600}
+.mini-card h3{font-weight:400;font-size:1.12rem;letter-spacing:-.01em;margin:0 0 .3rem;line-height:1.2}
+.card-meta{font-size:.68rem;letter-spacing:.04em;color:var(--ink-soft);margin:0 0 .8rem}
+.card-sig{margin:0 0 .8rem}
+.sig-num{font-family:var(--serif,Georgia,serif);font-size:1.7rem;line-height:1}
+.sig-num.sig-a{color:var(--sea)}
+.sig-num.sig-b{color:var(--clay)}
+.sig-arrow{color:var(--ink-soft);margin:0 .4rem;font-size:1.1rem}
+.sig-cap{font-size:.68rem;color:var(--ink-soft);margin-top:.25rem}
+.card-desc{font-size:.82rem;line-height:1.55;color:var(--ink-mid);margin:0 0 .7rem;flex-grow:1}
+.card-skills{font-size:.7rem;color:var(--ink-soft);margin:0 0 .6rem}
+.mini-card .lnk,.inst-card .lnk{font-size:.68rem;margin-top:0}
+
+/* ── Row 2: Selected institutional work (restrained, résumé-like) ── */
+.inst-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(max-width:760px){.inst-grid{grid-template-columns:1fr}}
+.inst-card{background:var(--paper);border:1px solid var(--rule);border-radius:14px;
+  padding:1.1rem 1.2rem 1.2rem;display:flex;flex-direction:column}
+.inst-card h3{font-weight:400;font-size:1.12rem;letter-spacing:-.01em;margin:0 0 .3rem;line-height:1.25}
+.inst-card .card-desc{margin-bottom:.6rem}
+
 .proj{background:var(--card);border:1px solid var(--rule);border-radius:16px;
   padding:clamp(1.4rem,3vw,2.1rem);margin-bottom:1.5rem;box-shadow:var(--shadow);
   transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
