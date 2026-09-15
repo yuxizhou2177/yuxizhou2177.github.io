@@ -65,7 +65,7 @@ section{padding:clamp(2.6rem,6.5vh,4rem) 0}
 /* 图 */
 .diagram svg{width:100%;height:auto;display:block}
 .link{transition:stroke-opacity .3s,stroke-width .3s}
-.link.dim{stroke-opacity:.1}
+.link.dim{stroke-opacity:.07}
 .link.lit{stroke-opacity:1;stroke-width:2.3}
 .node{transition:opacity .3s}
 .node.dim{opacity:.2}
@@ -79,6 +79,7 @@ section{padding:clamp(2.6rem,6.5vh,4rem) 0}
 .diaghint.on{font-style:normal;opacity:1;letter-spacing:.01em}
 .diaghint.g-sea{color:var(--sea)} .diaghint.g-clay{color:var(--clay)} .diaghint.g-och{color:var(--ochre)}
 .diaghint b{font-weight:400;letter-spacing:.06em}
+.diaghint i{display:block;font-style:italic;opacity:.7;font-size:.94em;margin-top:.1rem}
 .stacked{display:none}
 .stk{border-left:2px solid var(--rule);padding:.2rem 0 .2rem .9rem;margin-bottom:.9rem}
 .stk h4{font-weight:400;font-size:.95rem;margin-bottom:.15rem}
@@ -158,7 +159,7 @@ footer{border-top:1px solid var(--rule);max-width:var(--maxw);margin:1.6rem auto
 
  <div class="diagram rev">
   <svg viewBox="0 0 920 440" role="img"
-    aria-label="Six FAO technical portfolios grouped into three public messages, which converge on FAO's agrifood systems transformation frame and the Four Betters.">
+    aria-label="Six FAO technical portfolios grouped into three public messages, with dashed lines marking secondary contributions, all converging on FAO's agrifood systems transformation frame and the Four Betters.">
 
    <text x="59" y="20" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5" letter-spacing="2.2" fill="#7E8781">PORTFOLIOS</text>
    <text x="450" y="20" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5" letter-spacing="2.2" fill="#7E8781">PUBLIC MESSAGES</text>
@@ -181,7 +182,20 @@ footer{border-top:1px solid var(--rule);max-width:var(--maxw);margin:1.6rem auto
      <path class="link" data-c="NSA" d="M104,198 C170,198 184,206 238,212" stroke="#B0532C" stroke-width="1.3" stroke-opacity=".5"/>
      <path class="link" data-c="CJW" d="M104,234 C170,234 184,220 238,218" stroke="#B0532C" stroke-width="1.3" stroke-opacity=".5"/>
      <path class="link" data-c="CJN" d="M104,270 C170,270 184,236 238,224" stroke="#B0532C" stroke-width="1.3" stroke-opacity=".5"/>
+     <!-- secondary：虚线＝次要连接，不改变主分组 -->
+     <path class="link secondary" data-c="NFI" d="M104,130 C162,150 182,186 238,206" stroke="#B0532C" stroke-width="1.2" stroke-opacity=".32" stroke-dasharray="5 5"/>
+     <path class="link secondary" data-c="CJN" d="M104,270 C162,250 182,136 238,102" stroke="#1D5A61" stroke-width="1.2" stroke-opacity=".32" stroke-dasharray="5 5"/>
+     <path class="link secondary" data-c="NFI" d="M104,140 C160,166 172,202 238,214" stroke="#1D5A61" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="5 5"/>
+     <path class="link secondary" data-c="CJN" d="M104,260 C160,234 172,84 238,62" stroke="#B0532C" stroke-width="1.1" stroke-opacity=".3" stroke-dasharray="5 5"/>
      <path class="link secondary" data-c="ALL" d="M104,340 C170,340 184,348 238,354" stroke="#B8862F" stroke-width="1.2" stroke-opacity=".35" stroke-dasharray="5 5"/>
+   </g>
+
+   <!-- 图例 -->
+   <g font-family="Constantia,Georgia,serif" font-size="8.6" fill="#7E8781">
+     <path d="M14,388 L44,388" stroke="#7E8781" stroke-width="1.2" stroke-opacity=".55" fill="none"/>
+     <text x="50" y="391">primary grouping</text>
+     <path d="M14,408 L44,408" stroke="#7E8781" stroke-width="1.1" stroke-opacity=".4" stroke-dasharray="5 5" fill="none"/>
+     <text x="50" y="411">also contributes</text>
    </g>
 
    <g class="node" data-frame="m1">
@@ -369,7 +383,8 @@ footer{border-top:1px solid var(--rule);max-width:var(--maxw);margin:1.6rem auto
   <summary><i></i>Sources &amp; note</summary>
   <div class="nbody">
     Built from public FAO material. The three messages are a communication synthesis rather than a
-    description of FAO reporting lines. Figures link to the source cited.
+    description of FAO reporting lines. Solid lines show the primary grouping; dashed lines mark
+    secondary connections. Figures link to the source cited.
     <span>Independent portfolio exercise. Not an FAO product.</span>
   </div>
  </details>
@@ -396,10 +411,10 @@ addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('e
 const NAMES={
   OCB:['Office of Climate Change, Biodiversity and Environment','g-sea'],
   NFO:['Forestry Division','g-sea'],
-  NFI:['Fisheries and Aquaculture Division','g-sea'],
+  NFI:['Fisheries and Aquaculture Division','g-sea','also connects to risks — aquatic biosecurity and One Health'],
   NSA:['Animal Production and Health Division','g-clay'],
   CJW:['Joint FAO/WHO Centre — Codex Alimentarius and food safety','g-clay'],
-  CJN:['Joint FAO/IAEA Centre — nuclear techniques in food and agriculture','g-clay'],
+  CJN:['Joint FAO/IAEA Centre — nuclear techniques in food and agriculture','g-clay','also connects to resources — soil, water and plant breeding'],
   ALL:['All six portfolios contribute','g-och']
 };
 const cap=document.getElementById('cap');
@@ -407,16 +422,25 @@ function caption(code){
   if(!cap) return;
   cap.classList.remove('g-sea','g-clay','g-och','on');
   if(code&&NAMES[code]){
-    cap.innerHTML='<b>'+code+'</b> · '+NAMES[code][0];
+    const extra=NAMES[code][2]?' <i>'+NAMES[code][2]+'</i>':'';
+    cap.innerHTML='<b>'+code+'</b> · '+NAMES[code][0]+extra;
     cap.classList.add('on',NAMES[code][1]);
   } else {
     cap.textContent=cap.dataset.default;
   }
 }
 const links=[...document.querySelectorAll('.link')], nodes=[...document.querySelectorAll('.node')];
+/* 每个 portfolio 连到哪些 message —— NFI 与 CJN 各有两个 */
+const GOES={OCB:['m1'],NFO:['m1'],NFI:['m1','m2'],NSA:['m2'],CJW:['m2'],CJN:['m2','m1'],ALL:['m3']};
 function lite(code){
   links.forEach(l=>{l.classList.toggle('lit',l.dataset.c===code);l.classList.toggle('dim',!!code&&l.dataset.c!==code)});
-  nodes.forEach(n=>{const keep=!code||n.dataset.c===code||n.dataset.frame;n.classList.toggle('dim',!keep)});
+  const to=code?(GOES[code]||[]):null;
+  nodes.forEach(n=>{
+    const keep = !code
+      ? true
+      : (n.dataset.c===code) || (n.dataset.frame && to.includes(n.dataset.frame));
+    n.classList.toggle('dim',!keep);
+  });
 }
 document.querySelectorAll('.pcode').forEach(b=>{
   b.addEventListener('mouseenter',()=>{lite(b.dataset.c);caption(b.dataset.c)});
