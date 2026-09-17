@@ -256,7 +256,8 @@
     .dek {
       color: var(--grey);
       font-size: 15px;
-      max-width: 60ch;
+      max-width: none;
+      white-space: nowrap;
       margin: 0 0 22px;
     }
 
@@ -378,21 +379,49 @@
       color: var(--grey);
       font-size: 15.5px;
       line-height: 1.55;
-      max-width: 58ch;
+      max-width: none;
+      width: 100%;
       margin: 0 0 16px;
+    }
+
+    .web-image {
+      margin: 22px 0 20px;
+      max-width: 100%;
+    }
+
+    .web-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .web-image figcaption {
+      margin-top: 8px;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--grey);
+    }
+
+    .web-image .photo-credit {
+      display: block;
+      margin-top: 2px;
+      font-size: 11.5px;
+      color: var(--grey);
     }
 
     .web-story .divider {
       border: none;
       border-top: 1px solid var(--line);
-      margin: 0 0 16px;
-      max-width: 70px;
+      margin: 2px 0 18px;
+      max-width: 90px;
     }
 
     .web-story p.body-p {
       font-size: 15.5px;
-      margin: 0 0 14px;
-      max-width: 60ch;
+      line-height: 1.65;
+      margin: 0 0 18px;
+      max-width: none;
+      width: 100%;
     }
 
     .web-story .cta {
@@ -546,7 +575,7 @@
     }
 
     .social-copy {
-      padding-top: 12px;
+      padding-top: 18px;
     }
 
     .social-copy p {
@@ -606,6 +635,10 @@
     @media (max-width:600px) {
       .evidence-section {
         padding: 26px 0 28px;
+
+        .dek {
+          white-space: normal;
+        }
       }
 
       .audience-section {
@@ -828,6 +861,16 @@
           <p class="standfirst">SOFIA 2026 reports a new high in global aquatic animal production, with aquaculture now
             accounting for 53% of the total, while per-capita availability in Africa remains less than half the global
             average.</p>
+          <figure class="web-image">
+            <img src="images/sofia-web-story.jpg" alt="Aquaculture facilities and fishing activity in coastal waters.">
+
+            <figcaption>
+              Aquaculture and capture fisheries both contribute to global aquatic food systems.
+              <span class="photo-credit">
+                Photo: ©Quang Nguyen Vinh / Pexels
+              </span>
+            </figcaption>
+          </figure>
           <hr class="divider">
           <p class="body-p">Global aquatic animal production reached 195 million tonnes in 2024, with aquaculture now
             producing the majority for the first time — 103 million tonnes, or 53% of the total. Yet the regional
