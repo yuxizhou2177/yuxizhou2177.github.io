@@ -935,92 +935,67 @@
     document
       .querySelectorAll('.reveal, .reveal-soft, .reveal-scale')
       .forEach((el) => revealObserver.observe(el));
-    /* ---------- animated signal row ---------- */
+    /* ---------- hero number count-up ---------- */
 
     const signalRow = document.querySelector('.signal-row');
     const countEls = document.querySelectorAll('.countup');
 
-    const prefersReducedMotion =
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-
-    /* count-up function */
-    function animateCount(el) {
+    function animateCount(el, delay) {
 
       const target = Number(el.dataset.target);
       const suffix = el.dataset.suffix || '';
+      const duration = 1400;
 
-      /* accessibility: no animation if user prefers reduced motion */
-      if (prefersReducedMotion) {
-        el.textContent = target + suffix;
-        return;
-      }
+      setTimeout(() => {
 
-      const duration = 950;
-      const startTime = performance.now();
+        const startTime = performance.now();
 
-      el.textContent = '0' + suffix;
+        function update(now) {
 
-      function easeOutCubic(t) {
-        return 1 - Math.pow(1 - t, 3);
-      }
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
 
-      function update(now) {
+          /* smooth ease-out */
+          const eased = 1 - Math.pow(1 - progress, 3);
 
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
+          const value = Math.round(target * eased);
 
-        const eased = easeOutCubic(progress);
-        const value = Math.round(target * eased);
+          el.textContent = value + suffix;
 
-        el.textContent = value + suffix;
-
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        } else {
-          el.textContent = target + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            el.textContent = target + suffix;
+          }
         }
-      }
 
-      requestAnimationFrame(update);
+        requestAnimationFrame(update);
+
+      }, delay);
     }
 
 
-    /* trigger when the three figures enter the viewport */
-    if (signalRow) {
+    /* start sequence shortly after page appears */
+    if (signalRow && countEls.length) {
 
-      const signalObserver = new IntersectionObserver(
-        (entries, observer) => {
+      /* show zero first */
+      countEls.forEach((el) => {
+        const suffix = el.dataset.suffix || '';
+        el.textContent = '0' + suffix;
+      });
 
-          entries.forEach((entry) => {
+      setTimeout(() => {
 
-            if (!entry.isIntersecting) return;
+        /* trigger gold line */
+        signalRow.classList.add('line-in');
 
-            /* draw gold line */
-            signalRow.classList.add('line-in');
+        /* start numbers one by one */
+        countEls.forEach((el, index) => {
+          animateCount(el, index * 180);
+        });
 
-            /* count numbers, one after another */
-            countEls.forEach((el, index) => {
-
-              setTimeout(() => {
-                animateCount(el);
-              }, index * 120);
-
-            });
-
-            /* run only once */
-            observer.unobserve(signalRow);
-
-          });
-
-        },
-        {
-          threshold: 0.35,
-          rootMargin: '0px 0px -30px 0px'
-        }
-      );
-
-      signalObserver.observe(signalRow);
+      }, 700);
     }
   </script>
 
