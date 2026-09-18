@@ -42,7 +42,7 @@
       color: var(--ink);
       font-family: var(--serif);
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden
     }
@@ -53,9 +53,12 @@
     }
 
     .wrap {
-      max-width: var(--maxw);
+      width: 100%;
+      max-width: 1080px;
+
       margin: 0 auto;
-      padding: 0 clamp(1.2rem, 5vw, 3rem)
+
+      padding: 0 24px;
     }
 
     @media (pointer:fine) {
@@ -221,12 +224,14 @@
     }
 
     .orn {
-      max-width: var(--maxw);
+      max-width: 1080px;
       margin: 0 auto;
+
       display: flex;
       align-items: center;
       gap: 1rem;
-      padding: 0 clamp(1.2rem, 5vw, 3rem)
+
+      padding: 0 24px;
     }
 
     .orn::before,
@@ -600,7 +605,7 @@
       font-size: .83rem;
       color: var(--ink-mid);
       max-width: 46rem;
-      line-height: 1.7
+      line-height: 1.6
     }
 
     .notes .nbody span {
@@ -632,7 +637,7 @@
       border-top: 1px solid var(--rule);
       max-width: var(--maxw);
       margin: 1.6rem auto 0;
-      padding: 1rem clamp(1.2rem, 5vw, 3rem) 2.4rem;
+      padding: 1rem 24px 2.4rem;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
