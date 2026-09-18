@@ -72,6 +72,81 @@
       padding: 0 24px;
     }
 
+    /* ---------- shared custom cursor ---------- */
+
+    @media (pointer: fine) {
+
+      body,
+      a,
+      button {
+        cursor: none;
+      }
+    }
+
+    .cur {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .cur-core {
+      width: 5px;
+      height: 5px;
+      background: var(--ink);
+      opacity: .72;
+      transition: background .3s;
+    }
+
+    .cur-frame {
+      width: 24px;
+      height: 24px;
+      border: 1px solid var(--ink);
+      animation: cursor-glim 3.4s ease-in-out infinite;
+
+      transition:
+        width .35s cubic-bezier(.22, 1, .36, 1),
+        height .35s cubic-bezier(.22, 1, .36, 1),
+        border-color .3s;
+    }
+
+    @keyframes cursor-glim {
+
+      0%,
+      100% {
+        opacity: .14;
+      }
+
+      50% {
+        opacity: .4;
+      }
+    }
+
+    .cur-frame.grow {
+      animation: none;
+      opacity: .6;
+      width: 40px;
+      height: 40px;
+      border-color: #B0532C;
+    }
+
+    .cur-core.grow {
+      background: #B0532C;
+    }
+
+    @media (max-width: 900px) {
+      .cur {
+        display: none;
+      }
+
+      body,
+      a,
+      button {
+        cursor: auto;
+      }
+    }
+
     .rule {
       border: none;
       border-top: 1px solid var(--line);
@@ -749,6 +824,9 @@
 
 <body>
 
+  <div class="cur cur-frame" id="curFrame" aria-hidden="true"></div>
+  <div class="cur cur-core" id="curCore" aria-hidden="true"></div>
+
   <div class="topbar">
     <div class="wrap-wide">
       <span class="kicker">Independent communication case study</span>
@@ -1066,6 +1144,50 @@
         });
 
       }, 700);
+    }
+    /* ---------- shared custom cursor ---------- */
+
+    if (matchMedia('(pointer:fine)').matches) {
+
+      const ring = document.getElementById('curFrame');
+      const dot = document.getElementById('curCore');
+
+      let mx = -100;
+      let my = -100;
+      let tx = -100;
+      let ty = -100;
+      let ang = 45;
+
+      addEventListener('mousemove', e => {
+
+        mx = e.clientX;
+        my = e.clientY;
+
+        dot.style.transform =
+          `translate(${mx - dot.offsetWidth / 2}px, ${my - dot.offsetHeight / 2}px) rotate(45deg)`;
+
+        const hot = !!e.target.closest(
+          'a, button, .audience-canvas, .social-card'
+        );
+
+        ring.classList.toggle('grow', hot);
+        dot.classList.toggle('grow', hot);
+
+      }, {passive: true});
+
+
+      (function cursorLoop() {
+
+        tx += (mx - tx) * .16;
+        ty += (my - ty) * .16;
+        ang += .08;
+
+        ring.style.transform =
+          `translate(${tx - ring.offsetWidth / 2}px, ${ty - ring.offsetHeight / 2}px) rotate(${ang}deg)`;
+
+        requestAnimationFrame(cursorLoop);
+
+      })();
     }
   </script>
 
