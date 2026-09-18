@@ -143,10 +143,41 @@
     .signal-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+
       gap: 28px;
+
       margin-top: 28px;
       padding-top: 22px;
+
       border-top: 1px solid #E8DED0;
+
+      position: relative;
+    }
+
+    /* short gold line animates over the grey divider */
+    .signal-row::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      top: -1px;
+
+      width: 20%;
+      height: 1px;
+
+      background: var(--gold);
+
+      transform: scaleX(0);
+      transform-origin: left center;
+
+      transition:
+        transform 1.5s cubic-bezier(.22, 1, .36, 1);
+    }
+
+
+    .signal-row.line-in::before {
+      transform: scaleX(1);
     }
 
     .signal-label {
@@ -703,6 +734,7 @@
 
     /* respect accessibility settings */
     @media (prefers-reduced-motion: reduce) {
+
 
       .reveal,
       .reveal-soft,
