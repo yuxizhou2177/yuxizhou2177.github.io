@@ -729,17 +729,18 @@ const EXPERIENCE=[
 /* ═══ 地图 ═══
    CARTO 底图需要 API key（已配置好你的 key，每月 500 万次瓦片请求内免费）。 */
 const CARTO_KEY='cb1_2tj6_1_def4fd640c99a676cfb4e5e7';
-const map=L.map('map',{center:[22,44],zoom:2.2,zoomSnap:.2,scrollWheelZoom:false,
-  zoomControl:false,worldCopyJump:true});
+const map=L.map('map',{
+  center:[22,44],
+  zoom:2,
+  zoomSnap:1,
+  scrollWheelZoom:false,
+  zoomControl:false,
+  worldCopyJump:true
+});
 L.control.zoom({position:'bottomleft'}).addTo(map);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key='+CARTO_KEY,
   {attribution:'© OpenStreetMap · © CARTO',subdomains:'abcd',maxZoom:18}).addTo(map);
 
-const grat=L.layerGroup().addTo(map);
-for(let lat=-60;lat<=75;lat+=30)
-  L.polyline([[lat,-180],[lat,180]],{color:SEA,opacity:.09,weight:.6,interactive:false}).addTo(grat);
-for(let lng=-180;lng<=180;lng+=30)
-  L.polyline([[-70,lng],[80,lng]],{color:SEA,opacity:.09,weight:.6,interactive:false}).addTo(grat);
 
 function arc(a,b,bulge=8,n=64){
   const p=[]; let d=b[1]-a[1];

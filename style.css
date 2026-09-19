@@ -405,8 +405,16 @@ nav ul a.cvbtn:hover {
 }
 
 a.pill::after {
-  content: ' ↓';
-  opacity: .6
+  content: ' →';
+  display: inline-block;
+  margin-left: .22rem;
+  opacity: .65;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+a.pill:hover::after {
+  transform: translateX(3px);
+  opacity: 1;
 }
 
 .pill:hover {
@@ -541,7 +549,14 @@ a.p-och:hover {
 #map {
   position: absolute;
   inset: 0;
-  filter: sepia(.26) saturate(.62) contrast(1.05) brightness(1.02)
+  filter: sepia(.26) saturate(.62) contrast(1.05) brightness(.99);
+}
+
+/* Reduce Leaflet raster tile seams in Chromium */
+.leaflet-tile {
+  will-change: opacity;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .map-vig {
@@ -550,7 +565,7 @@ a.p-och:hover {
   pointer-events: none;
   z-index: 400;
   border-radius: 14px;
-  box-shadow: inset 0 0 100px rgba(90, 78, 60, .18)
+  box-shadow: inset 0 0 100px rgba(90, 78, 60, .18);
 }
 
 .rose {
@@ -849,14 +864,14 @@ section {
 }
 
 #background {
-  padding-top: 56px;
-  padding-bottom: 48px
+  padding-top: 48px;
+  padding-bottom: 24px;
 }
 
 @media(max-width:768px) {
   #background {
-    padding-top: 42px;
-    padding-bottom: 38px
+    padding-top: 36px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2084,7 +2099,7 @@ a.mc-chip {
 .endwrap {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: clamp(2rem, 4.5vh, 3rem) clamp(1.4rem, 5vw, 3rem)
+  padding: 1rem clamp(1.4rem, 5vw, 3rem) 2rem;
 }
 
 .card-contact {
@@ -2833,4 +2848,36 @@ nav ul .lgsep {
 /* 03 Policy cards: a little more space below titles */
 .policy-grid .proj .top {
   margin-bottom: .38rem;
+}
+
+/* ── 04 Experience: slightly tighter ────────────────── */
+
+#experience h2 {
+  margin-bottom: 1rem;
+}
+
+#experience .current-role {
+  padding: .9rem 1.15rem;
+  margin-bottom: .7rem;
+}
+
+#experience .cr-head {
+  margin-bottom: .32rem;
+}
+
+#experience .cr-summary {
+  font-size: .83rem;
+  line-height: 1.5;
+}
+
+#experience .fold {
+  margin-top: .85rem;
+}
+
+#experience .fold summary {
+  padding: .78rem 1.1rem;
+}
+
+#experience .fold .ftitle {
+  font-size: .96rem;
 }
