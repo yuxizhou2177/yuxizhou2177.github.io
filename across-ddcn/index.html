@@ -356,6 +356,10 @@
       padding: clamp(2.6rem, 6.5vh, 4rem) 0
     }
 
+    #messages {
+      padding-bottom: 1.35rem;
+    }
+
     .sechead {
       display: flex;
       align-items: baseline;
@@ -662,8 +666,8 @@
 
     /* Notes */
     .notes {
-      padding-top: .35rem;
-      margin-top: 1.35rem
+      padding-top: 0;
+      margin-top: .85rem;
     }
 
     .notes summary {
@@ -671,10 +675,10 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: .55rem;
-      font-size: .8rem;
+      gap: .45rem;
+      font-size: .76rem;
       color: var(--ink-soft);
-      transition: color .2s
+      transition: color .2s;
     }
 
     .notes summary::-webkit-details-marker {
@@ -715,14 +719,8 @@
 
     /* ---------- footer: matched to Beyond the Record ---------- */
     footer {
-      padding: 18px 0 24px;
+      padding: 10px 0 24px;
       font-family: Calibri, "Segoe UI", Helvetica, Arial, sans-serif;
-    }
-
-    footer .source {
-      font-size: 13.5px;
-      color: var(--ink);
-      margin: 0 0 10px;
     }
 
     footer .disclaimer {
@@ -1185,7 +1183,6 @@
 
   <footer>
     <div class="wrap">
-      <p class="source">Sources: public FAO material cited throughout this case study.</p>
       <p class="disclaimer">Independent communication case study, built for portfolio purposes. Not an official FAO
         product and not endorsed by FAO.</p>
       <p class="back"><a href="https://yuxizhou2177.github.io/">Back to yuxizhou2177.github.io →</a></p>
