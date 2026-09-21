@@ -12,6 +12,16 @@
   <link rel="icon" type="image/png" href="https://yuxizhou2177.github.io/favicon.png" />
   <link rel="apple-touch-icon" href="https://yuxizhou2177.github.io/apple-touch-icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGJ2X4MSQ9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EGJ2X4MSQ9');
+  </script>
+
   <style>
     :root {
       --paper: #F6F3EC;
@@ -207,15 +217,101 @@
       margin: 0;
     }
 
-    .hero-rule {
-      border: 0;
-      border-top: 1px solid rgba(184, 134, 47, 0.30);
-      margin: 28px 0 0;
-      width: 100%;
+    /* ---------- hero story strip: gold line + staggered reveal ---------- */
+    .hero-flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(184, 134, 47, .28);
+      position: relative;
     }
 
+    .hero-flow::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 22%;
+      height: 1px;
+      background: var(--ochre);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 1.45s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .hero-flow.line-in::before {
+      transform: scaleX(1);
+    }
+
+    .hero-step {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .65s cubic-bezier(.22, 1, .36, 1), transform .65s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .hero-flow.line-in .hero-step {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-flow.line-in .hero-step:nth-child(1) {
+      transition-delay: .16s
+    }
+
+    .hero-flow.line-in .hero-step:nth-child(2) {
+      transition-delay: .32s
+    }
+
+    .hero-flow.line-in .hero-step:nth-child(3) {
+      transition-delay: .48s
+    }
+
+    .hero-step-label {
+      font-family: Calibri, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ochre);
+      font-weight: 700;
+      margin: 0 0 7px;
+    }
+
+    .hero-step-title {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      color: #1C2B3A;
+      font-size: 1.28rem;
+      line-height: 1.15;
+      margin: 0 0 6px;
+    }
+
+    .hero-step-cap {
+      font-family: Calibri, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #6B6E75;
+      font-size: 13px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    @media(max-width:640px) {
+      .hero-flow {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+
+    /* 01: deliberately tighter than the other sections */
     #map {
-      padding-top: 34px;
+      padding: 18px 0 26px;
+    }
+
+    #map .sechead {
+      margin-bottom: .55rem;
+    }
+
+    #map .capline {
+      margin-top: .45rem;
     }
 
     .audline {
@@ -566,9 +662,8 @@
 
     /* Notes */
     .notes {
-      border-top: 1px solid var(--rule);
-      padding-top: .9rem;
-      margin-top: 1.6rem
+      padding-top: .35rem;
+      margin-top: 1.35rem
     }
 
     .notes summary {
@@ -618,34 +713,35 @@
       font-style: italic
     }
 
-    /* 底部返回 */
-    .backhome {
-      padding: clamp(2.2rem, 5.5vh, 3.2rem) 0 .6rem
-    }
-
-    .backhome a {
-      font-size: 1.02rem;
-      color: var(--sea);
-      border-bottom: 1px solid var(--sea);
-      padding-bottom: 3px;
-      transition: opacity .25s
-    }
-
-    .backhome a:hover {
-      opacity: .6
-    }
-
+    /* ---------- footer: matched to Beyond the Record ---------- */
     footer {
+      padding: 18px 0 24px;
+      font-family: Calibri, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    footer .source {
+      font-size: 13.5px;
+      color: var(--ink);
+      margin: 0 0 10px;
+    }
+
+    footer .disclaimer {
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-style: italic;
+      padding-top: 8px;
       border-top: 1px solid var(--rule);
-      max-width: var(--maxw);
-      margin: 1.6rem auto 0;
-      padding: 1rem 24px 2.4rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: .5rem;
-      font-size: .71rem;
-      color: var(--ink-soft)
+      margin: 0 0 12px;
+    }
+
+    footer .back {
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--sea);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .rev {
@@ -688,10 +784,27 @@
 
       <p class="sub2">
         A public-facing synthesis of FAO's Natural Resources and Sustainable Production
-        portfolio — spanning climate, forests, fisheries, animal health, food safety and applied science.
+        portfolio.
       </p>
 
-      <hr class="hero-rule">
+      <div class="hero-flow" id="heroFlow"
+        aria-label="From six technical portfolios to three public messages and one shared direction">
+        <div class="hero-step">
+          <p class="hero-step-label">Six portfolios</p>
+          <p class="hero-step-title">Technical depth</p>
+          <p class="hero-step-cap">climate · forests · fisheries · animal health · food safety · applied science</p>
+        </div>
+        <div class="hero-step">
+          <p class="hero-step-label">Three messages</p>
+          <p class="hero-step-title">Public meaning</p>
+          <p class="hero-step-cap">protect resources · manage risks · put knowledge to work</p>
+        </div>
+        <div class="hero-step">
+          <p class="hero-step-label">One shared direction</p>
+          <p class="hero-step-title">Agrifood transformation</p>
+          <p class="hero-step-cap">connecting technical portfolios to FAO's strategic frame</p>
+        </div>
+      </div>
 
     </div>
   </header>
@@ -704,133 +817,193 @@
       </div>
 
       <div class="diagram rev">
-        <svg viewBox="0 0 920 440" role="img"
+        <svg viewBox="0 0 920 360" role="img"
           aria-label="Six FAO technical portfolios grouped into three public messages, with dashed lines marking secondary contributions, all converging on FAO's agrifood systems transformation frame and the Four Betters.">
 
-          <text x="59" y="20" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5"
+          <text x="59" y="16" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5"
             letter-spacing="2.2" fill="#7E8781">PORTFOLIOS</text>
-          <text x="415" y="20" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5"
+          <text x="377" y="16" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="9.5"
             letter-spacing="2.2" fill="#7E8781">PUBLIC MESSAGES</text>
-
 
           <g id="pills">
             <g class="node" data-c="OCB">
-              <rect x="14" y="44" width="90" height="28" rx="14" fill="none" stroke="#1D5A61" /><text x="59" y="63"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#1D5A61">OCB</text>
+              <rect x="14" y="38" width="90" height="26" rx="13" fill="none" stroke="#1D5A61" />
+              <text x="59" y="56" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#1D5A61">OCB</text>
             </g>
             <g class="node" data-c="NFO">
-              <rect x="14" y="80" width="90" height="28" rx="14" fill="none" stroke="#1D5A61" /><text x="59" y="99"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#1D5A61">NFO</text>
+              <rect x="14" y="70" width="90" height="26" rx="13" fill="none" stroke="#1D5A61" />
+              <text x="59" y="88" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#1D5A61">NFO</text>
             </g>
             <g class="node" data-c="NFI">
-              <rect x="14" y="116" width="90" height="28" rx="14" fill="none" stroke="#1D5A61" /><text x="59" y="135"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#1D5A61">NFI</text>
+              <rect x="14" y="102" width="90" height="26" rx="13" fill="none" stroke="#1D5A61" />
+              <text x="59" y="120" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#1D5A61">NFI</text>
             </g>
             <g class="node" data-c="NSA">
-              <rect x="14" y="184" width="90" height="28" rx="14" fill="none" stroke="#B0532C" /><text x="59" y="203"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#B0532C">NSA</text>
+              <rect x="14" y="160" width="90" height="26" rx="13" fill="none" stroke="#B0532C" />
+              <text x="59" y="178" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#B0532C">NSA</text>
             </g>
             <g class="node" data-c="CJW">
-              <rect x="14" y="220" width="90" height="28" rx="14" fill="none" stroke="#B0532C" /><text x="59" y="239"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#B0532C">CJW</text>
+              <rect x="14" y="192" width="90" height="26" rx="13" fill="none" stroke="#B0532C" />
+              <text x="59" y="210" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#B0532C">CJW</text>
             </g>
             <g class="node" data-c="CJN">
-              <rect x="14" y="256" width="90" height="28" rx="14" fill="none" stroke="#B0532C" /><text x="59" y="275"
-                text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13.5" fill="#B0532C">CJN</text>
+              <rect x="14" y="224" width="90" height="26" rx="13" fill="none" stroke="#B0532C" />
+              <text x="59" y="242" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="13"
+                fill="#B0532C">CJN</text>
             </g>
             <g class="node" data-c="ALL">
-              <rect x="14" y="326" width="90" height="28" rx="14" fill="rgba(184,134,47,.07)" stroke="#B8862F"
-                stroke-dasharray="4 3" /><text x="59" y="345" text-anchor="middle"
-                font-family="Constantia,Georgia,serif" font-size="12" fill="#B8862F">ALL SIX</text>
+              <rect x="14" y="286" width="90" height="26" rx="13" fill="rgba(184,134,47,.07)" stroke="#B8862F"
+                stroke-dasharray="4 3" />
+              <text x="59" y="304" text-anchor="middle" font-family="Constantia,Georgia,serif" font-size="11.7"
+                fill="#B8862F">ALL SIX</text>
             </g>
           </g>
 
           <g fill="none" stroke-linecap="round">
-            <path class="link" data-c="OCB" d="M104,58 C170,58 184,66 238,72" stroke="#1D5A61" stroke-width="1.3"
+            <path class="link" data-c="OCB" d="M104,51 C160,51 178,60 220,66" stroke="#1D5A61" stroke-width="1.3"
               stroke-opacity=".5" />
-            <path class="link" data-c="NFO" d="M104,94 C170,94 184,80 238,78" stroke="#1D5A61" stroke-width="1.3"
+            <path class="link" data-c="NFO" d="M104,83 C164,83 180,75 220,72" stroke="#1D5A61" stroke-width="1.3"
               stroke-opacity=".5" />
-            <path class="link" data-c="NFI" d="M104,130 C170,130 184,96 238,84" stroke="#1D5A61" stroke-width="1.3"
+            <path class="link" data-c="NFI" d="M104,115 C164,115 180,90 220,80" stroke="#1D5A61" stroke-width="1.3"
               stroke-opacity=".5" />
-            <path class="link" data-c="NSA" d="M104,198 C170,198 184,206 238,212" stroke="#B0532C" stroke-width="1.3"
+            <path class="link" data-c="NSA" d="M104,173 C164,173 180,170 220,171" stroke="#B0532C" stroke-width="1.3"
               stroke-opacity=".5" />
-            <path class="link" data-c="CJW" d="M104,234 C170,234 184,220 238,218" stroke="#B0532C" stroke-width="1.3"
+            <path class="link" data-c="CJW" d="M104,205 C164,205 180,184 220,178" stroke="#B0532C" stroke-width="1.3"
               stroke-opacity=".5" />
-            <path class="link" data-c="CJN" d="M104,270 C170,270 184,236 238,224" stroke="#B0532C" stroke-width="1.3"
+            <path class="link" data-c="CJN" d="M104,237 C164,237 180,198 220,185" stroke="#B0532C" stroke-width="1.3"
               stroke-opacity=".5" />
-            <!-- secondary：虚线＝次要连接，不改变主分组 -->
-            <path class="link secondary" data-c="NFI" d="M104,130 C162,150 182,186 238,206" stroke="#B0532C"
+            <path class="link secondary" data-c="NFI" d="M104,115 C160,132 181,154 220,166" stroke="#B0532C"
               stroke-width="1.2" stroke-opacity=".32" stroke-dasharray="5 5" />
-            <path class="link secondary" data-c="CJN" d="M104,270 C162,250 182,136 238,102" stroke="#1D5A61"
+            <path class="link secondary" data-c="CJN" d="M104,237 C158,222 178,121 220,87" stroke="#1D5A61"
               stroke-width="1.2" stroke-opacity=".32" stroke-dasharray="5 5" />
-            <path class="link secondary" data-c="ALL" d="M104,340 C170,340 184,348 238,354" stroke="#B8862F"
+            <path class="link secondary" data-c="ALL" d="M104,299 C164,299 181,289 220,282" stroke="#B8862F"
               stroke-width="1.2" stroke-opacity=".35" stroke-dasharray="5 5" />
           </g>
 
-          <!-- 图例 -->
-          <g font-family="Constantia,Georgia,serif" font-size="8.6" fill="#7E8781">
-            <path d="M14,388 L44,388" stroke="#7E8781" stroke-width="1.2" stroke-opacity=".55" fill="none" />
-            <text x="50" y="391">primary grouping</text>
-            <path d="M14,408 L44,408" stroke="#7E8781" stroke-width="1.1" stroke-opacity=".4" stroke-dasharray="5 5"
+          <g font-family="Constantia,Georgia,serif" font-size="8.4" fill="#7E8781">
+            <path d="M14,330 L44,330" stroke="#7E8781" stroke-width="1.2" stroke-opacity=".55" fill="none" />
+            <text x="50" y="333">primary grouping</text>
+            <path d="M14,348 L44,348" stroke="#7E8781" stroke-width="1.1" stroke-opacity=".4" stroke-dasharray="5 5"
               fill="none" />
-            <text x="50" y="411">also contributes</text>
+            <text x="50" y="351">also contributes</text>
           </g>
 
           <g class="node" data-frame="m1">
-            <rect x="240" y="41" width="350" height="76" rx="11" fill="rgba(29,90,97,.06)" stroke="#1D5A61"
+            <rect x="220" y="40" width="315" height="60" rx="10" fill="rgba(29,90,97,.055)" stroke="#1D5A61"
               stroke-width="1.1" />
-            <text x="290" y="82" font-family="Constantia,Georgia,serif" font-size="17" fill="#1D5A61">PROTECT
+
+            <!-- leaf icon -->
+            <g transform="translate(238 56)" fill="none" stroke="#1D5A61" stroke-width="1.25" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M0 8 C3 1, 10 0, 14 1 C14 7, 10 13, 3 13 C1 12, 0 10, 0 8 Z" />
+              <path d="M2 11 C6 8, 9 5, 13 2" />
+            </g>
+
+            <text x="262" y="66" font-family="Constantia,Georgia,serif" font-size="16" fill="#1D5A61">PROTECT
               RESOURCES</text>
-            <text x="290" y="102" font-family="Constantia,Georgia,serif" font-size="11.5" fill="#49534F">forests · land
-              &amp; biodiversity · aquatic systems</text>
+
+            <text x="262" y="85" font-family="Constantia,Georgia,serif" font-size="10.8" fill="#49534F">
+              forests · land &amp; biodiversity · aquatic systems
+            </text>
           </g>
+
           <g class="node" data-frame="m2">
-            <rect x="240" y="181" width="350" height="76" rx="11" fill="rgba(176,83,44,.06)" stroke="#B0532C"
+            <rect x="220" y="145" width="315" height="60" rx="10" fill="rgba(176,83,44,.055)" stroke="#B0532C"
               stroke-width="1.1" />
-            <text x="290" y="222" font-family="Constantia,Georgia,serif" font-size="17" fill="#B0532C">MANAGE
+
+            <!-- shield icon -->
+            <g transform="translate(239 160)" fill="none" stroke="#B0532C" stroke-width="1.25" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M7 0 L13 3 V8 C13 12 10 15 7 17 C4 15 1 12 1 8 V3 Z" />
+              <path d="M4.5 8 L6.4 10 L10 6" />
+            </g>
+
+            <text x="262" y="171" font-family="Constantia,Georgia,serif" font-size="16" fill="#B0532C">MANAGE
               RISKS</text>
-            <text x="290" y="242" font-family="Constantia,Georgia,serif" font-size="11.5" fill="#49534F">people ·
-              animals · plants &amp; food · environment</text>
+
+            <text x="262" y="190" font-family="Constantia,Georgia,serif" font-size="10.8" fill="#49534F">
+              people · animals · plants &amp; food · environment
+            </text>
           </g>
+
           <g class="node" data-frame="m3">
-            <rect x="240" y="321" width="350" height="76" rx="11" fill="rgba(184,134,47,.06)" stroke="#B8862F"
+            <rect x="220" y="250" width="315" height="60" rx="10" fill="rgba(184,134,47,.055)" stroke="#B8862F"
               stroke-width="1.1" />
-            <text x="290" y="362" font-family="Constantia,Georgia,serif" font-size="17" fill="#B8862F">PUT KNOWLEDGE TO
+
+            <!-- connected knowledge icon -->
+            <g transform="translate(238 265)" fill="none" stroke="#B8862F" stroke-width="1.2" stroke-linecap="round">
+              <circle cx="2" cy="8" r="2.2" />
+              <circle cx="13" cy="2" r="2.2" />
+              <circle cx="13" cy="14" r="2.2" />
+              <path d="M4 7 L11 3.2" />
+              <path d="M4 9 L11 12.8" />
+            </g>
+
+            <text x="262" y="276" font-family="Constantia,Georgia,serif" font-size="16" fill="#B8862F">PUT KNOWLEDGE TO
               WORK</text>
-            <text x="290" y="382" font-family="Constantia,Georgia,serif" font-size="11.5" fill="#49534F">science &amp;
-              data · standards · partnerships · investment</text>
+
+            <text x="262" y="295" font-family="Constantia,Georgia,serif" font-size="10.8" fill="#49534F">
+              science &amp; data · standards · partnerships · investment
+            </text>
           </g>
 
-          <!-- 三条 message 汇聚成一条，进入 strategic frame -->
-          <g fill="none" stroke="#7E8781" stroke-width="1" stroke-opacity=".45" stroke-linecap="round">
-
-            <path d="M590,79 L625,79" />
-            <path d="M590,219 L625,219" />
-            <path d="M590,359 L625,359" />
-
-            <path d="M625,79 L625,359" />
-
-            <path d="M625,219 L690,219" />
-
+          <g fill="none" stroke="#7E8781" stroke-width="1" stroke-opacity=".42" stroke-linecap="round">
+            <path d="M535,70 L565,70" />
+            <path d="M535,175 L565,175" />
+            <path d="M535,280 L565,280" />
+            <path d="M565,70 L565,280" />
+            <path d="M565,175 L610,175" />
           </g>
+          <circle cx="565" cy="175" r="2.5" fill="#7E8781" fill-opacity=".65" />
 
-          <circle cx="625" cy="219" r="2.6" fill="#7E8781" fill-opacity=".7" />
-
-          <!-- 右：FAO strategic frame（终点卡）-->
-          <rect x="690" y="96" width="216" height="248" rx="12" fill="rgba(184,134,47,.085)" stroke="#D8C79D"
+          <rect x="610" y="42" width="295" height="268" rx="12" fill="rgba(184,134,47,.08)" stroke="#D8C79D"
             stroke-width="1.15" />
           <g font-family="Constantia,Georgia,serif" text-anchor="middle">
-            <text x="798" y="130" font-size="9" letter-spacing="2.2" fill="#B8862F">FAO STRATEGIC FRAME</text>
-            <text x="798" y="166" font-size="15.5" letter-spacing="1" fill="#16191B">AGRIFOOD SYSTEMS</text>
-            <text x="798" y="185" font-size="15.5" letter-spacing="1" fill="#16191B">TRANSFORMATION</text>
-            <text x="798" y="209" font-size="10" fill="#7E8781">more efficient · inclusive</text>
-            <text x="798" y="223" font-size="10" fill="#7E8781">resilient · sustainable</text>
-            <path d="M798,238 L798,250" stroke="#B8862F" stroke-width="1" stroke-opacity=".5" fill="none" />
-            <path d="M794,246 L798,251 L802,246" stroke="#B8862F" stroke-width="1" stroke-opacity=".5" fill="none" />
-            <text x="750" y="280" font-size="8.2" letter-spacing=".4" fill="#B8862F">BETTER PRODUCTION</text>
-            <text x="850" y="280" font-size="8.2" letter-spacing=".4" fill="#B8862F">BETTER NUTRITION</text>
-            <text x="750" y="304" font-size="8.2" letter-spacing=".4" fill="#B8862F">BETTER ENVIRONMENT</text>
-            <text x="850" y="304" font-size="8.2" letter-spacing=".4" fill="#B8862F">BETTER LIFE</text>
+            <!-- Four Betters symbol -->
+            <g transform="translate(757.5 57)" fill="none" stroke="#B8862F" stroke-width="1.15" opacity=".78">
+              <polygon points="0,-7 3,-4 0,-1 -3,-4" />
+              <polygon points="7,0 10,3 7,6 4,3" />
+              <polygon points="0,7 3,10 0,13 -3,10" />
+              <polygon points="-7,0 -4,3 -7,6 -10,3" />
+            </g>
+            <text x="757.5" y="96" font-size="9.2" letter-spacing="2.1" fill="#B8862F">
+              FAO STRATEGIC FRAME
+            </text>
+
+            <text x="757.5" y="128" font-size="16" letter-spacing=".8" fill="#16191B">
+              AGRIFOOD SYSTEMS
+            </text>
+
+            <text x="757.5" y="148" font-size="16" letter-spacing=".8" fill="#16191B">
+              TRANSFORMATION
+            </text>
+
+            <text x="757.5" y="172" font-size="10.2" fill="#7E8781">
+              more efficient · inclusive
+            </text>
+
+            <text x="757.5" y="187" font-size="10.2" fill="#7E8781">
+              resilient · sustainable
+            </text>
+            <path d="M757.5,203 L757.5,217" stroke="#B8862F" stroke-width="1" stroke-opacity=".5" fill="none" />
+
+            <path d="M753.5,213 L757.5,217 L761.5,213" stroke="#B8862F" stroke-width="1" stroke-opacity=".5"
+              fill="none" />
+
+            <rect x="625" y="216" width="123" height="26" rx="13" fill="rgba(184,134,47,.07)" stroke="#D8C79D" />
+            <rect x="767" y="216" width="123" height="26" rx="13" fill="rgba(184,134,47,.07)" stroke="#D8C79D" />
+            <rect x="625" y="254" width="123" height="26" rx="13" fill="rgba(184,134,47,.07)" stroke="#D8C79D" />
+            <rect x="767" y="254" width="123" height="26" rx="13" fill="rgba(184,134,47,.07)" stroke="#D8C79D" />
+
+            <text x="686.5" y="233.5" font-size="8.3" letter-spacing=".25" fill="#B8862F">BETTER PRODUCTION</text>
+            <text x="828.5" y="233.5" font-size="8.3" letter-spacing=".25" fill="#B8862F">BETTER NUTRITION</text>
+            <text x="686.5" y="271.5" font-size="8.1" letter-spacing=".18" fill="#B8862F">BETTER ENVIRONMENT</text>
+            <text x="828.5" y="271.5" font-size="8.3" letter-spacing=".25" fill="#B8862F">BETTER LIFE</text>
           </g>
         </svg>
 
@@ -1010,21 +1183,24 @@
     </div>
   </section>
 
-  <div class="backhome">
-    <div class="wrap">
-      <a href="https://yuxizhou2177.github.io">Back to yuxizhou2177.github.io →</a>
-    </div>
-  </div>
-
   <footer>
-    <span>Across DDCN — a communication synthesis exercise</span>
-    <span>Yuxi Zhou · 2026</span>
+    <div class="wrap">
+      <p class="source">Sources: public FAO material cited throughout this case study.</p>
+      <p class="disclaimer">Independent communication case study, built for portfolio purposes. Not an official FAO
+        product and not endorsed by FAO.</p>
+      <p class="back"><a href="https://yuxizhou2177.github.io/">Back to yuxizhou2177.github.io →</a></p>
+    </div>
   </footer>
 
   <div class="cur cur-frame" id="curFrame" aria-hidden="true"></div>
   <div class="cur cur-core" id="curCore" aria-hidden="true"></div>
 
   <script>
+    const heroFlow = document.getElementById('heroFlow');
+    if (heroFlow) {
+      setTimeout(() => heroFlow.classList.add('line-in'), 520);
+    }
+
     const io = new IntersectionObserver(es => es.forEach(e => {if (e.isIntersecting) e.target.classList.add('in')}),
       {threshold: .1, rootMargin: '0px 0px -40px 0px'});
     document.querySelectorAll('.rev').forEach((el, i) => {el.style.transitionDelay = (Math.min(i, 5) * .06) + 's'; io.observe(el)});
