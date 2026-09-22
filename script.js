@@ -8,10 +8,6 @@ const EN_CACHE={};
 const T={
 es:{
  'nav.about':'Sobre mí','nav.project':'Trabajo seleccionado','nav.policy':'Política y PEID','nav.exp':'Experiencia','nav.bg':'Formación',
- 'mp.1':'Evidencia','mp.1d':'Información técnica o de nivel país',
- 'mp.2':'Audiencia','mp.2d':'Alta dirección · Estados Miembros · público',
- 'mp.3':'Relato','mp.3d':'Editorial · visual · digital',
- 'mp.4':'Acción','mp.4d':'Comprender · involucrarse · dar seguimiento',
  'mast.tiny':'París · UNESCO','mast.hi':'Hola, soy',
  'mast.pill1':'Seguimiento y desarrollo de capacidades','mast.pill2':'Visualización de datos y comunicación',
  'mast.line':"Este es mi pequeño rincón en internet — un espacio para compartir trabajo seleccionado, los lugares a los que me lleva, y las historias que voy construyendo por el camino.",
@@ -20,10 +16,8 @@ es:{
  'map.cap':'Misiones seleccionadas, 2024–2026 · Capa de PEID: países acompañados mediante seguimiento y monitoreo en el Pacífico, el Caribe y la región AIS.',
  'tool.label':'Herramientas seleccionadas',
  'sec.about':'Sobre mí','sec.project':'Trabajo seleccionado','sec.policy':'Política y PEID','sec.exp':'Experiencia','sec.bg':'Formación',
- 'about.h2':'Convierto trabajo complejo en comunicación clara.',
-'about.p1':'En la UNESCO, en París, trabajo en el seguimiento de los Estados Miembros y en una iniciativa mundial sobre Farmacopea Tradicional. Transformo información compleja en comunicación clara y adaptada al público — dando forma a mensajes, notas informativas, contenidos web, materiales visuales y productos digitales para la alta dirección, los Estados Miembros y audiencias internacionales.',
- 'about.p2':'Mi fortaleza está en moverme entre el contenido técnico y la comunicación: entender información técnica o de nivel país, identificar qué es relevante para la audiencia, y convertirlo en contenido claro, productos de conocimiento útiles y seguimiento práctico.',
- 'about.bubble':'Disfruto convirtiendo información compleja en comunicación clara y útil: encontrando el ángulo correcto, dando forma al mensaje y adaptándolo a la audiencia.',
+ 'about.h2':'Convierto información técnica en comunicación clara y útil.',
+'about.p1':'En la UNESCO, en París, mi trabajo abarca el seguimiento del cumplimiento de los Estados Miembros y una iniciativa mundial sobre Farmacopea Tradicional. Me gusta encontrar el ángulo adecuado, dar forma al mensaje y adaptarlo al público — desde notas para la alta dirección y contenidos web hasta materiales visuales y productos digitales para los Estados Miembros y audiencias internacionales.',
  'comms.h2':'Productos de comunicación seleccionados',
  'comms.intro':'Lo que he producido: escrito, visual, filmado y publicado.',
  'exp.h2':'Trayectoria seleccionada','fold.title':'Misiones seleccionadas, 2024–2026','fold.hint':'Haz clic para desplegar',
@@ -148,10 +142,6 @@ es:{
 },
 fr:{
  'nav.about':'À propos','nav.project':'Travaux sélectionnés','nav.policy':'Politique et PEID','nav.exp':'Expérience','nav.bg':'Parcours',
- 'mp.1':'Données','mp.1d':'Information technique ou relative à un pays',
- 'mp.2':'Public','mp.2d':'Haute direction · États membres · public',
- 'mp.3':'Récit','mp.3d':'Éditorial · visuel · numérique',
- 'mp.4':'Action','mp.4d':'Comprendre · engager · assurer le suivi',
  'mast.tiny':'Paris · UNESCO','mast.hi':'Bonjour, je suis',
  'mast.pill1':'Suivi et renforcement des capacités','mast.pill2':'Visualisation de données et communication',
  'mast.line':"Ceci est mon petit coin sur Internet — un espace pour partager des travaux sélectionnés, les lieux où ils m’emmènent, et les histoires que je construis en chemin.",
@@ -160,10 +150,8 @@ fr:{
  'map.cap':'Missions sélectionnées, 2024–2026 · Couche PEID : pays accompagnés par le suivi et l’accompagnement dans le Pacifique, les Caraïbes et la région AIS.',
  'tool.label':'Outils sélectionnés',
  'sec.about':'À propos','sec.project':'Travaux sélectionnés','sec.policy':'Politique et PEID','sec.exp':'Expérience','sec.bg':'Parcours',
- 'about.h2':'Je transforme des sujets complexes en communication claire.',
-'about.p1':'À l’UNESCO, à Paris, je travaille à la fois sur le suivi des États membres et sur une initiative mondiale consacrée à la pharmacopée traditionnelle. Je transforme des informations complexes en communication claire et adaptée aux publics — en façonnant messages, notes d’information, contenus web, supports visuels et produits numériques pour la haute direction, les États membres et les publics internationaux.',
- 'about.p2':'Ma force est de naviguer entre le fond technique et la communication : comprendre une information technique ou relative à un pays, identifier ce qui compte pour le public visé, et le transformer en contenu clair, en produits de connaissance utiles et en suivi concret.',
- 'about.bubble':'J’aime transformer une information complexe en communication claire et utile : trouver le bon angle, façonner le message et l’adapter au public.',
+ 'about.h2':'Je transforme l’information technique en communication claire et utile.',
+'about.p1':'À l’UNESCO, à Paris, mon travail porte sur le suivi de la conformité des États membres et sur une initiative mondiale consacrée à la pharmacopée traditionnelle. J’aime trouver le bon angle, façonner le message et l’adapter au public — des notes pour la haute direction et contenus web aux supports visuels et produits numériques destinés aux États membres et aux publics internationaux.',
  'comms.h2':'Productions de communication choisies',
  'comms.intro':'Ce que j’ai réellement produit : écrit, visuel, filmé et publié.',
  'exp.h2':'Engagements sélectionnés','fold.title':'Missions choisies, 2024–2026','fold.hint':'Cliquez pour déplier',
@@ -288,10 +276,6 @@ fr:{
 },
 zh:{
  "nav.about":"关于我",
- "mp.1":"证据","mp.1d":"技术信息或国别层面信息",
- "mp.2":"受众","mp.2d":"高层管理人员 · 会员国 · 公众",
- "mp.3":"叙事","mp.3d":"编辑 · 视觉 · 数字",
- "mp.4":"行动","mp.4d":"理解 · 参与 · 跟进",
  "nav.project":"精选作品",
  "nav.policy":"政策与小岛屿国家",
  "nav.exp":"经历",
@@ -315,10 +299,8 @@ zh:{
  "sec.policy":"政策与小岛屿国家",
  "sec.exp":"经历",
  "sec.bg":"教育背景",
- "about.h2":"我把复杂的工作转化为清晰的传播。",
-"about.p1":"在巴黎联合国教科文组织总部，我的工作涵盖会员国监测以及一项关于传统药典的全球倡议。我把复杂信息转化为清晰、面向受众的传播内容——核心信息和简报，网页内容、视觉材料与数字产品等，服务于高层管理人员、会员国和国际受众。",
- "about.p2":"我的优势在于能在技术内容和传播之间自如切换：理解技术性或国别层面的信息，判断受众真正关心什么，再把它转化成清晰的内容、有用的知识产品和切实可行的后续行动。",
- "about.bubble":"我喜欢把复杂的信息转化成清晰有用的传播——找到合适的角度，打磨核心信息，并根据受众调整表达方式。",
+ "about.h2":"我把技术信息转化为清晰、有用的传播信息。",
+"about.p1":"在巴黎联合国教科文组织总部，我的工作涵盖会员国履约监测以及一项关于传统药典的全球倡议。我喜欢找到合适的切入角度，打磨核心信息，并根据受众调整表达——从高层简报和网页内容，到面向会员国和国际受众的视觉材料与数字产品。",
  "p1.t":"SIDSight",
  "p1.bg":"看板",
  "p1.k":"独立案例研究 · 2026年8月",
@@ -1039,7 +1021,7 @@ function renderComms(){
 renderComms();
 renderMore();
 
-/* ── hover/focus 淡出说明（用于 mini-process 和 More Communication Work）── */
+/* ── hover/focus descriptions for More Communication Work ── */
 (function(){
   function findBox(el){
     const scope = el.closest('[data-desc-scope]');
