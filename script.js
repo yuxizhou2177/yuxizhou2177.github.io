@@ -6,600 +6,1254 @@ var lang='en';
 const EN_CACHE={};
 
 const T={
-es:{
- 'nav.about':'Sobre mí','nav.project':'Trabajo seleccionado','nav.policy':'Política y PEID','nav.exp':'Experiencia','nav.bg':'Formación',
- 'mast.tiny':'París · UNESCO','mast.hi':'Hola, soy',
- 'mast.pill1':'Seguimiento y desarrollo de capacidades','mast.pill2':'Visualización de datos y comunicación',
- 'mast.line':"Este es mi pequeño rincón en internet — un espacio para compartir trabajo seleccionado, los lugares a los que me lleva, y las historias que voy construyendo por el camino.",
- 'map.label':'Adónde me lleva mi trabajo','map.tour':'▶ Ver recorrido','map.fmis':'Misiones','map.fsids':'PEID acompañados',
- 'map.sub':'Misiones seleccionadas (2024–2026) en comunicación y diálogo de políticas — junto con los PEID acompañados mediante monitoreo en este bienio.',
- 'map.cap':'Misiones seleccionadas, 2024–2026 · Capa de PEID: países acompañados mediante seguimiento y monitoreo en el Pacífico, el Caribe y la región AIS.',
- 'tool.label':'Herramientas seleccionadas',
- 'sec.about':'Sobre mí','sec.project':'Trabajo seleccionado','sec.policy':'Política y PEID','sec.exp':'Experiencia','sec.bg':'Formación',
- 'about.h2':'Convierto información técnica en comunicación clara y útil.',
-'about.p1':'En la UNESCO, en París, mi trabajo abarca el seguimiento del cumplimiento de los Estados Miembros y una iniciativa mundial sobre Farmacopea Tradicional. Me gusta encontrar el ángulo adecuado, dar forma al mensaje y adaptarlo al público — desde notas para la alta dirección y contenidos web hasta materiales visuales y productos digitales para los Estados Miembros y audiencias internacionales.',
- 'comms.h2':'Productos de comunicación seleccionados',
- 'comms.intro':'Lo que he producido: escrito, visual, filmado y publicado.',
- 'exp.h2':'Trayectoria seleccionada','fold.title':'Misiones seleccionadas, 2024–2026','fold.hint':'Haz clic para desplegar',
- 'fold.exptitle':'Todas las experiencias',
- 'cr.title':'Asistente de proyecto · UNESCO','cr.when':'París · ene. 2025 – actualidad',
- 'cr.summary':'Seguimiento de Estados Miembros · comunicación institucional · coordinación científico-política · divulgación internacional',
- 'fold.note':'Pasa el cursor sobre un marcador en el mapa del inicio de la página para destacar la nota correspondiente aquí abajo, y al revés.',
- 'bg.h2':'Formación y aprendizaje',
- 'bg.bubble':'Formación científica · Investigadora en ciencias sociales · Curiosa y siempre aprendiendo',
- 'bg.edu':'Formación académica','bg.train':'Formación y certificaciones seleccionadas','bg.awards':'Reconocimientos','bg.pub':'Investigación y publicaciones seleccionadas',
- 'bg.ma':'Enseñanza y evaluación de lenguas, adquisición de segundas lenguas, análisis del discurso, política internacional, diseño de investigación y métodos cuantitativos.',
- 'bg.bsc':'Ecología, biodiversidad, botánica, bioestadística, informática aplicada a la biología y conservación de la naturaleza.',
- 'bg.d1':'Máster en Lingüística','bg.d2':'Licenciatura en Ciencias Biológicas',
- 'bg.t1':'Academia de aprendizaje en línea de la FAO (2026) — Comunicación para el desarrollo rural · Seguridad alimentaria y medios de vida · Biodiversidad y sistemas agroalimentarios · Agricultura en acuerdos comerciales regionales',
- 'bg.t2':'Google Analytics · Microsoft Power Platform Fundamentals (PL-900) · IELTS Academic 8.0 · Certificado de aptitud docente para educación secundaria superior',
- 'bg.t2m':'Ministerio de Educación, China, 2021',
- 'bg.a1m':'Ministerio de Educación, China, 2020',
- 'bg.a2':'Beca de nivel especial; Estudiante de mérito (dos veces)','bg.a3':'Premio a la tesis destacada',
- 'bg.a4':'Primer premio — 17.º Concurso Nacional Universitario de Debate en Inglés',
- 'bg.pth':"Tesis de máster, Universidad de Estudios Extranjeros de Pekín, 2022",
- 'c.label':'06 — Contacto','c.h2':'Hola 👋',
- 'c.p1':'Siempre me alegra conectar en torno a la comunicación, la cooperación internacional y las ideas detrás del trabajo. 🌍',
- 'c.p2':'Si algo de aquí te ha llamado la atención, o simplemente quieres saludar, escríbeme sin problema. ☕',
- 'f.left':'Yuxi Zhou — París · hecho y mantenido por mí',
- 'p1.k':'Estudio de caso independiente · ago. 2026',
-'p1.type':'Narrativa de datos','p1.sig':'evidencia → contexto → relato','p1.sk':'Narrativa de datos · Análisis de políticas · Power BI · SIG',
-'p1.a':'Una narrativa interactiva de datos agroalimentarios que conecta indicadores públicos, comparaciones regionales y contexto de país en ocho PEID.',
- 'p1.nl':'Un poco más',
- 'p1.n':'Un conjunto de datos más pequeño y verificado; sin estimar valores faltantes; años de referencia visibles; e indicadores descartados cuando la calidad del dato no era fiable.',
- 'p1.lnk':'Explorar SIDSight →',
-'p1.lnk2':'Recorrer el mapa →',
- 'p2.k':'Experiencia digital de la COP10 · 2025',
- 'p2.type':'Narrativa Interactiva','p2.sk':'Arquitectura de contenidos · Coordinación internacional · Narrativa digital',
- 'p2.bg':'Narrativa Interactiva',
- 'p2.a':'Punto focal de la UNESCO para la arquitectura de contenidos, la redacción y la coordinación de una plataforma interactiva que acerca veinte años de hitos de la Convención a un público internacional.',
- 'p2.lnk':'Abrir el tablero →',
- 'p3.k':'Vídeo breve para la COP10 · 2025',
- 'p3.a':'Un vídeo breve que conmemora los veinte años de la Convención, recorriendo los hitos principales en orden cronológico. Desarrollé el concepto, el guion y el montaje completo, condensando dos décadas en un formato conciso y accesible.',
- 'p3.b':'Se proyectó en la ceremonia de apertura de la COP10, que reunió a más de 500 representantes de más de 140 países, incluidos más de 30 ministros.',
- 'p3.lnk':'Ver el vídeo →',
- 'p4.t':'Más allá del récord','p4.bg':'Comunicación',
- 'p4.k':'Estudio de caso independiente · sep. 2026',
- 'p4.type':'Adaptación a Audiencias','p4.sig':'informe → audiencias','p4.sk':'Adaptación a audiencias · Editorial · Narrativa de datos',
- 'p4.a':'Un informe técnico reformulado para públicos de alta dirección, web y redes sociales mediante narrativa editorial y visual.',
- 'p4.c1':'Adaptación a audiencias','p4.c2':'Editorial','p4.c3':'Narrativa de datos','p4.c4':'GA4',
- 'p4.lnk':'Ver estudio de caso →',
- 'wg1.label':'Estudios de Caso Independientes','wg1.meta':'Iniciativa propia · basado en fuentes públicas',
- 'wg2.label':'Trabajo Institucional Seleccionado','wg2.meta':'Desarrollado en mi puesto en la UNESCO',
- 'ddcn.new':'Nuevo','ddcn.type':'Síntesis de Comunicación','ddcn.t':'Across DDCN',
- 'ddcn.k':'Estudio de caso independiente · sep. 2026','ddcn.sig':'carteras → mensajes públicos',
- 'ddcn.a':'Seis carteras técnicas de la FAO condensadas en tres mensajes públicos para responsables de políticas, socios y medios.',
- 'ddcn.sk':'Síntesis técnica · Mensajería · Criterio editorial','ddcn.lnk':'Ver estudio de caso →',
- 'work.sub':'Trabajo seleccionado en comunicación, narrativa digital, política y evidencia.',
- 'p5.t':'Estrategia de Comunicación de la Convención','p5.bg':'Estrategia',
- 'p5.k':'Estrategia institucional · 2025',
- 'p5.type':'Estrategia de Comunicación','p5.sk':'Planificación de audiencias · Planificación de contenidos · KPI',
- 'p5.a':'Desarrollé la primera estrategia de comunicación específica de la Convención, traduciendo los objetivos institucionales en audiencias definidas, prioridades de mensaje, entregables, responsabilidades, un cronograma de implementación y KPI.',
- 'p5.c1':'Estrategia de comunicación','p5.c2':'Planificación de audiencias','p5.c3':'Planificación de contenidos','p5.c4':'KPI',
- 'p5.note':'Trabajo institucional — solo resumen público.',
- 'more.label':'Más trabajo de comunicación',
- 'more.h1':'Ejecutivo y editorial','more.p1':'Notas informativas · puntos de conversación · mensajes clave · artículos · presentaciones · informes',
- 'more.h2':'Digital y web','more.p2':'Contenido en Drupal · boletines · visualizaciones de datos · exposiciones',
- 'more.h3':'Eventos y difusión','more.p3':'Materiales de eventos · vídeo y multimedia ↗ · productos de conocimiento · relación con partes interesadas',
- 'more.vidlnk':'vídeo y multimedia ↗',
- 'more.h4':'Planificación y medición','more.p4':'Campañas de comunicación · segmentación de audiencias · KPI · GA4',
- 'policy.h2':'Política, PEID y trabajo programático',
- 'policy.intro':'Monitoreo, apoyo a los PEID y coordinación de ciencia y política en mi trabajo actual en la UNESCO.',
- 'pol1.t':'Monitoreo y seguimiento de los Estados Miembros',
- 'pol1.a':'Apoyo el monitoreo y seguimiento de la Convención con los Estados Miembros: reviso los informes nacionales, identifico brechas de implementación, hago seguimiento del progreso y preparo próximos pasos específicos.',
- 'pol1.c1':'Estados Miembros','pol1.c2':'Evidencia por país','pol1.c3':'Seguimiento','pol1.c4':'Power BI',
- 'pol2.t':'Apoyo a los PEID y compromiso regional',
- 'pol2.a':'Apoyo el seguimiento cercano de 9 PEID en el Pacífico, el Caribe y la región AIS, junto con el compromiso regional y el desarrollo de capacidades, incluido el programa para los PEID del Pacífico.',
- 'pol2.c1':'PEID','pol2.c2':'Seguimiento por país','pol2.c3':'Compromiso regional','pol2.c4':'Desarrollo de capacidades',
- 'pol3.t':'Farmacopea Tradicional y Valores del Deporte',
- 'pol3.a':'Apoyo a la coordinación de una iniciativa mundial de ciencia y política que reúne a académicos, expertos y coordinadores regionales, incluida la consolidación de aportes de expertos en productos de comunicación.',
- 'pol3.c1':'Ciencia y política','pol3.c2':'Coordinación global','pol3.c3':'Coordinación de expertos','pol3.c4':'Intercambio de conocimiento',
- 'p1.n':"En tres vistas, pasa de una comparación regional a una ficha de país y a las conexiones pertinentes con la FAO: de entender el contexto a identificar hacia dónde podría ir la conversación.",
- 'p1.c1':"Power BI",
- 'p1.c2':"Python · pandas",
- 'p1.c3':"ArcGIS",
- 'p1.c4':"GitHub",
- 'p1.c5':"Datos del Banco Mundial y la FAO",
- 'p2.c1':"Redacción de contenidos",
- 'p2.c2':"Diseño interactivo",
- 'p2.c3':"Alianza gubernamental",
- 'p2.c4':"Comunicación digital",
- 'p3.c1':"Concepto y guion",
- 'p3.c2':"Narrativa visual",
- 'p3.c3':"Edición de vídeo",
- 'p3.c4':"Comunicación institucional",
- 'bg.m1':"Universidad de Estudios Extranjeros de Pekín · 2019–2022",
- 'bg.m2':"Universidad de Ludong · 2014–2018",
- 'bg.s1':'Análisis del discurso · Estilística · Política internacional · Métodos de investigación · ASL',
- 'bg.s2':'Ecología · Biodiversidad · Bioestadística · Botánica · Zoología · Informática aplicada a la biología',
- 'bg.a1':'Beca Nacional (2 % superior) · Beca de Nivel Especial · Estudiante Destacada (×2)',
- 'bg.a2':'Premio a la Mejor Tesis · Concurso Nacional de Debate en Inglés para Estudiantes Universitarios — Primer Premio',
- 'bg.p1':'La construcción del discurso internacional de China sobre la «reducción de la pobreza» (2021) · Conciencia fonológica y adquisición del inglés en niños chinos (2020)',
- 'bg.pthl':'Tesis de maestría:',
- 'bg.p2':"Retroalimentación correctiva escrita y conocimiento explícito/implícito (2022)",
- 'bg.p2m':"con Y. Chen · Investigación sobre el Aprendizaje de Segundas Lenguas, vol. 11, 2020",
- 'bg.p3':"La relación entre la retroalimentación correctiva escrita y el desarrollo del conocimiento explícito e implícito",
- 'lg1':"Chino — lengua materna",
- 'lg2':"Inglés — IELTS 8.0",
- 'lg3':"Español — B2",
- 'lg4':"Francés — B1",
- 'p1.t':"SIDSight",
- 'p1.bg':"Datos",
- 'p2.t':"El recorrido de la Convención contra el Dopaje",
- 'p2.bg':"En línea",
- 'p3.t':"20 años de la Convención",
- 'p3.bg':"Vídeo",
- 'bg.t1m':"Academia de aprendizaje en línea de la FAO, 2026",
- 'bg.t3':"IELTS Academic — banda global 8.0",
- 'bg.t4':"Microsoft Power Platform Fundamentals (PL-900)",
- 'bg.t5':"Certificación de Google Analytics",'bg.t5m':"Google Skillshop, 2026",
- 'bg.a2m':"Universidad de Estudios Extranjeros de Pekín, 2021",
- 'bg.a3m':"14.º Foro Académico de Posgrado de la Capital, 2020",
- 'bg.p1m':"Revista de Humanidades y Ciencias Sociales de Asia-Pacífico, 2021",
- 'f.left':"Mi pequeño rincón de internet, todavía en construcción.",
- 'read.label':"Detalle",
- 'read.hint':"Explora el mapa pasando el cursor sobre un marcador, iniciando el recorrido o desplazándote hasta las notas de misión.",
-},
-fr:{
- 'nav.about':'À propos','nav.project':'Travaux sélectionnés','nav.policy':'Politique et PEID','nav.exp':'Expérience','nav.bg':'Parcours',
- 'mast.tiny':'Paris · UNESCO','mast.hi':'Bonjour, je suis',
- 'mast.pill1':'Suivi et renforcement des capacités','mast.pill2':'Visualisation de données et communication',
- 'mast.line':"Ceci est mon petit coin sur Internet — un espace pour partager des travaux sélectionnés, les lieux où ils m’emmènent, et les histoires que je construis en chemin.",
- 'map.label':'Là où mon travail me mène','map.tour':'▶ Lancer la visite','map.fmis':'Missions','map.fsids':'PEID accompagnés',
- 'map.sub':'Missions sélectionnées (2024–2026) en communication et dialogue politique — ainsi que les PEID accompagnés par le suivi durant cet exercice biennal.',
- 'map.cap':'Missions sélectionnées, 2024–2026 · Couche PEID : pays accompagnés par le suivi et l’accompagnement dans le Pacifique, les Caraïbes et la région AIS.',
- 'tool.label':'Outils sélectionnés',
- 'sec.about':'À propos','sec.project':'Travaux sélectionnés','sec.policy':'Politique et PEID','sec.exp':'Expérience','sec.bg':'Parcours',
- 'about.h2':'Je transforme l’information technique en communication claire et utile.',
-'about.p1':'À l’UNESCO, à Paris, mon travail porte sur le suivi de la conformité des États membres et sur une initiative mondiale consacrée à la pharmacopée traditionnelle. J’aime trouver le bon angle, façonner le message et l’adapter au public — des notes pour la haute direction et contenus web aux supports visuels et produits numériques destinés aux États membres et aux publics internationaux.',
- 'comms.h2':'Productions de communication choisies',
- 'comms.intro':'Ce que j’ai réellement produit : écrit, visuel, filmé et publié.',
- 'exp.h2':'Engagements sélectionnés','fold.title':'Missions choisies, 2024–2026','fold.hint':'Cliquez pour déplier',
- 'fold.exptitle':'Toutes les expériences',
- 'cr.title':'Assistante de projet · UNESCO','cr.when':'Paris · janv. 2025 – aujourd’hui',
- 'cr.summary':'Suivi des États membres · communication institutionnelle · coordination science-politique · rayonnement international',
- 'fold.note':'Survolez un marqueur sur la carte en haut de la page pour mettre en évidence la note correspondante ci-dessous, et inversement.',
- 'bg.h2':'Formation et apprentissage',
- 'bg.bubble':'Formation scientifique · Chercheuse en sciences sociales · Curieuse et toujours en apprentissage',
- 'bg.edu':'Formation','bg.train':'Formations et certifications sélectionnées','bg.awards':'Distinctions','bg.pub':'Recherche et publications sélectionnées',
- 'bg.ma':'Enseignement et évaluation des langues, acquisition des langues secondes, analyse du discours, politique internationale, méthodologie de recherche et méthodes quantitatives.',
- 'bg.bsc':'Écologie, biodiversité, botanique, biostatistique, informatique appliquée à la biologie et conservation de la nature.',
- 'bg.d1':'Master en linguistique','bg.d2':'Licence en sciences biologiques',
- 'bg.t1':'Académie d’apprentissage en ligne de la FAO (2026) — Communication pour le développement rural · Sécurité alimentaire et moyens d’existence · Biodiversité et systèmes agroalimentaires · Agriculture dans les accords commerciaux régionaux',
- 'bg.t2':'Google Analytics · Microsoft Power Platform Fundamentals (PL-900) · IELTS Academic 8.0 · Certificat d’aptitude à l’enseignement secondaire supérieur',
- 'bg.t2m':'Ministère de l’Éducation, Chine, 2021',
- 'bg.a1':'Bourse nationale (2 % supérieurs) · Bourse de niveau spécial · Étudiante modèle (×2)',
- 'bg.a2':'Prix de la meilleure thèse · Concours national de débat en anglais pour étudiants — Premier prix',
- 'bg.a1m':'Ministère de l’Éducation, Chine, 2020',
- 'bg.a2':'Bourse de niveau spécial ; étudiante méritante (deux fois)','bg.a3':'Prix du mémoire remarquable',
- 'bg.a4':'Premier prix — 17e Concours national universitaire de débat en anglais',
- 'bg.pth':"Mémoire de master, Université des langues étrangères de Pékin, 2022",
- 'c.label':'06 — Contact','c.h2':'Bonjour 👋',
- 'c.p1':'Je suis toujours ravie d’échanger autour de la communication, de la coopération internationale et des idées derrière ce travail. 🌍',
- 'c.p2':'Si quelque chose ici a retenu votre attention, ou si vous voulez simplement dire bonjour, n’hésitez pas à m’écrire. ☕',
- 'f.left':'Yuxi Zhou — Paris · conçu et maintenu par mes soins',
- 'p1.k':'Étude de cas indépendante · août 2026',
- 'p1.type':'Narration de données','p1.sig':'données → contexte → récit','p1.sk':'Narration par les données · Analyse des politiques · Power BI · SIG',
-'p1.a':'Un récit interactif de données agroalimentaires reliant indicateurs publics, comparaisons régionales et contexte pays dans huit PEID.',
- 'p1.nl':'Pour aller plus loin',
- 'p1.n':'Un jeu de données plus restreint et vérifié ; aucune estimation des valeurs manquantes ; années de référence visibles ; et indicateurs écartés lorsque la qualité des données était incertaine.',
- 'p1.lnk':'Explorer SIDSight →',
-'p1.lnk2':'Parcourir la carte →',
- 'p2.k':'Expérience numérique de la COP10 · 2025',
- 'p2.type':'Récit Interactif','p2.sk':'Architecture de contenu · Coordination internationale · Narration numérique',
- 'p2.bg':'Récit Interactif',
- 'p2.a':'Point focal de l’UNESCO pour l’architecture de contenu, la rédaction et la coordination d’une plateforme interactive rendant vingt ans de jalons de la Convention accessibles à un public international.',
- 'p2.lnk':'Ouvrir le tableau →',
- 'p3.k':'Vidéo courte pour la COP10 · 2025',
- 'p3.a':'Une courte vidéo marquant les vingt ans de la Convention, retraçant les jalons principaux dans l’ordre chronologique. J’en ai conçu le principe, écrit le scénario et réalisé le montage complet, condensant deux décennies dans un format concis et accessible.',
- 'p3.b':'Projetée lors de la cérémonie d’ouverture de la COP10, qui a réuni plus de 500 représentants de plus de 140 pays, dont plus de 30 ministres.',
- 'p3.lnk':'Voir la vidéo →',
- 'p4.t':'Au-delà du record','p4.bg':'Communication',
- 'p4.k':'Étude de cas indépendante · sept. 2026',
- 'p4.type':'Adaptation au Public','p4.sig':'rapport → publics','p4.sk':'Adaptation au public · Éditorial · Narration par les données',
- 'p4.a':'Un rapport technique retravaillé pour des publics de haute direction, web et réseaux sociaux, à travers une narration éditoriale et visuelle.',
- 'p4.c1':'Adaptation à l’audience','p4.c2':'Éditorial','p4.c3':'Narration par les données','p4.c4':'GA4',
- 'p4.lnk':'Voir l’étude de cas →',
- 'wg1.label':'Études de Cas Indépendantes','wg1.meta':'Initiative personnelle · fondée sur des sources publiques',
- 'wg2.label':'Travaux Institutionnels Sélectionnés','wg2.meta':'Réalisés dans le cadre de mes fonctions à l’UNESCO',
- 'ddcn.new':'Nouveau','ddcn.type':'Synthèse de Communication','ddcn.t':'Across DDCN',
- 'ddcn.k':'Étude de cas indépendante · sept. 2026','ddcn.sig':'portefeuilles → messages publics',
- 'ddcn.a':'Six portefeuilles techniques de la FAO condensés en trois messages publics pour les décideurs, partenaires et médias.',
- 'ddcn.sk':'Synthèse technique · Messages clés · Jugement éditorial','ddcn.lnk':'Voir l’étude de cas →',
- 'work.sub':'Travaux sélectionnés en communication, narration numérique, politique et données probantes.',
- 'p5.t':'Stratégie de communication de la Convention','p5.bg':'Stratégie',
- 'p5.k':'Stratégie institutionnelle · 2025',
- 'p5.type':'Stratégie de Communication','p5.sk':'Planification des publics · Planification de contenu · KPI',
- 'p5.a':'J’ai élaboré la première stratégie de communication propre à la Convention, en traduisant les objectifs institutionnels en publics définis, priorités de message, livrables, responsabilités, un calendrier de mise en œuvre et des KPI.',
- 'p5.c1':'Stratégie de communication','p5.c2':'Planification des publics','p5.c3':'Planification de contenu','p5.c4':'KPI',
- 'p5.note':'Travail institutionnel — résumé public uniquement.',
- 'more.label':'Autres travaux de communication',
- 'more.h1':'Exécutif et éditorial','more.p1':'Notes d’information · éléments de langage · messages clés · articles · présentations · rapports',
- 'more.h2':'Numérique et web','more.p2':'Contenu Drupal · lettres d’information · visualisations de données · expositions',
- 'more.h3':'Événements et sensibilisation','more.p3':'Supports d’événements · vidéo et multimédia ↗ · produits de connaissance · liaison avec les parties prenantes',
- 'more.vidlnk':'vidéo et multimédia ↗',
- 'more.h4':'Planification et mesure','more.p4':'Campagnes de communication · ciblage des publics · KPI · GA4',
- 'policy.h2':'Politique, PEID et travail programmatique',
- 'policy.intro':'Suivi, appui aux PEID et coordination science-politique dans mon travail actuel à l’UNESCO.',
- 'pol1.t':'Suivi et accompagnement des États membres',
- 'pol1.a':'J’appuie le suivi et l’accompagnement de la Convention auprès des États membres : examen des rapports nationaux, identification des lacunes de mise en œuvre, suivi des progrès et préparation d’étapes suivantes adaptées.',
- 'pol1.c1':'États membres','pol1.c2':'Données par pays','pol1.c3':'Suivi','pol1.c4':'Power BI',
- 'pol2.t':'Appui aux PEID et engagement régional',
- 'pol2.a':'J’appuie le suivi rapproché de 9 PEID du Pacifique, des Caraïbes et de la région AIS, ainsi que l’engagement régional et le renforcement des capacités, y compris le programme pour les PEID du Pacifique.',
- 'pol2.c1':'PEID','pol2.c2':'Suivi par pays','pol2.c3':'Engagement régional','pol2.c4':'Renforcement des capacités',
- 'pol3.t':'Pharmacopée traditionnelle et valeurs du sport',
- 'pol3.a':'Appui à la coordination d’une initiative mondiale science-politique réunissant universitaires, experts et coordinateurs régionaux, y compris la consolidation des contributions d’experts en produits de communication.',
- 'pol3.c1':'Science et politique','pol3.c2':'Coordination mondiale','pol3.c3':'Coordination d’experts','pol3.c4':'Échange de connaissances',
- 'p1.n':"En trois vues, il passe d’une comparaison régionale à une fiche pays puis aux liens pertinents avec la FAO : de la compréhension du contexte à l’identification des suites possibles.",
- 'p1.c1':"Power BI",
- 'p1.c2':"Python · pandas",
- 'p1.c3':"ArcGIS",
- 'p1.c4':"GitHub",
- 'p1.c5':"Données Banque mondiale et FAO",
- 'p2.c1':"Rédaction de contenus",
- 'p2.c2':"Conception interactive",
- 'p2.c3':"Partenariat gouvernemental",
- 'p2.c4':"Communication numérique",
- 'p3.c1':"Concept et scénario",
- 'p3.c2':"Narration visuelle",
- 'p3.c3':"Montage vidéo",
- 'p3.c4':"Communication institutionnelle",
- 'bg.m1':"Université des langues étrangères de Pékin · 2019–2022",
- 'bg.m2':"Université de Ludong · 2014–2018",
- 'bg.s1':'Analyse du discours · Stylistique · Politique internationale · Méthodes de recherche · ALS',
- 'bg.s2':'Écologie · Biodiversité · Biostatistique · Botanique · Zoologie · Informatique appliquée à la biologie',
- 'bg.p1':"La construction du discours international de la Chine sur la « réduction de la pauvreté » (2021) · Conscience phonologique et acquisition de l’anglais chez les enfants chinois (2020)",
- 'bg.pthl':'Mémoire de master :',
- 'bg.p2':"Rétroaction corrective écrite et connaissance explicite/implicite (2022)",
- 'bg.p2m':"avec Y. Chen · Recherches sur l’apprentissage des langues secondes, vol. 11, 2020",
- 'bg.p3':"La relation entre le feedback correctif écrit et le développement des connaissances explicites et implicites",
- 'lg1':"Chinois — langue maternelle",
- 'lg2':"Anglais — IELTS 8.0",
- 'lg3':"Espagnol — B2",
- 'lg4':"Français — B1",
- 'p1.t':"SIDSight",
- 'p1.bg':"Données",
- 'p2.t':"Le parcours de la Convention contre le dopage",
- 'p2.bg':"En ligne",
- 'p3.t':"20 ans de la Convention",
- 'p3.bg':"Vidéo",
- 'bg.t1m':"Académie d’apprentissage en ligne de la FAO, 2026",
- 'bg.t3':"IELTS Academic — score global 8,0",
- 'bg.t4':"Microsoft Power Platform Fundamentals (PL-900)",
- 'bg.t5':"Certification Google Analytics",'bg.t5m':"Google Skillshop, 2026",
- 'bg.a2m':"Université des langues étrangères de Pékin, 2021",
- 'bg.a3m':"14e Forum académique des étudiants de troisième cycle de la capitale, 2020",
- 'bg.p1m':"Revue des sciences humaines et sociales d’Asie-Pacifique, 2021",
- 'f.left':"Mon petit coin d’internet, encore en chantier.",
- 'read.label':"Aperçu",
- 'read.hint':"Explorez la carte en survolant un marqueur, en lançant la visite ou en faisant défiler jusqu’aux notes de mission.",
-},
-zh:{
- "nav.about":"关于我",
- "nav.project":"精选作品",
- "nav.policy":"政策与小岛屿国家",
- "nav.exp":"经历",
- "nav.bg":"教育背景",
- "mast.tiny":"巴黎 · 联合国教科文组织",
- "mast.hi":"你好呀，我是",
- "mast.pill1":"履约监测与能力建设",
- "mast.pill2":"数据可视化与传播",
- "mast.line":"这是我在互联网上的小角落——分享精选作品、工作带我去过的地方，以及一路上构建的故事。",
- "map.label":"工作把我带去的地方",
- "map.sub":"精选出差记录（2024–2026）：传播与政策对话；同时展示本两年期通过监测获得支持的小岛屿发展中国家。",
- "map.tour":"▶ 自动浏览",
- "map.fmis":"出差",
- "map.fsids":"帮助过的小岛屿国家",
- "map.cap":"精选出差记录，2024–2026 · 小岛屿国家图层：通过监测与跟进工作获得支持的太平洋、加勒比与AIS地区国家。",
- "read.label":"详情",
- "read.hint":"把鼠标移到标记上、或点击自动浏览，或向下滚动查看我的出差。",
- "tool.label":"精选工具",
- "sec.about":"关于我",
- "sec.project":"精选作品",
- "sec.policy":"政策与小岛屿国家",
- "sec.exp":"经历",
- "sec.bg":"教育背景",
- "about.h2":"我把技术信息转化为清晰、有用的传播信息。",
-"about.p1":"在巴黎联合国教科文组织总部，我的工作涵盖会员国履约监测以及一项关于传统药典的全球倡议。我喜欢找到合适的切入角度，打磨核心信息，并根据受众调整表达——从高层简报和网页内容，到面向会员国和国际受众的视觉材料与数字产品。",
- "p1.t":"SIDSight",
- "p1.bg":"看板",
- "p1.k":"独立案例研究 · 2026年8月",
- "p1.type":"数据叙事","p1.sig":"证据 → 背景 → 叙事","p1.sk":"数据叙事 · 政策分析 · Power BI · GIS",
-"p1.a":"一个交互式农业食品数据故事，把公开指标、区域比较和国别背景连接起来，覆盖8个小岛屿发展中国家。",
- "p1.nl":"再多说几句",
- "p1.n":"三个视图依次展开：从区域比较，到单一国家简报，再到相关的粮农组织联系——从理解背景，到判断这场对话接下来可以往哪里去。",
- "p1.c1":"Power BI",
- "p1.c2":"Python · pandas",
- "p1.c3":"ArcGIS",
- "p1.c4":"GitHub",
- "p1.c5":"世界银行与粮农组织数据",
- "p1.lnk":"探索 SIDSight →",
-"p1.lnk2":"滚动查看地图 →",
- "p2.t":"反兴奋剂公约的二十年历程",
- "p2.bg":"互动叙事",
- "p2.k":"COP10数字体验 · 2025",
- "p2.type":"互动叙事","p2.sk":"内容架构 · 国际协调 · 数字叙事",
- "p2.a":"担任教科文组织联络人，负责一个交互式平台的内容架构、撰写与协调，把公约二十年的重要节点呈现给国际受众。",
- "p2.c1":"内容撰写",
- "p2.c2":"交互设计",
- "p2.c3":"政府合作",
- "p2.c4":"数字传播",
- "p2.lnk":"打开展板 →",
- "p3.t":"公约二十周年",
- "p3.bg":"视频",
- "p3.k":"COP10 短片 · 2025",
- "p3.a":"一支纪念公约二十周年的短片，按时间顺序梳理关键节点。概念、脚本与剪辑均由我完成，把二十年压缩进一个简洁清楚的形式。",
- "p3.b":"在 COP10 开幕式上放映，现场有来自 140 多个国家的 500 余名代表，其中包括 30 多位部长。",
- "p3.c1":"概念与脚本",
- "p3.c2":"视觉叙事",
- "p3.c3":"视频剪辑",
- "p3.c4":"官媒传播",
- "p3.lnk":"观看短片 →",
- "p4.t":"纪录之外","p4.bg":"传播",
- "p4.k":"独立案例研究 · 2026年9月",
- "p4.type":"受众适配","p4.sig":"报告 → 受众","p4.sk":"受众适配 · 编辑写作 · 数据叙事",
- "p4.a":"一份技术报告，通过编辑与视觉叙事，重新改写成面向高层管理者、网页读者与社交媒体受众的版本。",
- "p4.c1":"受众适配","p4.c2":"编辑写作","p4.c3":"数据叙事","p4.c4":"GA4",
- "work.sub":"精选作品涵盖传播、数字叙事、政策与证据分析。",
- "p5.t":"公约传播战略","p5.bg":"战略",
- "p5.k":"机构战略 · 2025",
- "p5.type":"传播战略","p5.sk":"受众规划 · 内容规划 · KPI",
- "p5.a":"制定了公约首份专门的传播战略，把机构目标转化为明确的受众定位、信息优先级、交付物、责任分工、实施时间表与KPI。",
- "p5.c1":"传播战略","p5.c2":"受众规划","p5.c3":"内容规划","p5.c4":"KPI",
- "p5.note":"机构内部工作 — 此处仅为公开摘要。",
- "more.label":"更多传播工作",
- "more.h1":"高层文稿与编辑","more.p1":"简报 · 发言要点 · 核心信息 · 新闻稿 · 演示文稿 · 报告",
- "more.h2":"数字与网页","more.p2":"Drupal网页内容 · 通讯 · 数据可视化 · 展览",
- "more.h3":"活动与外联","more.p3":"活动物料 · 视频与多媒体 ↗ · 知识产品 · 利益相关方联络",
- "more.vidlnk":"视频与多媒体 ↗",
- "more.h4":"规划与效果衡量","more.p4":"传播活动策划 · 受众定位 · KPI · GA4",
- "policy.h2":"政策、小岛屿国家与项目工作",
- "policy.intro":"我在教科文组织目前工作中的监测、小岛屿国家支持与科学政策协调工作。",
- "pol1.t":"监测与会员国跟进",
- "pol1.a":"我支持公约与会员国之间的监测与跟进工作：审阅国家报告，识别履约差距，跟踪进展，并准备有针对性的下一步行动。",
- "pol1.c1":"会员国","pol1.c2":"国别证据","pol1.c3":"跟进","pol1.c4":"Power BI",
- "pol2.t":"小岛屿国家支持与区域参与",
- "pol2.a":"我支持对太平洋、加勒比和AIS区域9个小岛屿发展中国家的持续跟进，同时开展区域参与和能力建设，包括太平洋小岛屿国家项目。",
- "pol2.c1":"小岛屿发展中国家","pol2.c2":"国别跟进","pol2.c3":"区域参与","pol2.c4":"能力建设",
- "pol3.t":"传统药典与体育价值观",
- "pol3.a":"支持协调一项全球科学政策倡议，汇聚学者、专家与区域协调员，包括把专家意见整合为传播产出。",
- "pol3.c1":"科学政策","pol3.c2":"全球协调","pol3.c3":"专家协调","pol3.c4":"知识交流",
- "p4.lnk":"查看案例研究 →",
- "wg1.label":"独立案例研究","wg1.meta":"自主发起 · 基于公开资料",
- "wg2.label":"精选机构工作","wg2.meta":"在教科文组织任职期间完成",
- "ddcn.new":"新","ddcn.type":"传播综合","ddcn.t":"Across DDCN",
- "ddcn.k":"独立案例研究 · 2026年9月","ddcn.sig":"技术组合 → 公开信息",
- "ddcn.a":"把FAO六个技术板块的内容，浓缩成面向政策制定者、合作伙伴与媒体的三条公开信息。",
- "ddcn.sk":"技术综合 · 信息提炼 · 编辑判断","ddcn.lnk":"查看案例研究 →",
- "comms.h2":"部分传播作品",
- "comms.intro":"一些我做过的东西——写过、设计过、拍过，或者发布过的。",
- "exp.h2":"精选工作经历",
- "fold.title":"部分出差记录，2024–2026",
- "fold.exptitle":"全部工作经历",
- "cr.title":"项目助理 · 联合国教科文组织","cr.when":"巴黎 · 2025年1月至今",
- "cr.summary":"会员国监测 · 机构传播 · 科学政策协调 · 国际外联",
- "fold.hint":"点击展开",
- "fold.note":"把鼠标移到页面顶部地图上的标记，就可以跳转到下方对应的记录；反过来也一样。",
- "bg.h2":"教育与学习",
- "bg.bubble":"理科出身 · 社会科学研究者 · 带着好奇心一路学习",
- "bg.edu":"教育经历",
- "bg.d1":"文学硕士，语言学",
- "bg.m1":"北京外国语大学 · 2019–2022",
- "bg.ma":"语言教学与测评、二语习得、话语分析、国际政治、研究设计与量化方法。",
- "bg.d2":"理学学士，生物科学",
- "bg.m2":"鲁东大学 · 2014–2018",
- "bg.s1":"话语分析 · 文体学 · 国际政治 · 研究方法 · 二语习得",
- "bg.s2":"生态学 · 生物多样性 · 生物统计 · 植物学 · 动物学 · 生物信息技术",
- "bg.bsc":"生态学、生物多样性、植物学、生物统计、生物信息技术与自然保育。",
- "bg.train":"精选学习与证书",
- "bg.t1":"粮农组织在线学院（2026）— 面向农村发展的传播 · 粮食安全与生计 · 生物多样性与农业食品体系 · 区域贸易协定中的农业",
- "bg.t1m":"粮农组织在线学院，2026",
- "bg.t2":"Google Analytics · Microsoft Power Platform 基础认证（PL-900）· 雅思学术类 8.0 · 高级中学教师资格证",
- "bg.t2m":"中国教育部，2021",
- "bg.t3":"雅思学术类 — 总分 8.0",
- "bg.t4":"Microsoft Power Platform 基础认证（PL-900）",
- "bg.t5":"Google Analytics 认证","bg.t5m":"Google Skillshop，2026",
- "bg.awards":"奖项",
- "bg.a1":"国家奖学金（前 2%）· 特等奖学金 · 三好学生（2次）",
- "bg.a2":"优秀论文奖 · 第十七届全国大学生英语辩论赛 一等奖",
- "bg.a1m":"中国教育部，2020",
- "bg.a2":"特等奖学金；三好学生（2次）",
- "bg.a2m":"北京外国语大学，2021",
- "bg.a3":"优秀论文奖",
- "bg.a3m":"第十四届首都研究生学术论坛，2020",
- "bg.a4":"第十七届全国大学生英语辩论赛 一等奖",
- "bg.pub":"精选研究与发表",
- "bg.p1":"《中国日报》扶贫报道中的中国国际话语建构（2021）· 语音意识对中国儿童英语习得的影响（2020）",
- "bg.p1m":"《亚太人文与社会科学期刊》，2021",
- "bg.pthl":"硕士论文：",
- "bg.p2":"书面纠正性反馈与显性/隐性知识的关系（2022）",
- "bg.p2m":"与陈亚平合著 · 《第二语言学习研究》第 11 卷，2020",
- "bg.p3":"书面纠正性反馈与显性、隐性知识发展的关系",
- "bg.pth":"硕士论文，北京外国语大学，2022",
- "lg1":"中文 — 母语",
- "lg2":"英语 — 雅思 8.0",
- "lg3":"西班牙语 — B2",
- "lg4":"法语 — B1",
- "c.label":"06 — 联系",
- "c.h2":"打个招呼 👋",
- "c.p1":"欢迎就传播、国际合作，以及这些工作背后的想法找我聊聊。🌍",
- "c.p2":"如果有什么让你感兴趣的，或者你只是想打个招呼，欢迎随时邮件联系我。☕",
- "f.left":"互联网上属于我的小角落，还在一点点长大。",
-}};
+  "es": {
+    "nav.about": "Sobre mí",
+    "nav.project": "Trabajos seleccionados",
+    "nav.policy": "Políticas y PEID",
+    "nav.exp": "Experiencia",
+    "nav.bg": "Formación",
+    "mast.tiny": "París · UNESCO",
+    "mast.hi": "Hola, soy",
+    "mast.pill1": "Comunicación institucional",
+    "mast.pill2": "Programas multilaterales",
+    "mast.line": "Este es mi rincón de internet: un espacio donde comparto algunos de mis trabajos, los lugares a los que me llevan y las historias que voy creando por el camino.",
+    "map.label": "Adónde me ha llevado el trabajo",
+    "map.tour": "▶ Ver recorrido",
+    "map.fmis": "Misiones",
+    "map.fsids": "PEID que han recibido apoyo",
+    "map.sub": "Misiones seleccionadas (2024–2026) relacionadas con la comunicación y el diálogo sobre políticas, junto con los pequeños Estados insulares en desarrollo (PEID) que han recibido apoyo mediante el seguimiento durante este bienio.",
+    "read.label": "Detalle",
+    "read.hint": "Explora el mapa pasando el cursor sobre un marcador, iniciando el recorrido o bajando hasta las notas de las misiones.",
+    "tool.label": "Herramientas seleccionadas",
+    "sec.about": "Sobre mí",
+    "about.h2": "Convierto información técnica en comunicación clara y útil.",
+    "about.p1": "En la UNESCO, en París, mi trabajo abarca el seguimiento del cumplimiento de las obligaciones de los Estados Miembros y una iniciativa mundial sobre farmacopea tradicional. Me gusta encontrar el enfoque adecuado, dar forma al mensaje y adaptarlo al público: desde notas informativas para la alta dirección y contenido web hasta materiales visuales y productos digitales para los Estados Miembros y públicos internacionales.",
+    "sec.project": "Trabajos seleccionados",
+    "wg1.label": "Estudios de caso independientes",
+    "wg1.meta": "Iniciativas propias · basadas en fuentes públicas",
+    "p1.type": "Narrativa de datos",
+    "p1.t": "SIDSight",
+    "p1.k": "Estudio de caso independiente · ago. 2026",
+    "p1.sig": "evidencia → contexto → relato",
+    "p1.a": "Una historia interactiva basada en datos agroalimentarios que conecta indicadores públicos, comparaciones regionales y el contexto de ocho PEID.",
+    "p1.sk": "Narrativa de datos · Análisis de políticas · Power BI · SIG",
+    "p1.lnk": "Explorar SIDSight →",
+    "p1.lnk2": "Recorrer el mapa →",
+    "p4.type": "Adaptación al público",
+    "p4.t": "Beyond the Record",
+    "p4.k": "Estudio de caso independiente · sep. 2026",
+    "p4.sig": "informe → públicos",
+    "p4.a": "Un mismo informe técnico adaptado para la alta dirección, los lectores de la web y el público de las redes sociales mediante la redacción y la narrativa visual.",
+    "p4.sk": "Adaptación al público · Redacción y edición · Narrativa de datos",
+    "p4.lnk": "Ver estudio de caso →",
+    "ddcn.new": "Nuevo",
+    "ddcn.type": "Síntesis para la comunicación",
+    "ddcn.t": "Across DDCN",
+    "ddcn.k": "Estudio de caso independiente · sep. 2026",
+    "ddcn.sig": "ámbitos de trabajo → mensajes para el público",
+    "ddcn.a": "Síntesis de seis ámbitos técnicos de la FAO en tres mensajes dirigidos a responsables de políticas, socios y medios de comunicación.",
+    "ddcn.sk": "Síntesis técnica · Formulación de mensajes · Criterio editorial",
+    "ddcn.lnk": "Ver estudio de caso →",
+    "wg2.label": "Trabajos institucionales seleccionados",
+    "wg2.meta": "Realizados en el marco de mis funciones en la UNESCO",
+    "p5.type": "Estrategia de comunicación",
+    "p5.t": "Estrategia de comunicación de la Convención",
+    "p5.k": "Estrategia institucional · 2025",
+    "p5.a": "Desarrollé la primera estrategia dedicada específicamente a la comunicación de la Convención, concretando los objetivos institucionales en públicos, prioridades de los mensajes, productos e indicadores clave de desempeño (KPI).",
+    "p5.sk": "Definición de públicos · Planificación de contenidos · KPI",
+    "p2.type": "Narrativa interactiva",
+    "p2.t": "El recorrido de la Convención contra el Dopaje",
+    "p2.k": "Experiencia digital de la COP10 · 2025",
+    "p2.a": "Fui el punto focal de la UNESCO para la arquitectura de contenidos, la redacción y la coordinación de una plataforma interactiva que presenta a un público internacional veinte años de hitos de la Convención.",
+    "p2.sk": "Arquitectura de contenidos · Coordinación internacional · Narrativa digital",
+    "p2.lnk": "Abrir el panel interactivo →",
+    "more.label": "Otros trabajos de comunicación",
+    "sec.policy": "Políticas y PEID",
+    "pol1.t": "Monitoreo y seguimiento con los Estados Miembros",
+    "pol1.a": "Apoyo el monitoreo de la Convención y el seguimiento con los Estados Miembros: reviso informes nacionales, identifico carencias en la aplicación, sigo los avances y preparo próximos pasos adaptados a cada caso.",
+    "pol1.c1": "Estados Miembros",
+    "pol1.c2": "Evidencia por país",
+    "pol1.c3": "Seguimiento",
+    "pol2.t": "Apoyo a los PEID y colaboración regional",
+    "pol2.a": "Apoyo el monitoreo estrecho y el seguimiento con nueve PEID del Pacífico, el Caribe y la región AIS, así como la colaboración regional y el desarrollo de capacidades, incluido el programa para los PEID del Pacífico.",
+    "pol2.c1": "PEID",
+    "pol2.c3": "Colaboración regional",
+    "pol2.c4": "Desarrollo de capacidades",
+    "pol3.t": "Farmacopea tradicional y valores del deporte",
+    "pol3.a": "Apoyo la coordinación de una iniciativa mundial que vincula la ciencia y las políticas públicas y reúne a académicos, expertos y coordinadores regionales, incluida la integración de sus aportaciones en productos de comunicación.",
+    "pol3.c1": "Ciencia y políticas públicas",
+    "pol3.c3": "Coordinación con expertos",
+    "pol3.c4": "Intercambio de conocimientos",
+    "sec.exp": "Experiencia",
+    "exp.h2": "Trayectoria seleccionada",
+    "cr.title": "Asistente de proyecto · UNESCO",
+    "cr.when": "París · ene. 2025 – actualidad",
+    "cr.summary": "Seguimiento de los Estados Miembros · comunicación institucional · coordinación entre ciencia y políticas públicas · difusión internacional",
+    "fold.exptitle": "Trayectoria completa",
+    "fold.hint": "Haz clic para desplegar",
+    "fold.title": "Misiones seleccionadas, 2024–2026",
+    "fold.note": "Pasa el cursor sobre un marcador en <a class=\"jump\" href=\"#map-plate\">el mapa de la parte superior de la página</a> para resaltar la nota correspondiente aquí abajo, y viceversa.",
+    "sec.bg": "Formación",
+    "bg.h2": "Formación y aprendizaje",
+    "bg.bubble": "Formación científica · Investigadora en ciencias sociales · Curiosa y siempre aprendiendo",
+    "bg.edu": "Formación académica",
+    "bg.d1": "Máster en Lingüística",
+    "bg.m1": "Universidad de Estudios Extranjeros de Pekín · 2019–2022",
+    "bg.s1": "Análisis del discurso · Estilística · Política internacional · Métodos de investigación · Adquisición de segundas lenguas",
+    "bg.d2": "Grado en Ciencias Biológicas (BSc)",
+    "bg.m2": "Universidad de Ludong · 2014–2018",
+    "bg.s2": "Ecología · Biodiversidad · Bioestadística · Botánica · Zoología · Informática aplicada a la biología",
+    "bg.train": "Selección de formación y certificaciones",
+    "bg.t1": "Academia de aprendizaje electrónico de la FAO (2026) — Comunicación para el desarrollo rural · Seguridad alimentaria y medios de vida · Biodiversidad y sistemas agroalimentarios · Agricultura en los acuerdos comerciales regionales",
+    "bg.t2": "Google Analytics · Microsoft Power Platform Fundamentals (PL-900) · IELTS Academic: 8,0 · Habilitación docente para la educación secundaria superior",
+    "bg.awards": "Reconocimientos",
+    "bg.a1": "Beca Nacional (2 % con mejores resultados) · Beca de categoría especial · Reconocimiento al mérito estudiantil (×2)",
+    "bg.a2": "Premio a la tesis destacada · Concurso Nacional de Debate en Inglés para Estudiantes Universitarios — Primer premio",
+    "bg.pub": "Investigación y publicaciones seleccionadas",
+    "bg.p1": "La construcción del discurso internacional de China sobre la «reducción de la pobreza» (2021) · Conciencia fonológica y adquisición del inglés en la infancia (2020)",
+    "bg.pthl": "Tesis de máster:",
+    "bg.p2": "Retroalimentación correctiva escrita y conocimiento explícito/implícito (2022)",
+    "lg1": "Chino — lengua materna",
+    "lg2": "Inglés — IELTS 8,0",
+    "lg3": "Español — B2",
+    "lg4": "Francés — B1",
+    "c.label": "06 — Contacto",
+    "c.h2": "¡Hablemos! 👋",
+    "c.p1": "Me alegra poder conversar sobre comunicación, cooperación internacional y las ideas que hay detrás de mi trabajo. 🌍",
+    "f.left": "Mi pequeño rincón de internet, que sigue tomando forma.",
+    "p1.count": "8 PEID"
+  },
+  "fr": {
+    "nav.about": "À propos",
+    "nav.project": "Travaux sélectionnés",
+    "nav.policy": "Politiques et PEID",
+    "nav.exp": "Expérience",
+    "nav.bg": "Parcours",
+    "mast.tiny": "Paris · UNESCO",
+    "mast.hi": "Bonjour, je suis",
+    "mast.pill1": "Communication institutionnelle",
+    "mast.pill2": "Programmes multilatéraux",
+    "mast.line": "Voici mon coin d’internet : un espace où je partage une sélection de mes travaux, les lieux où ils me mènent et les histoires que je crée au fil du chemin.",
+    "map.label": "Là où mon travail m’a menée",
+    "map.tour": "▶ Lancer la visite",
+    "map.fmis": "Missions",
+    "map.fsids": "PEID ayant reçu un appui",
+    "map.sub": "Une sélection de missions (2024–2026) liées à la communication et au dialogue sur les politiques publiques, ainsi que les petits États insulaires en développement (PEID) ayant reçu un appui dans le cadre du suivi pendant cet exercice biennal.",
+    "read.label": "Aperçu",
+    "read.hint": "Explorez la carte en survolant un repère, en lançant la visite ou en faisant défiler la page jusqu’aux notes de mission.",
+    "tool.label": "Outils sélectionnés",
+    "sec.about": "À propos",
+    "about.h2": "Je transforme l’information technique en contenus de communication clairs et utiles.",
+    "about.p1": "À l’UNESCO, à Paris, mon travail porte sur le suivi du respect des obligations des États membres et sur une initiative mondiale consacrée à la pharmacopée traditionnelle. J’aime trouver le bon angle, construire le message et l’adapter au public : notes d’information pour la haute direction, contenus web, supports visuels et produits numériques destinés aux États membres et à des publics internationaux.",
+    "sec.project": "Travaux sélectionnés",
+    "wg1.label": "Études de cas indépendantes",
+    "wg1.meta": "Initiatives personnelles · fondées sur des sources publiques",
+    "p1.type": "Narration par les données",
+    "p1.t": "SIDSight",
+    "p1.k": "Étude de cas indépendante · août 2026",
+    "p1.sig": "éléments probants → contexte → récit",
+    "p1.a": "Un récit interactif fondé sur des données agroalimentaires, qui relie des indicateurs publics, des comparaisons régionales et le contexte de huit PEID.",
+    "p1.sk": "Narration par les données · Analyse des politiques · Power BI · SIG",
+    "p1.lnk": "Explorer SIDSight →",
+    "p1.lnk2": "Parcourir la carte →",
+    "p4.type": "Adaptation aux publics",
+    "p4.t": "Beyond the Record",
+    "p4.k": "Étude de cas indépendante · sept. 2026",
+    "p4.sig": "rapport → publics",
+    "p4.a": "Un même rapport technique adapté à la haute direction, aux lecteurs du web et aux publics des réseaux sociaux grâce à un travail de rédaction et de narration visuelle.",
+    "p4.sk": "Adaptation aux publics · Rédaction et édition · Narration par les données",
+    "p4.lnk": "Voir l’étude de cas →",
+    "ddcn.new": "Nouveau",
+    "ddcn.type": "Synthèse pour la communication",
+    "ddcn.t": "Across DDCN",
+    "ddcn.k": "Étude de cas indépendante · sept. 2026",
+    "ddcn.sig": "domaines d’activité → messages destinés au public",
+    "ddcn.a": "Une synthèse de six domaines techniques de la FAO en trois messages destinés aux responsables de l’élaboration des politiques, aux partenaires et aux médias.",
+    "ddcn.sk": "Synthèse technique · Formulation des messages · Jugement éditorial",
+    "ddcn.lnk": "Voir l’étude de cas →",
+    "wg2.label": "Travaux institutionnels sélectionnés",
+    "wg2.meta": "Réalisés dans le cadre de mes fonctions à l’UNESCO",
+    "p5.type": "Stratégie de communication",
+    "p5.t": "Stratégie de communication de la Convention",
+    "p5.k": "Stratégie institutionnelle · 2025",
+    "p5.a": "J’ai élaboré la première stratégie spécifiquement consacrée à la communication de la Convention, en déclinant les objectifs institutionnels en publics, priorités des messages, livrables et indicateurs clés de performance (KPI).",
+    "p5.sk": "Définition des publics · Planification des contenus · KPI",
+    "p2.type": "Narration interactive",
+    "p2.t": "Le parcours de la Convention contre le dopage",
+    "p2.k": "Expérience numérique de la COP10 · 2025",
+    "p2.a": "J’ai assuré le rôle de point focal de l’UNESCO pour l’architecture des contenus, la rédaction et la coordination d’une plateforme interactive présentant à un public international vingt ans de jalons de la Convention.",
+    "p2.sk": "Architecture de contenu · Coordination internationale · Narration numérique",
+    "p2.lnk": "Ouvrir le panneau interactif →",
+    "more.label": "Autres travaux de communication",
+    "sec.policy": "Politiques et PEID",
+    "pol1.t": "Suivi de la mise en œuvre et échanges avec les États membres",
+    "pol1.a": "J’appuie le suivi de la Convention et les échanges de suivi avec les États membres : examen des rapports nationaux, repérage des lacunes dans la mise en œuvre, suivi des progrès et préparation de prochaines étapes adaptées.",
+    "pol1.c1": "États membres",
+    "pol1.c2": "Éléments probants par pays",
+    "pol1.c3": "Suivi",
+    "pol2.t": "Appui aux PEID et coopération régionale",
+    "pol2.a": "J’appuie le suivi rapproché et les échanges avec neuf PEID du Pacifique, des Caraïbes et de la région AIS, ainsi que la coopération régionale et le renforcement des capacités, notamment dans le cadre du programme pour les PEID du Pacifique.",
+    "pol2.c1": "PEID",
+    "pol2.c3": "Coopération régionale",
+    "pol2.c4": "Renforcement des capacités",
+    "pol3.t": "Pharmacopée traditionnelle et valeurs du sport",
+    "pol3.a": "J’appuie la coordination d’une initiative mondiale à l’interface entre science et politiques publiques, réunissant universitaires, experts et coordonnateurs régionaux, notamment en intégrant les contributions des experts dans des supports de communication.",
+    "pol3.c1": "Science et politiques publiques",
+    "pol3.c3": "Coordination avec les experts",
+    "pol3.c4": "Échange de connaissances",
+    "sec.exp": "Expérience",
+    "exp.h2": "Une sélection de mes expériences",
+    "cr.title": "Assistante de projet · UNESCO",
+    "cr.when": "Paris · janv. 2025 – aujourd’hui",
+    "cr.summary": "Suivi des États membres · communication institutionnelle · coordination entre science et politiques publiques · communication auprès de publics internationaux",
+    "fold.exptitle": "Toutes mes expériences",
+    "fold.hint": "Cliquez pour déplier",
+    "fold.title": "Missions choisies, 2024–2026",
+    "fold.note": "Survolez un repère sur <a class=\"jump\" href=\"#map-plate\">la carte en haut de la page</a> pour mettre en évidence la note correspondante ci-dessous, et inversement.",
+    "sec.bg": "Parcours",
+    "bg.h2": "Formation et apprentissage",
+    "bg.bubble": "De formation scientifique · Chercheuse en sciences sociales · Curieuse d’apprendre tout au long de la vie",
+    "bg.edu": "Formation",
+    "bg.d1": "Master en linguistique",
+    "bg.m1": "Université des langues étrangères de Pékin · 2019–2022",
+    "bg.s1": "Analyse du discours · Stylistique · Politique internationale · Méthodes de recherche · Acquisition des langues secondes",
+    "bg.d2": "Bachelor en sciences biologiques (BSc)",
+    "bg.m2": "Université de Ludong · 2014–2018",
+    "bg.s2": "Écologie · Biodiversité · Biostatistique · Botanique · Zoologie · Informatique appliquée à la biologie",
+    "bg.train": "Formations et certifications sélectionnées",
+    "bg.t1": "Académie numérique de la FAO (2026) — Communication pour le développement rural · Sécurité alimentaire et moyens d’existence · Biodiversité et systèmes agroalimentaires · Agriculture dans les accords commerciaux régionaux",
+    "bg.t2": "Google Analytics · Microsoft Power Platform Fundamentals (PL-900) · IELTS Academic : 8,0 · Qualification pour l’enseignement secondaire supérieur",
+    "bg.awards": "Distinctions",
+    "bg.a1": "Bourse nationale (parmi les 2 % les mieux classés) · Bourse de niveau spécial · Distinction d’étudiante méritante (×2)",
+    "bg.a2": "Prix du mémoire remarquable · Concours national universitaire de débat en anglais — Premier prix",
+    "bg.pub": "Recherche et publications sélectionnées",
+    "bg.p1": "La construction du discours international de la Chine sur la « réduction de la pauvreté » (2021) · Conscience phonologique et acquisition de l’anglais chez les enfants (2020)",
+    "bg.pthl": "Mémoire de master :",
+    "bg.p2": "Rétroaction corrective écrite et connaissances explicites/implicites (2022)",
+    "lg1": "Chinois — langue maternelle",
+    "lg2": "Anglais — IELTS 8,0",
+    "lg3": "Espagnol — B2",
+    "lg4": "Français — B1",
+    "c.label": "06 — Contact",
+    "c.h2": "Faisons connaissance 👋",
+    "c.p1": "Je suis toujours ravie d’échanger autour de la communication, de la coopération internationale et des idées derrière ce travail. 🌍",
+    "f.left": "Mon petit coin d’internet, qui continue de prendre forme.",
+    "p1.count": "8 PEID"
+  },
+  "zh": {
+    "nav.about": "关于我",
+    "nav.project": "精选作品",
+    "nav.policy": "政策与 SIDS",
+    "nav.exp": "经历",
+    "nav.bg": "教育背景",
+    "mast.tiny": "巴黎 · 联合国教科文组织",
+    "mast.hi": "你好，我是",
+    "mast.pill1": "机构传播",
+    "mast.pill2": "多边项目",
+    "mast.line": "这是我在互联网上的一方小天地，分享我的部分作品、工作带我走过的地方，以及一路创作的故事。",
+    "map.label": "工作带我走过的地方",
+    "map.tour": "▶ 自动浏览",
+    "map.fmis": "出差",
+    "map.fsids": "获得支持的小岛屿发展中国家",
+    "map.sub": "精选出差记录（2024–2026），涵盖传播与政策对话；同时展示本两年期通过监测工作获得支持的小岛屿发展中国家。",
+    "read.label": "详情",
+    "read.hint": "将鼠标移到地图标记上、启动自动浏览，或向下滚动查看出差记录。",
+    "tool.label": "精选工具",
+    "sec.about": "关于我",
+    "about.h2": "我将技术信息转化为清晰、实用的传播内容。",
+    "about.p1": "在巴黎联合国教科文组织，我的工作涵盖会员国履约监测，以及一项有关传统药典的全球倡议。我喜欢寻找合适的切入角度、打磨信息，并根据受众调整表达：从面向高层管理人员的简报和网页内容，到面向会员国及国际受众的视觉材料与数字产品。",
+    "sec.project": "精选作品",
+    "wg1.label": "独立案例研究",
+    "wg1.meta": "自主发起 · 基于公开资料",
+    "p1.type": "数据叙事",
+    "p1.t": "SIDSight",
+    "p1.k": "独立案例研究 · 2026年8月",
+    "p1.sig": "证据 → 背景 → 叙事",
+    "p1.a": "一个交互式农食数据故事，结合公开指标、区域比较与国别背景，呈现八个小岛屿发展中国家的情况。",
+    "p1.sk": "数据叙事 · 政策分析 · Power BI · GIS",
+    "p1.lnk": "探索 SIDSight →",
+    "p1.lnk2": "滚动查看地图 →",
+    "p4.type": "面向不同受众的改写",
+    "p4.t": "Beyond the Record",
+    "p4.k": "独立案例研究 · 2026年9月",
+    "p4.sig": "报告 → 受众",
+    "p4.a": "通过编辑写作与视觉叙事，将同一份技术报告改写为分别面向高层管理人员、网页读者和社交媒体受众的内容。",
+    "p4.sk": "受众适配 · 编辑写作 · 数据叙事",
+    "p4.lnk": "查看案例研究 →",
+    "ddcn.new": "新增",
+    "ddcn.type": "传播内容综合提炼",
+    "ddcn.t": "Across DDCN",
+    "ddcn.k": "独立案例研究 · 2026年9月",
+    "ddcn.sig": "业务领域 → 面向公众的信息",
+    "ddcn.a": "将粮农组织六个技术业务领域的内容提炼为三条面向政策制定者、合作伙伴和媒体的公众传播信息。",
+    "ddcn.sk": "技术内容综合提炼 · 信息提炼 · 编辑判断",
+    "ddcn.lnk": "查看案例研究 →",
+    "wg2.label": "精选机构工作成果",
+    "wg2.meta": "在教科文组织任职期间完成",
+    "p5.type": "传播战略",
+    "p5.t": "公约传播战略",
+    "p5.k": "机构战略 · 2025",
+    "p5.a": "制定公约首份专门的传播战略，将机构目标落实为受众定位、信息优先次序、交付成果与关键绩效指标（KPI）。",
+    "p5.sk": "受众规划 · 内容规划 · KPI",
+    "p2.type": "互动叙事",
+    "p2.t": "反兴奋剂公约的历程",
+    "p2.k": "COP10 数字体验 · 2025",
+    "p2.a": "担任教科文组织联络人，负责一个互动平台的内容架构、撰写与协调，向国际受众呈现公约二十年来的重要节点。",
+    "p2.sk": "内容架构 · 国际协调 · 数字叙事",
+    "p2.lnk": "打开互动展板 →",
+    "more.label": "更多传播工作",
+    "sec.policy": "政策与小岛屿发展中国家",
+    "pol1.t": "监测与会员国跟进",
+    "pol1.a": "支持公约的监测及会员国跟进工作，审阅国家报告、识别实施差距、跟踪进展，并提出有针对性的后续行动。",
+    "pol1.c1": "会员国",
+    "pol1.c2": "国别证据",
+    "pol1.c3": "跟进",
+    "pol2.t": "小岛屿发展中国家支持与区域合作",
+    "pol2.a": "支持对太平洋、加勒比及 AIS 区域九个小岛屿发展中国家的密切监测与跟进，同时参与区域合作和能力建设，包括太平洋小岛屿发展中国家项目。",
+    "pol2.c1": "小岛屿发展中国家",
+    "pol2.c3": "区域合作",
+    "pol2.c4": "能力建设",
+    "pol3.t": "传统药典与体育价值观",
+    "pol3.a": "支持协调一项衔接科学与政策的全球倡议，汇聚学者、专家和区域协调员，并将专家意见整合为传播材料。",
+    "pol3.c1": "科学与政策衔接",
+    "pol3.c3": "专家协调",
+    "pol3.c4": "知识交流",
+    "sec.exp": "经历",
+    "exp.h2": "精选工作经历",
+    "cr.title": "项目助理 · 联合国教科文组织",
+    "cr.when": "巴黎 · 2025年1月至今",
+    "cr.summary": "会员国监测 · 机构传播 · 科学与政策衔接协调 · 国际外联",
+    "fold.exptitle": "全部工作经历",
+    "fold.hint": "点击展开",
+    "fold.title": "精选出差记录，2024–2026",
+    "fold.note": "将鼠标移到<a class=\"jump\" href=\"#map-plate\">页面顶部地图</a>的标记上，下方对应记录就会高亮显示；将鼠标移到记录上，也会突出显示对应地图位置。",
+    "sec.bg": "教育背景",
+    "bg.h2": "教育与学习",
+    "bg.bubble": "理科背景 · 社会科学研究者 · 保持好奇，终身学习",
+    "bg.edu": "教育经历",
+    "bg.d1": "语言学文学硕士",
+    "bg.m1": "北京外国语大学 · 2019–2022",
+    "bg.s1": "话语分析 · 文体学 · 国际政治 · 研究方法 · 二语习得",
+    "bg.d2": "生物科学理学学士",
+    "bg.m2": "鲁东大学 · 2014–2018",
+    "bg.s2": "生态学 · 生物多样性 · 生物统计学 · 植物学 · 动物学 · 信息技术在生物学中的应用",
+    "bg.train": "部分学习经历与资格证书",
+    "bg.t1": "粮农组织在线学习学院（2026）— 农村发展传播 · 粮食安全与生计 · 生物多样性与农食系统 · 区域贸易协定中的农业",
+    "bg.t2": "Google Analytics · Microsoft Power Platform 基础知识（PL-900）· 雅思学术类总分 8.0 · 高级中学教师资格",
+    "bg.awards": "奖项",
+    "bg.a1": "国家奖学金（前 2%）· 特等奖学金 · 优秀学生荣誉（两次）",
+    "bg.a2": "优秀论文奖 · 全国大学生英语辩论赛一等奖",
+    "bg.pub": "精选研究与出版成果",
+    "bg.p1": "中国“扶贫”国际话语的建构（2021）· 语音意识与儿童英语习得（2020）",
+    "bg.pthl": "硕士论文：",
+    "bg.p2": "书面纠正性反馈与显性／隐性知识（2022）",
+    "lg1": "中文 — 母语",
+    "lg2": "英语 — 雅思 8.0",
+    "lg3": "西班牙语 — B2",
+    "lg4": "法语 — B1",
+    "c.label": "06 — 联系",
+    "c.h2": "打个招呼 👋",
+    "c.p1": "欢迎就传播、国际合作，以及这些工作背后的想法找我聊聊。🌍",
+    "f.left": "我在互联网上的小天地，仍在逐步完善。",
+    "p1.count": "8 个 SIDS"
+  }
+};
 
 /* 经历 · 三种译文 */
 const EXP_T={
-es:[
- {role:'Asistente de proyecto',org:'UNESCO, Sector de Ciencias',when:'ene. 2025 – actualidad',where:'París',
-  tags:['Informes ejecutivos','Visualización de datos','Seguimiento del cumplimiento','PEID y PMA','Desarrollo de capacidades'],
-  points:['Soy el punto focal de la Sección para informes de la alta dirección: redacto mensajes clave, puntos de intervención y materiales de difusión, y desarrollo visualizaciones de datos y paneles que traducen la información técnica y de seguimiento en recursos accesibles.',
-   'Gestiono el seguimiento del cumplimiento a través del sistema ADLogic de la Convención, revisando informes nacionales y coordinando el seguimiento con los Estados Partes, ministerios y Misiones Permanentes, con especial atención a los PEID y los PMA.',
-   'Apoyé el primer Programa Regional de Desarrollo de Capacidades para los PEID del Pacífico en Brisbane, contribuyendo a la ejecución del programa, a los materiales de formación y a la coordinación con las partes interesadas de 13 PEID del Pacífico.',
-   'Coordino la participación de más de 50 expertos internacionales y coordinadores regionales en la iniciativa de la UNESCO sobre Farmacopea Tradicional, contribuyendo a un repositorio internacional de conocimiento para el intercambio de investigación.']},
- {role:'Consultora',org:'UNESCO, Sector de Ciencias',when:'jun. – dic. 2024',where:'París',
-  tags:['Comunicación de políticas','PEID y PMA','Movilización de recursos','Coordinación de actores internacionales'],
-  points:['Elaboré notas conceptuales, informes, puntos de intervención, contenido web y materiales visuales para apoyar el diálogo sobre políticas, la visibilidad del programa y la relación con las contrapartes nacionales.',
-   'Analicé los avances de implementación de los Estados Partes y traduje las brechas detectadas en apoyo específico, con especial atención a los PEID y los PMA, incluyendo oportunidades de financiación a través del Fondo contra el Dopaje.',
-   'Apoyé la iniciativa mundial de la UNESCO sobre Farmacopea Tradicional y Valores del Deporte, coordinando expertos, coordinadores regionales y actores nacionales en reuniones del grupo de trabajo.']},
- {role:'Becaria patrocinada',org:'UNESCO, Sector de Ciencias',when:'jun. 2023 – jun. 2024',where:'París',
-  tags:['Comunicación estratégica','Investigación de políticas','Tecnologías emergentes','Coordinación con actores clave'],
-  points:['Redacté productos de conocimiento, informes, puntos de intervención y contenido web, y desarrollé materiales visuales para comunicación y divulgación.',
-   'Apoyé la preparación y realización de la COP9, incluida la coordinación y la comunicación de la reunión intergubernamental.',
-   'Investigué cuestiones emergentes de gobernanza, incluidas la neurotecnología, la inteligencia artificial y la integridad en el deporte, contribuyendo a notas conceptuales y documentos de reunión.']},
- {role:'Responsable de programa y comunicación',org:'Lufy Education',when:'abr. 2019 – jun. 2023',where:'Remoto',
-  tags:['Diseño de programas','Currículo y evaluación','Estrategia en redes sociales','Analítica de aprendizaje'],
-  points:['Dirigí la comunicación y la difusión en tres grandes plataformas sociales (WeChat, Weibo y RedNote), desarrollando contenido digital y herramientas de promoción para hacer crecer la comunidad de estudiantes.',
-   'Cofundé y gestioné un programa en línea de preparación de exámenes, diseñando el currículo, los materiales docentes y los métodos de evaluación.',
-   'Utilicé la retroalimentación de los estudiantes, estudios de mercado y datos de desempeño para mejorar continuamente el curso y la estrategia de difusión, con más del 60 % de los participantes accediendo a sus programas objetivo.']},
- {role:'Secretaria de dirección',org:'Mercedes-Benz AG, operaciones en Pekín',when:'ago. 2022 – abr. 2023',where:'Pekín',
-  tags:['Estudios de mercado','Visualización de datos','Seguimiento de operaciones','Gestión de partes interesadas'],
-  points:['Realicé estudios de mercado y análisis de datos, elaborando visualizaciones, informes y presentaciones para la toma de decisiones a nivel de dirección.',
-   'Coordiné equipos internos y proveedores externos, hice seguimiento de las operaciones en los almacenes de Mercedes-Benz en China y dirigí la realización de un concurso nacional de competencias.']},
- {role:'Gestora de producto (prácticas)',org:'JD.com',when:'ene. – may. 2022',where:'Pekín',
-  tags:['Coordinación técnica','Comunicación entre equipos','Diseño de soluciones','Gestión de partes interesadas'],
-  points:['Apoyé el análisis de requisitos y el diseño de soluciones técnicas para una plataforma internacional.',
-   'Coordiné la implementación entre equipos internos y proveedores externos y mantuve los seguimientos y materiales de orientación del proyecto.']},
- {role:'Intérprete chino–inglés (a tiempo parcial)',org:'Embajada de la República Eslovaca en China',when:'sept. 2022',where:'Pekín',
-  tags:['Interpretación','Comunicación diplomática','Enlace bilateral'],
-  points:['Interpretación consecutiva en una reunión bilateral en una misión diplomática.']}],
-fr:[
- {role:'Assistante de projet',org:'UNESCO, Secteur des sciences',when:'janv. 2025 – aujourd’hui',where:'Paris',
-  tags:['Notes exécutives','Visualisation de données','Suivi de la conformité','PEID et PMA','Renforcement des capacités'],
-  points:['Je suis le point focal de la Section pour les notes de la haute direction : rédaction de messages clés, d’éléments de langage et de supports de diffusion, et développement de visualisations de données et de tableaux de bord traduisant l’information technique et de suivi en ressources accessibles.',
-   'Je gère le suivi de la conformité via le système ADLogic de la Convention, en examinant les rapports nationaux et en coordonnant le suivi avec les États parties, les ministères et les Missions permanentes, avec une attention particulière aux PEID et aux PMA.',
-   'J’ai appuyé le premier programme régional de renforcement des capacités pour les PEID du Pacifique à Brisbane, en contribuant à la mise en œuvre du programme, aux supports de formation et à la coordination avec les parties prenantes de 13 PEID du Pacifique.',
-   'Je coordonne la participation de plus de 50 experts internationaux et coordonnateurs régionaux dans le cadre de l’initiative de l’UNESCO sur la pharmacopée traditionnelle, en contribuant à un répertoire international de connaissances pour l’échange en recherche.']},
- {role:'Consultante',org:'UNESCO, Secteur des sciences',when:'juin – déc. 2024',where:'Paris',
-  tags:['Communication de politiques','PEID et PMA','Mobilisation de ressources','Coordination d’acteurs internationaux'],
-  points:['J’ai rédigé des notes conceptuelles, des notes d’information, des éléments de langage, des contenus web et des supports visuels pour appuyer le dialogue sur les politiques, la visibilité du programme et les échanges avec les homologues nationaux.',
-   'J’ai analysé l’état d’avancement de la mise en œuvre par les États parties et traduit les écarts identifiés en appuis ciblés, avec une attention particulière aux PEID et aux PMA, y compris des possibilités de financement via le Fonds contre le dopage.',
-   'J’ai appuyé l’initiative mondiale de l’UNESCO sur la pharmacopée traditionnelle et les valeurs du sport, en coordonnant experts, coordonnateurs régionaux et acteurs nationaux lors des réunions du groupe de travail.']},
- {role:'Stagiaire boursière',org:'UNESCO, Secteur des sciences',when:'juin 2023 – juin 2024',where:'Paris',
-  tags:['Communication stratégique','Recherche sur les politiques','Technologies émergentes','Coordination avec les acteurs clés'],
-  points:['J’ai rédigé des produits de connaissance, des notes d’information, des éléments de langage et des contenus web, et conçu des supports visuels pour la communication et la sensibilisation.',
-   'J’ai appuyé la préparation et la tenue de la COP9, notamment la coordination et la communication de cette réunion intergouvernementale.',
-   'J’ai étudié des enjeux émergents de gouvernance — neurotechnologies, intelligence artificielle et intégrité dans le sport — en contribuant à des notes conceptuelles et à des documents de réunion.']},
- {role:'Responsable de programme et communication',org:'Lufy Education',when:'avr. 2019 – juin 2023',where:'À distance',
-  tags:['Conception de programmes','Programme et évaluation','Stratégie sur les réseaux sociaux','Analyse des apprentissages'],
-  points:['J’ai piloté la communication et la diffusion sur trois grandes plateformes sociales (WeChat, Weibo et RedNote), en développant contenus et outils de promotion pour faire grandir la communauté d’apprenants.',
-   'J’ai cofondé et dirigé un programme en ligne de préparation aux examens, en concevant le programme, les supports pédagogiques et les méthodes d’évaluation.',
-   'J’ai utilisé les retours des apprenants, des études de marché et les données de performance pour affiner en continu le cours et la stratégie de diffusion : plus de 60 % des participants ont intégré le programme visé.']},
- {role:'Secrétaire de direction',org:'Mercedes-Benz AG, opérations de Pékin',when:'août 2022 – avr. 2023',where:'Pékin',
-  tags:['Études de marché','Visualisation de données','Suivi des opérations','Gestion des parties prenantes'],
-  points:['J’ai mené des études de marché et des analyses de données, en produisant visualisations, rapports et présentations pour la prise de décision au niveau de la direction.',
-   'J’ai coordonné équipes internes et prestataires externes, suivi les opérations des entrepôts Mercedes-Benz en Chine et piloté l’organisation d’un concours national de compétences.']},
- {role:'Cheffe de produit (stage)',org:'JD.com',when:'janv. – mai 2022',where:'Pékin',
-  tags:['Coordination technique','Communication inter-équipes','Conception de solutions','Gestion des parties prenantes'],
-  points:['J’ai appuyé l’analyse des besoins et la conception de solutions techniques pour une plateforme internationale.',
-   'J’ai coordonné la mise en œuvre entre équipes internes et prestataires externes et tenu à jour les outils de suivi et les guides du projet.']},
- {role:'Interprète chinois–anglais (à temps partiel)',org:'Ambassade de la République slovaque en Chine',when:'sept. 2022',where:'Pékin',
-  tags:['Interprétation','Communication diplomatique','Liaison bilatérale'],
-  points:['Interprétation consécutive lors d’une réunion bilatérale au sein d’une mission diplomatique.']}],
-zh:[
- {role:"项目助理",org:"联合国教科文组织 科学部门",when:"2025年1月 – 至今",where:"巴黎",
-  tags:["高层文稿撰写","数据可视化","履约监测","小岛屿国家与最不发达国家","能力建设"],
-  points:["担任本处高层简报的联络人，撰写核心信息、发言要点和外联材料，并制作把技术与监测信息转化为易于理解的数据可视化与仪表盘。",
-   "通过公约的 ADLogic 系统管理履约监测，审阅各国国家报告，并与缔约国、各国部委和常驻代表团协调后续跟进，其中对小岛屿发展中国家和最不发达国家给予特别关注。",
-   "参与支持公约首个面向太平洋小岛屿国家的区域能力建设项目（布里斯班），协助项目交付、培训材料开发，并负责与来自 13 个太平洋小岛屿国家代表的对接协调。",
-   "在教科文组织传统药典倡议下，协调 50 余位国际专家和区域协调员的参与，助力建设促进研究交流的国际知识库。"]},
- {role:"顾问",org:"联合国教科文组织 科学部门",when:"2024年6–12月",where:"巴黎",
-  tags:["政策传播","小岛屿国家与最不发达国家","资源筹措","全球利益相关方协调"],
-  points:["撰写概念说明、简报、发言要点、网页内容和视觉材料，支持政策对话、项目可见度以及与各国对口单位的沟通。",
-   "分析缔约国履约进展，把发现的缺口转化为有针对性的支持，其中对小岛屿发展中国家和最不发达国家给予特别关注，包括通过反兴奋剂基金提供的资助机会。",
-   "支持教科文组织关于传统药典与体育价值观的全球倡议，在工作组会议中协调专家、区域协调员与各国利益相关方。"]},
- {role:"公派实习",org:"联合国教科文组织 科学部门",when:"2023年6月 – 2024年6月",where:"巴黎",
-  tags:["战略传播","政策研究","新兴技术","利益相关方联络"],
-  points:["起草知识产品、简报、发言要点和网页内容，并制作用于传播与推广的视觉材料。",
-   "参与第九届缔约方大会（COP9）的筹备与实施，包括该政府间会议的协调与传播工作。",
-   "研究新兴治理议题，包括神经技术、人工智能与体育诚信，并参与撰写概念说明和会议文件。"]},
- {role:"项目与传播主管",org:"鹿飞考研英语",when:"2019年4月 – 2023年6月",where:"远程",
-  tags:["项目设计","课程与测评","社交媒体策略","学习数据分析"],
-  points:["主导三大社交平台（微信公众号、微博、小红书）的传播与推广，开发数字内容与推广工具，扩大并维系学习者社群。",
-   "联合创办并运营一个线上考试备考项目，负责课程体系、教学材料与测评方法的设计。",
-   "依据学员反馈、市场调研与表现数据持续优化课程与推广策略，超过 60% 的学员进入了目标院校。"]},
- {role:"总监秘书",org:"梅赛德斯-奔驰 北京",when:"2022年8月 – 2023年4月",where:"北京",
-  tags:["市场调研","数据可视化","运营监测","跨方协调"],
-  points:["开展市场调研与数据分析，制作可视化图表、报告与演示材料，支持总监层面的决策。",
-   "协调内部团队与外部供应商，监测奔驰在中国各地仓库的运营情况，并主导一项全国性技能竞赛的落地。"]},
- {role:"产品经理（实习）",org:"京东",when:"2022年1–5月",where:"北京",
-  tags:["技术协调","跨团队沟通","方案设计","干系人管理"],
-  points:["参与国际平台的需求分析与技术方案设计。",
-   "协调内部团队与外部供应商推进实施，并维护项目进度表与操作指引。"]},
- {role:"中英交替传译（兼职）",org:"斯洛伐克共和国驻华大使馆",when:"2022年9月",where:"北京",
-  tags:["口译","外交沟通","双边联络"],
-  points:["为一场在外交使团举行的双边会议提供交替传译。"]}]};
+  "es": [
+    {
+      "role": "Asistente de proyecto",
+      "org": "UNESCO, Sector de Ciencias",
+      "when": "ene. 2025 – actualidad",
+      "where": "París",
+      "tags": [
+        "Notas para la alta dirección",
+        "Visualización de datos",
+        "Seguimiento del cumplimiento",
+        "PEID y PMA",
+        "Desarrollo de capacidades"
+      ],
+      "points": [
+        "Soy el punto focal de la Sección para las notas informativas dirigidas a la alta dirección. Redacto mensajes clave, puntos de intervención y materiales de difusión, y desarrollo visualizaciones de datos y paneles que convierten la información técnica y de monitoreo en recursos accesibles.",
+        "Gestiono el seguimiento del cumplimiento a través del sistema ADLogic de la Convención, revisando informes nacionales y coordinando el seguimiento con los Estados Partes, ministerios y Misiones Permanentes, con especial atención a los PEID y los PMA.",
+        "Apoyé el primer Programa Regional de Desarrollo de Capacidades para los PEID del Pacífico en Brisbane, contribuyendo a la ejecución del programa, a los materiales de formación y a la coordinación con las partes interesadas de 13 PEID del Pacífico.",
+        "Coordino la participación de más de 50 expertos internacionales y coordinadores regionales en la iniciativa de la UNESCO sobre Farmacopea Tradicional, contribuyendo a un repositorio internacional de conocimiento para el intercambio de investigación."
+      ]
+    },
+    {
+      "role": "Consultora",
+      "org": "UNESCO, Sector de Ciencias",
+      "when": "jun. – dic. 2024",
+      "where": "París",
+      "tags": [
+        "Comunicación sobre políticas públicas",
+        "PEID y PMA",
+        "Movilización de recursos",
+        "Coordinación con partes interesadas de todo el mundo"
+      ],
+      "points": [
+        "Elaboré notas conceptuales, notas informativas, puntos de intervención, contenido web y materiales visuales para apoyar el diálogo sobre políticas, la visibilidad del programa y la colaboración con las contrapartes nacionales.",
+        "Analicé los avances de los Estados Partes en la aplicación de la Convención y convertí las carencias detectadas en sus informes en apoyo adaptado a cada caso, con especial atención a los PEID y los PMA, incluidas oportunidades de financiación a través del Fondo para la Eliminación del Dopaje en el Deporte.",
+        "Apoyé la iniciativa mundial de la UNESCO sobre Farmacopea Tradicional y Valores del Deporte, coordinando expertos, coordinadores regionales y actores nacionales en reuniones del grupo de trabajo."
+      ]
+    },
+    {
+      "role": "Becaria en prácticas con financiación",
+      "org": "UNESCO, Sector de Ciencias",
+      "when": "jun. 2023 – jun. 2024",
+      "where": "París",
+      "tags": [
+        "Comunicación estratégica",
+        "Investigación de políticas",
+        "Tecnologías emergentes",
+        "Enlace con las partes interesadas"
+      ],
+      "points": [
+        "Redacté productos de conocimiento, notas informativas, puntos de intervención y contenido web, y elaboré materiales visuales para la comunicación y la difusión.",
+        "Apoyé la preparación y realización de la COP9, incluida la coordinación y la comunicación de la reunión intergubernamental.",
+        "Investigué cuestiones emergentes de gobernanza, incluidas la neurotecnología, la inteligencia artificial y la integridad en el deporte, contribuyendo a notas conceptuales y documentos de reunión."
+      ]
+    },
+    {
+      "role": "Responsable de programas y comunicación",
+      "org": "Lufy Education",
+      "when": "abr. 2019 – jun. 2023",
+      "where": "Remoto",
+      "tags": [
+        "Diseño de programas",
+        "Currículo y evaluación",
+        "Estrategia en redes sociales",
+        "Analítica de aprendizaje"
+      ],
+      "points": [
+        "Dirigí la comunicación y la difusión en tres grandes plataformas sociales —cuenta oficial de WeChat, Weibo y RedNote—, creando contenido digital y herramientas de promoción para ampliar la comunidad de estudiantes y fomentar su participación.",
+        "Cofundé y gestioné un programa en línea de preparación de exámenes, diseñando el currículo, los materiales docentes y los métodos de evaluación.",
+        "Utilicé la retroalimentación de los estudiantes, estudios de mercado y datos de desempeño para mejorar continuamente el curso y la estrategia de difusión, con más del 60 % de los participantes accediendo a sus programas objetivo."
+      ]
+    },
+    {
+      "role": "Secretaria de dirección",
+      "org": "Mercedes-Benz AG",
+      "when": "ago. 2022 – abr. 2023",
+      "where": "Pekín",
+      "tags": [
+        "Estudios de mercado",
+        "Visualización de datos",
+        "Seguimiento de operaciones",
+        "Coordinación con las partes interesadas"
+      ],
+      "points": [
+        "Realicé estudios de mercado y análisis de datos, elaborando visualizaciones, informes y presentaciones para la toma de decisiones a nivel de dirección.",
+        "Coordiné equipos internos y proveedores externos, hice seguimiento de las operaciones en los almacenes de Mercedes-Benz en China y dirigí la realización de un concurso nacional de competencias."
+      ]
+    },
+    {
+      "role": "Gestora de producto (prácticas)",
+      "org": "JD.com",
+      "when": "ene. – may. 2022",
+      "where": "Pekín",
+      "tags": [
+        "Coordinación técnica",
+        "Comunicación entre equipos",
+        "Diseño de soluciones",
+        "Gestión de partes interesadas"
+      ],
+      "points": [
+        "Apoyé el análisis de requisitos y el diseño de soluciones técnicas para una plataforma internacional.",
+        "Coordiné la implementación entre equipos internos y proveedores externos y mantuve los seguimientos y materiales de orientación del proyecto."
+      ]
+    },
+    {
+      "role": "Intérprete chino–inglés (a tiempo parcial)",
+      "org": "Embajada de la República Eslovaca en China",
+      "when": "sept. 2022",
+      "where": "Pekín",
+      "tags": [
+        "Interpretación",
+        "Comunicación diplomática",
+        "Enlace bilateral"
+      ],
+      "points": [
+        "Interpretación consecutiva en una reunión bilateral en una misión diplomática."
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "role": "Assistante de projet",
+      "org": "UNESCO, Secteur des sciences",
+      "when": "janv. 2025 – aujourd’hui",
+      "where": "Paris",
+      "tags": [
+        "Notes pour la haute direction",
+        "Visualisation de données",
+        "Suivi du respect des obligations",
+        "PEID et PMA",
+        "Renforcement des capacités"
+      ],
+      "points": [
+        "Je suis le point focal de la Section pour les notes d’information destinées à la haute direction. Je rédige des messages clés, des éléments de langage et des supports de communication, et je conçois des visualisations de données et des tableaux de bord qui rendent les informations techniques et de suivi accessibles.",
+        "Je gère le suivi du respect des obligations au moyen du système ADLogic de la Convention, en examinant les rapports nationaux et en coordonnant le suivi avec les États parties, les ministères et les missions permanentes, en particulier dans les PEID et les PMA.",
+        "J’ai appuyé le premier programme régional de renforcement des capacités pour les PEID du Pacifique à Brisbane, en contribuant à la mise en œuvre du programme, aux supports de formation et à la coordination avec les parties prenantes de 13 PEID du Pacifique.",
+        "Je coordonne les échanges avec plus de 50 experts internationaux et coordonnateurs régionaux dans le cadre de l’initiative de l’UNESCO sur la pharmacopée traditionnelle, et je contribue à une base internationale de connaissances destinée au partage des travaux de recherche."
+      ]
+    },
+    {
+      "role": "Consultante",
+      "org": "UNESCO, Secteur des sciences",
+      "when": "juin – déc. 2024",
+      "where": "Paris",
+      "tags": [
+        "Communication sur les politiques publiques",
+        "PEID et PMA",
+        "Mobilisation de ressources",
+        "Coordination de parties prenantes à l’échelle mondiale"
+      ],
+      "points": [
+        "J’ai rédigé des notes conceptuelles, des notes d’information, des éléments de langage, des contenus web et des supports visuels pour appuyer le dialogue sur les politiques, la visibilité du programme et les échanges avec les homologues nationaux.",
+        "J’ai analysé les progrès des États parties dans la mise en œuvre de la Convention et proposé un appui adapté aux lacunes de leurs rapports, avec une attention particulière aux PEID et aux PMA, notamment aux possibilités de financement par le Fonds pour l’élimination du dopage dans le sport.",
+        "J’ai appuyé l’initiative mondiale de l’UNESCO sur la pharmacopée traditionnelle et les valeurs du sport, en coordonnant experts, coordonnateurs régionaux et acteurs nationaux lors des réunions du groupe de travail."
+      ]
+    },
+    {
+      "role": "Stagiaire bénéficiant d’un financement",
+      "org": "UNESCO, Secteur des sciences",
+      "when": "juin 2023 – juin 2024",
+      "where": "Paris",
+      "tags": [
+        "Communication stratégique",
+        "Recherche sur les politiques",
+        "Technologies émergentes",
+        "Liaison avec les parties prenantes"
+      ],
+      "points": [
+        "J’ai rédigé des produits de connaissance, des notes d’information, des éléments de langage et des contenus web, et conçu des supports visuels pour la communication et la sensibilisation.",
+        "J’ai appuyé la préparation et la tenue de la COP9, notamment la coordination et la communication de cette réunion intergouvernementale.",
+        "J’ai étudié des enjeux émergents de gouvernance — neurotechnologies, intelligence artificielle et intégrité dans le sport — en contribuant à des notes conceptuelles et à des documents de réunion."
+      ]
+    },
+    {
+      "role": "Responsable de programmes et de communication",
+      "org": "Lufy Education",
+      "when": "avr. 2019 – juin 2023",
+      "where": "À distance",
+      "tags": [
+        "Conception de programmes",
+        "Contenus pédagogiques et évaluation",
+        "Stratégie sur les réseaux sociaux",
+        "Analyse des apprentissages"
+      ],
+      "points": [
+        "J’ai piloté la communication et les actions de diffusion sur trois grandes plateformes sociales — compte officiel WeChat, Weibo et RedNote —, en créant des contenus numériques et des outils de promotion pour élargir la communauté d’apprenants et encourager sa participation.",
+        "J’ai cofondé et dirigé un programme en ligne de préparation aux examens, en concevant le programme, les supports pédagogiques et les méthodes d’évaluation.",
+        "J’ai utilisé les retours des apprenants, des études de marché et les données de performance pour affiner en continu le cours et la stratégie de diffusion : plus de 60 % des participants ont intégré le programme visé."
+      ]
+    },
+    {
+      "role": "Secrétaire de direction",
+      "org": "Mercedes-Benz AG",
+      "when": "août 2022 – avr. 2023",
+      "where": "Pékin",
+      "tags": [
+        "Études de marché",
+        "Visualisation de données",
+        "Suivi des opérations",
+        "Coordination avec les parties prenantes"
+      ],
+      "points": [
+        "J’ai mené des études de marché et des analyses de données, en produisant visualisations, rapports et présentations pour la prise de décision au niveau de la direction.",
+        "J’ai coordonné équipes internes et prestataires externes, suivi les opérations des entrepôts Mercedes-Benz en Chine et piloté l’organisation d’un concours national de compétences."
+      ]
+    },
+    {
+      "role": "Cheffe de produit (stage)",
+      "org": "JD.com",
+      "when": "janv. – mai 2022",
+      "where": "Pékin",
+      "tags": [
+        "Coordination technique",
+        "Communication inter-équipes",
+        "Conception de solutions",
+        "Gestion des parties prenantes"
+      ],
+      "points": [
+        "J’ai appuyé l’analyse des besoins et la conception de solutions techniques pour une plateforme internationale.",
+        "J’ai coordonné la mise en œuvre entre équipes internes et prestataires externes et tenu à jour les outils de suivi et les guides du projet."
+      ]
+    },
+    {
+      "role": "Interprète chinois–anglais (à temps partiel)",
+      "org": "Ambassade de la République slovaque en Chine",
+      "when": "sept. 2022",
+      "where": "Pékin",
+      "tags": [
+        "Interprétation",
+        "Communication diplomatique",
+        "Liaison bilatérale"
+      ],
+      "points": [
+        "Interprétation consécutive lors d’une réunion bilatérale au sein d’une mission diplomatique."
+      ]
+    }
+  ],
+  "zh": [
+    {
+      "role": "项目助理",
+      "org": "联合国教科文组织 科学部门",
+      "when": "2025年1月 – 至今",
+      "where": "巴黎",
+      "tags": [
+        "高层简报",
+        "数据可视化",
+        "履约监测",
+        "小岛屿发展中国家与最不发达国家",
+        "能力建设"
+      ],
+      "points": [
+        "担任本处高层管理人员简报工作的联络人，撰写核心信息、发言要点与外联材料，并制作数据可视化内容和数据看板，将技术与监测信息转化为易于理解和使用的资源。",
+        "通过公约的 ADLogic 系统管理履约监测，审阅各国国家报告，并与缔约国、各国部委和常驻代表团协调后续跟进，其中对小岛屿发展中国家和最不发达国家给予特别关注。",
+        "支持公约首个面向太平洋小岛屿发展中国家的区域能力建设项目在布里斯班开展，协助项目实施、培训资源准备，以及与十三个太平洋小岛屿发展中国家相关方的联络。",
+        "在教科文组织传统药典倡议下，协调 50 余位国际专家和区域协调员的参与，助力建设促进研究交流的国际知识库。"
+      ]
+    },
+    {
+      "role": "顾问",
+      "org": "联合国教科文组织 科学部门",
+      "when": "2024年6–12月",
+      "where": "巴黎",
+      "tags": [
+        "政策传播",
+        "小岛屿发展中国家与最不发达国家",
+        "资源筹措",
+        "全球利益相关方协调"
+      ],
+      "points": [
+        "撰写概念说明、简报、发言要点、网页内容和视觉材料，支持政策对话、项目传播及与各国对口单位的交流。",
+        "分析缔约国的实施进展，根据报告材料中的缺口提供有针对性的支持，重点关注小岛屿发展中国家与最不发达国家，包括通过反兴奋剂基金获得资助的机会。",
+        "支持教科文组织关于传统药典与体育价值观的全球倡议，在工作组会议中协调专家、区域协调员与各国利益相关方。"
+      ]
+    },
+    {
+      "role": "实习生（资助项目）",
+      "org": "联合国教科文组织 科学部门",
+      "when": "2023年6月 – 2024年6月",
+      "where": "巴黎",
+      "tags": [
+        "战略传播",
+        "政策研究",
+        "新兴技术",
+        "利益相关方联络"
+      ],
+      "points": [
+        "起草知识产品、简报、发言要点和网页内容，并制作用于传播与推广的视觉材料。",
+        "支持第九届缔约国大会（COP9）的筹备与举办，包括这场政府间会议的协调与传播工作。",
+        "研究新兴治理议题，包括神经技术、人工智能与体育诚信，并参与撰写概念说明和会议文件。"
+      ]
+    },
+    {
+      "role": "项目与传播专员",
+      "org": "鹿飞考研英语",
+      "when": "2019年4月 – 2023年6月",
+      "where": "远程",
+      "tags": [
+        "项目设计",
+        "课程与测评",
+        "社交媒体策略",
+        "学习数据分析"
+      ],
+      "points": [
+        "主导三大社交平台（微信公众号、微博、小红书）的传播与推广，开发数字内容与推广工具，扩大并维系学习者社群。",
+        "联合创办并运营一个线上考试备考项目，负责课程体系、教学材料与测评方法的设计。",
+        "依据学员反馈、市场调研和学习表现数据，持续优化课程与推广策略，超过 60% 的学员进入目标学习项目。"
+      ]
+    },
+    {
+      "role": "总监秘书",
+      "org": "Mercedes-Benz AG（梅赛德斯-奔驰）",
+      "when": "2022年8月 – 2023年4月",
+      "where": "北京",
+      "tags": [
+        "市场调研",
+        "数据可视化",
+        "运营监测",
+        "利益相关方协调"
+      ],
+      "points": [
+        "开展市场调研与数据分析，制作可视化图表、报告与演示材料，支持总监层面的决策。",
+        "协调内部团队与外部供应商，监测奔驰在中国各地仓库的运营情况，并主导一项全国性技能竞赛的落地。"
+      ]
+    },
+    {
+      "role": "产品经理（实习）",
+      "org": "京东",
+      "when": "2022年1–5月",
+      "where": "北京",
+      "tags": [
+        "技术协调",
+        "跨团队沟通",
+        "方案设计",
+        "利益相关方管理"
+      ],
+      "points": [
+        "参与国际平台的需求分析与技术方案设计。",
+        "协调内部团队与外部供应商推进实施，并维护项目进度表与操作指引。"
+      ]
+    },
+    {
+      "role": "中英交替传译（兼职）",
+      "org": "斯洛伐克共和国驻华大使馆",
+      "when": "2022年9月",
+      "where": "北京",
+      "tags": [
+        "口译",
+        "外交沟通",
+        "双边联络"
+      ],
+      "points": [
+        "为一场在外交使团举行的双边会议提供交替传译。"
+      ]
+    }
+  ]
+};
 
 /* 出差 · 三种译文 */
 const MIS_T={
-es:{paris:{when:"2023 – actualidad",event:'COP10 · Comunicación intergubernamental',body:'<strong>Informes para la alta dirección · narrativa digital · comunicación de eventos.</strong> Con base en la sede de la UNESCO, donde convergen el trabajo diario de comunicación y monitoreo, incluida la Estrategia de Comunicación de la Convención. <a href="#strategy-card">Ver trabajo relacionado →</a>'},
- budapest:{when:"mayo de 2026",event:'Taller de investigación multiactor (TALE)',body:'<strong>Aporte de políticas y gobernanza sobre la protección de deportistas.</strong> Representé a la UNESCO en un taller multiactor que reunió a investigadores y actores de la integridad en el deporte, aportando una perspectiva de gobernanza a las discusiones sobre investigación emergente en protección de deportistas e integridad.'},
- antalya:{when:"febrero de 2025",event:'Mesa de la COP9 y Comité de Aprobación del Fondo',body:'<strong>Revisión de gobernanza y preparación de la COP10.</strong> Dos reuniones estatutarias consecutivas, en las que revisamos nueve solicitudes de proyecto, incluidas propuestas de PEID y PMA, y discutimos prioridades y preparativos hacia la COP10.'},
- riyadh:{when:"diciembre de 2024",event:'Reuniones estatutarias y consulta de la Mesa de la COP9',body:'<strong>Coordinación con actores clave y diálogo de gobernanza.</strong> Apoyé intercambios de alto nivel entre la UNESCO, gobiernos y organizaciones asociadas, incluidas consultas sobre las prioridades de la Convención y sobre cómo involucrar a los Estados Miembros y a otros actores en las discusiones de gobernanza y reforma.'},
- olympia:{when:"noviembre de 2024",event:'Asamblea General de una federación internacional',body:'<strong>Alianza exploratoria y mapeo de gobernanza.</strong> Trabajo exploratorio de alianzas en torno a las carreras de camellos y la integridad en el deporte: identificación de brechas de gobernanza entre federaciones regionales, discusión sobre dónde podría aportar la experiencia de la UNESCO y exploración de una vía hacia orientación específica y cooperación a más largo plazo.'},
- cannes:{when:"febrero de 2024",event:'Simposio de investigación y Conferencia Mundial de Educación',body:'<strong>Comunicación y divulgación.</strong> Junto a las discusiones de investigación y educación de la AMA, mi colega Camila y yo dialogamos con contrapartes de la organización regional del Caribe (RADO) y de Nueva Zelanda sobre necesidades de desarrollo de capacidades en los estados insulares, seguimiento del cumplimiento y oportunidades de apoyo a través del Fondo.'}},
-fr:{paris:{when:"2023 – aujourd’hui",event:'COP10 · Communication intergouvernementale',body:'<strong>Notes pour la haute direction · récit numérique · communication événementielle.</strong> Basée au siège de l’UNESCO, où se rejoignent le travail quotidien de communication et de suivi, y compris la Stratégie de communication de la Convention. <a href="#strategy-card">Voir le travail associé →</a>'},
- budapest:{when:"mai 2026",event:'Atelier de recherche multi-acteurs (TALE)',body:'<strong>Contribution politique et de gouvernance sur la protection des athlètes.</strong> J’ai représenté l’UNESCO lors d’un atelier réunissant chercheurs et acteurs de l’intégrité dans le sport, en apportant un regard de gouvernance aux discussions sur les recherches émergentes en matière de protection des athlètes et d’intégrité.'},
- antalya:{when:"février 2025",event:'Bureau de la COP9 et Comité d’approbation du Fonds',body:'<strong>Examen de gouvernance et préparation de la COP10.</strong> Deux réunions statutaires consécutives, au cours desquelles nous avons examiné neuf demandes de projet, dont des propositions de PEID et de PMA, et discuté des priorités et des préparatifs en vue de la COP10.'},
- riyadh:{when:"décembre 2024",event:'Réunions statutaires et consultation du Bureau de la COP9',body:'<strong>Coordination des parties prenantes et dialogue de gouvernance.</strong> J’ai appuyé des échanges de haut niveau entre l’UNESCO, des gouvernements et des organisations partenaires, y compris des consultations sur les priorités de la Convention et sur la manière d’associer les États membres et d’autres acteurs aux discussions sur la gouvernance et la réforme.'},
- olympia:{when:"novembre 2024",event:'Assemblée générale d’une fédération internationale',body:'<strong>Partenariat exploratoire et cartographie de gouvernance.</strong> Travail exploratoire de partenariat autour des courses de chameaux et de l’intégrité dans le sport : identification des lacunes de gouvernance entre fédérations régionales, discussion sur l’apport possible de l’expertise de l’UNESCO et exploration d’une voie vers des orientations adaptées et une coopération à plus long terme.'},
- cannes:{when:"février 2024",event:'Symposium de recherche et Conférence mondiale sur l’éducation',body:'<strong>Communication et sensibilisation.</strong> En marge des discussions de l’AMA sur la recherche et l’éducation, ma collègue Camila et moi avons échangé avec des homologues de l’organisation régionale des Caraïbes (RADO) et de Nouvelle-Zélande sur les besoins de renforcement des capacités dans les États insulaires, le suivi de la conformité et les possibilités d’appui via le Fonds.'}},
-zh:{paris:{when:"2023年至今",event:"COP10 · 政府间传播",body:"<strong>高层简报 · 数字叙事 · 活动传播。</strong>常驻教科文组织总部，日常传播与监测工作在这里交汇，其中包括公约传播战略。<a href=\"#strategy-card\">查看相关工作 →</a>"},
- budapest:{when:"2026年5月",event:"多方参与研究工作坊（TALE）",body:"<strong>就运动员保护议题提供政策与治理意见。</strong>代表教科文组织参加一场汇集研究人员与体育诚信领域各方的多方工作坊，就运动员保护与体育诚信方面的新兴研究，提供政策与治理层面的视角。"},
- antalya:{when:"2025年2月",event:"COP9 主席团与基金审批委员会",body:"<strong>治理审议与COP10筹备。</strong>连续两场法定会议，审议了九份项目申请（其中包括来自小岛屿发展中国家和最不发达国家的提案），并讨论了面向 COP10 的优先事项与筹备工作。"},
- riyadh:{when:"2024年12月",event:"法定会议与 COP9 主席团磋商",body:"<strong>利益相关方协调与治理对话。</strong>支持教科文组织、各国政府与伙伴机构之间的高级别交流，包括就公约优先事项、以及如何让会员国和其他相关方参与治理与改革讨论进行磋商。"},
- olympia:{when:"2024年11月",event:"某国际联合会大会",body:"<strong>探索性合作与治理版图梳理。</strong>围绕骆驼赛与体育诚信开展的探索性伙伴关系工作：梳理各区域联合会的治理缺口，讨论教科文组织的专业经验可以在哪些方面发挥作用，并探索走向定制化指导与长期合作的可能路径。"},
- cannes:{when:"2024年2月",event:"研究研讨会与全球教育大会",body:"<strong>传播与外联。</strong>在世界反兴奋剂机构的研究与教育讨论之外，我和同事 Camila 与加勒比区域组织（RADO）及新西兰的参会方就岛屿国家的能力建设需求、履约跟进以及基金会支持等方面进行了交流。"}}};
+  "es": {
+    "paris": {
+      "when": "2023 – actualidad",
+      "event": "COP10 · Comunicación intergubernamental",
+      "body": "<strong>Notas para la alta dirección · narrativa digital · comunicación de eventos.</strong> Con base en la sede de la UNESCO, donde se desarrolla el trabajo diario de comunicación y monitoreo, incluida la estrategia de comunicación de la Convención. <a href=\"#strategy-card\">Ver trabajo relacionado →</a>",
+      "city": "París",
+      "country": "Francia"
+    },
+    "budapest": {
+      "when": "mayo de 2026",
+      "event": "Taller de investigación multiactor (TALE)",
+      "body": "<strong>Aportaciones sobre políticas y gobernanza para la protección de los deportistas.</strong> Representé a la UNESCO en un taller que reunió a investigadores y partes interesadas en la integridad en el deporte, aportando una perspectiva de gobernanza a los debates sobre nuevas investigaciones en materia de protección de deportistas e integridad en el deporte.",
+      "city": "Budapest",
+      "country": "Hungría"
+    },
+    "antalya": {
+      "when": "febrero de 2025",
+      "event": "Mesa de la COP9 y Comité de Aprobación del Fondo",
+      "body": "<strong>Revisión de gobernanza y preparación de la COP10.</strong> Dos reuniones estatutarias consecutivas, en las que revisamos nueve solicitudes de proyecto, incluidas propuestas de PEID y PMA, y discutimos prioridades y preparativos hacia la COP10.",
+      "city": "Antalya",
+      "country": "Türkiye"
+    },
+    "riyadh": {
+      "when": "diciembre de 2024",
+      "event": "Reuniones estatutarias y consulta de la Mesa de la COP9",
+      "body": "<strong>Coordinación con actores clave y diálogo de gobernanza.</strong> Apoyé intercambios de alto nivel entre la UNESCO, gobiernos y organizaciones asociadas, incluidas consultas sobre las prioridades de la Convención y sobre cómo involucrar a los Estados Miembros y a otros actores en las discusiones de gobernanza y reforma.",
+      "city": "Riad",
+      "country": "Arabia Saudita"
+    },
+    "olympia": {
+      "when": "noviembre de 2024",
+      "event": "Asamblea General de una federación internacional",
+      "body": "<strong>Alianza exploratoria y mapeo de gobernanza.</strong> Trabajo exploratorio de alianzas en torno a las carreras de camellos y la integridad en el deporte: identificación de brechas de gobernanza entre federaciones regionales, discusión sobre dónde podría aportar la experiencia de la UNESCO y exploración de una vía hacia orientación específica y cooperación a más largo plazo.",
+      "city": "Olimpia",
+      "country": "Grecia"
+    },
+    "cannes": {
+      "when": "febrero de 2024",
+      "event": "Simposio de investigación y Conferencia Mundial de Educación",
+      "body": "<strong>Comunicación y difusión.</strong> En el marco de las conversaciones de la AMA sobre investigación y educación, mi colega Camila y yo intercambiamos con representantes de la organización regional del Caribe (RADO) y de Nueva Zelanda sobre las necesidades de desarrollo de capacidades en los PEID, el seguimiento del cumplimiento y las oportunidades de apoyo a través del Fondo para la Eliminación del Dopaje en el Deporte.",
+      "city": "Cannes y Niza",
+      "country": "Francia"
+    }
+  },
+  "fr": {
+    "paris": {
+      "when": "2023 – aujourd’hui",
+      "event": "COP10 · Communication intergouvernementale",
+      "body": "<strong>Notes pour la haute direction · récit numérique · communication événementielle.</strong> Basée au siège de l’UNESCO, où se rejoignent le travail quotidien de communication et de suivi, y compris la Stratégie de communication de la Convention. <a href=\"#strategy-card\">Voir le travail associé →</a>",
+      "city": "Paris",
+      "country": "France"
+    },
+    "budapest": {
+      "when": "mai 2026",
+      "event": "Atelier de recherche multi-acteurs (TALE)",
+      "body": "<strong>Apport en matière de politiques publiques et de gouvernance pour la protection des athlètes.</strong> J’ai représenté l’UNESCO lors d’un atelier réunissant chercheurs et parties prenantes de l’intégrité dans le sport, en apportant une perspective de gouvernance aux discussions sur les nouvelles recherches concernant la protection des athlètes et l’intégrité dans le sport.",
+      "city": "Budapest",
+      "country": "Hongrie"
+    },
+    "antalya": {
+      "when": "février 2025",
+      "event": "Bureau de la COP9 et Comité d’approbation du Fonds",
+      "body": "<strong>Examen de gouvernance et préparation de la COP10.</strong> Deux réunions statutaires consécutives, au cours desquelles nous avons examiné neuf demandes de projet, dont des propositions de PEID et de PMA, et discuté des priorités et des préparatifs en vue de la COP10.",
+      "city": "Antalya",
+      "country": "Türkiye"
+    },
+    "riyadh": {
+      "when": "décembre 2024",
+      "event": "Réunions statutaires et consultation du Bureau de la COP9",
+      "body": "<strong>Coordination des parties prenantes et dialogue de gouvernance.</strong> J’ai appuyé des échanges de haut niveau entre l’UNESCO, des gouvernements et des organisations partenaires, y compris des consultations sur les priorités de la Convention et sur la manière d’associer les États membres et d’autres acteurs aux discussions sur la gouvernance et la réforme.",
+      "city": "Riyad",
+      "country": "Arabie saoudite"
+    },
+    "olympia": {
+      "when": "novembre 2024",
+      "event": "Assemblée générale d’une fédération internationale",
+      "body": "<strong>Partenariat exploratoire et cartographie de gouvernance.</strong> Travail exploratoire de partenariat autour des courses de chameaux et de l’intégrité dans le sport : identification des lacunes de gouvernance entre fédérations régionales, discussion sur l’apport possible de l’expertise de l’UNESCO et exploration d’une voie vers des orientations adaptées et une coopération à plus long terme.",
+      "city": "Olympie",
+      "country": "Grèce"
+    },
+    "cannes": {
+      "when": "février 2024",
+      "event": "Symposium de recherche et Conférence mondiale sur l’éducation",
+      "body": "<strong>Communication et sensibilisation.</strong> En marge des échanges de l’AMA sur la recherche et l’éducation, ma collègue Camila et moi avons discuté avec des homologues de l’organisation régionale des Caraïbes (RADO) et de Nouvelle-Zélande des besoins de renforcement des capacités dans les PEID, du suivi du respect des obligations et des possibilités d’appui par le Fonds pour l’élimination du dopage dans le sport.",
+      "city": "Cannes et Nice",
+      "country": "France"
+    }
+  },
+  "zh": {
+    "paris": {
+      "when": "2023年至今",
+      "event": "COP10 · 政府间传播",
+      "body": "<strong>高层简报 · 数字叙事 · 活动传播。</strong>常驻教科文组织总部，日常传播与监测工作在这里交汇，其中包括公约传播战略。<a href=\"#strategy-card\">查看相关工作 →</a>",
+      "city": "巴黎",
+      "country": "法国"
+    },
+    "budapest": {
+      "when": "2026年5月",
+      "event": "多方参与研究工作坊（TALE）",
+      "body": "<strong>就运动员保护议题提供政策与治理意见。</strong>代表教科文组织参加一场汇集研究人员与体育诚信领域各方的多方工作坊，就运动员保护与体育诚信方面的新兴研究，提供政策与治理层面的视角。",
+      "city": "布达佩斯",
+      "country": "匈牙利"
+    },
+    "antalya": {
+      "when": "2025年2月",
+      "event": "COP9 主席团与基金审批委员会",
+      "body": "<strong>治理审议与COP10筹备。</strong>连续两场法定会议，审议了九份项目申请（其中包括来自小岛屿发展中国家和最不发达国家的提案），并讨论了面向 COP10 的优先事项与筹备工作。",
+      "city": "安塔利亚",
+      "country": "土耳其"
+    },
+    "riyadh": {
+      "when": "2024年12月",
+      "event": "法定会议与 COP9 主席团磋商",
+      "body": "<strong>利益相关方协调与治理对话。</strong>支持教科文组织、各国政府与伙伴机构之间的高级别交流，包括就公约优先事项、以及如何让会员国和其他相关方参与治理与改革讨论进行磋商。",
+      "city": "利雅得",
+      "country": "沙特阿拉伯"
+    },
+    "olympia": {
+      "when": "2024年11月",
+      "event": "某国际联合会大会",
+      "body": "<strong>探索伙伴关系与梳理治理机制。</strong>围绕赛骆驼与体育诚信探索合作：识别各区域联合会的治理缺口，讨论教科文组织的专业知识可以在哪些方面发挥作用，并探索制定针对性指导及开展长期合作的可能路径。",
+      "city": "奥林匹亚",
+      "country": "希腊"
+    },
+    "cannes": {
+      "when": "2024年2月",
+      "event": "研究研讨会与全球教育大会",
+      "body": "<strong>传播与外联。</strong>在世界反兴奋剂机构开展研究与教育交流期间，我和同事 Camila 与加勒比区域组织（RADO）及新西兰的对口人员进行了交流，讨论小岛屿发展中国家的能力建设需求、履约跟进，以及通过反兴奋剂基金获得支持的机会。",
+      "city": "戛纳与尼斯",
+      "country": "法国"
+    }
+  }
+};
 
 const COMMS_T={
- es:['Escritos','Campañas y narrativa','Visual','Plataformas','Vídeo y multimedia','Redes sociales'],
- fr:['Écrits','Campagnes et récits','Visuel','Plateformes','Vidéo et multimédia','Réseaux sociaux'],
- zh:["文字","传播活动与叙事","视觉","平台","视频与多媒体","社交媒体"]};
+  "es": [
+    "Escritos",
+    "Campañas y narrativa",
+    "Visual",
+    "Plataformas",
+    "Vídeo y multimedia",
+    "Redes sociales"
+  ],
+  "fr": [
+    "Écrits",
+    "Campagnes et récits",
+    "Visuel",
+    "Plateformes",
+    "Vidéo et multimédia",
+    "Réseaux sociaux"
+  ],
+  "zh": [
+    "文字",
+    "传播活动与叙事",
+    "视觉",
+    "平台",
+    "视频与多媒体",
+    "社交媒体"
+  ]
+};
 
 
 /* 传播产出 · 逐条译文（顺序与 COMMS 一致）*/
 const CITEMS_T={
-es:[
- ['Notas conceptuales','Notas informativas','Puntos de intervención','Contenido web','Boletines','Materiales de desarrollo de capacidades','Recursos de conocimiento'],
- ['Campaña de visibilidad del 20.º aniversario (COP10)','Recopilación, visualización y narrativa de datos de impacto','Serie de entrevistas a actores clave (concepto, edición)'],
- ['Infografías','Folletos y dípticos de impacto','Publicaciones digitales','Carteles de eventos','Fondos para eventos','Logotipos','Certificados','Distintivos','Presentaciones','Cuestionarios en Mentimeter'],
- ['Tablero interactivo de narrativa para la COP10','Paneles de visualización de datos','Gestión de páginas web de la UNESCO (Drupal)','Gestión de la plataforma de seguimiento ADLogic'],
- ['Vídeo del aniversario de la COP10 (concepto, guion, edición)','Campaña de visibilidad del 20.º aniversario (COP10)','Tutoriales en vídeo multilingües','Vídeos de momentos destacados de las COP (coedición)'],
- ['Contenido institucional en redes sociales (LinkedIn, YouTube)','Estrategia y contenido multiplataforma en WeChat, Weibo y RedNote']],
-fr:[
- ['Notes conceptuelles','Notes d’information','Éléments de langage','Contenus web','Lettres d’information','Supports de renforcement des capacités','Ressources de connaissance'],
- ['Campagne de visibilité du 20e anniversaire (COP10)','Collecte, visualisation et mise en récit des données d’impact','Série d’entretiens avec les parties prenantes (concept, montage)'],
- ['Infographies','Dépliants et brochures d’impact','Publications numériques','Affiches d’événements','Fonds visuels d’événements','Logos','Certificats','Badges','Présentations','Quiz Mentimeter'],
- ['Tableau interactif narratif pour la COP10','Tableaux de bord de visualisation','Gestion des pages web de l’UNESCO (Drupal)','Gestion de la plateforme de suivi ADLogic'],
- ['Vidéo anniversaire de la COP10 (concept, scénario, montage)','Campagne de visibilité du 20e anniversaire (COP10)','Tutoriels vidéo multilingues','Vidéos des temps forts des COP (co-montage)'],
- ['Contenus institutionnels sur les réseaux sociaux (LinkedIn, YouTube)','Stratégie et contenus multiplateformes sur WeChat, Weibo et RedNote']],
-zh:[
- ["概念说明","简报","发言要点","网页内容","新闻稿","能力建设材料","知识资源"],
- ["COP10 二十周年宣传活动","影响力数据的收集、可视化与叙事","利益相关方访谈系列（策划、剪辑）"],
- ["信息页","折页与传单","数字出版物","活动海报","活动背景板","标识设计","证书","标志设计","演示文稿","Mentimeter 互动问答"],
- ["COP10 交互式叙事展板","数据可视化仪表盘","教科文组织网页维护（Drupal）","ADLogic 监测平台管理"],
- ["COP10 周年短片（概念、脚本、剪辑）","COP10 二十周年宣传活动","多语种视频教程","缔约方大会精彩集锦（联合剪辑）"],
- ["官方社交媒体内容（LinkedIn、YouTube）","微信、微博、小红书多平台策略与内容"]]};
+  "es": [
+    [
+      "Notas conceptuales",
+      "Notas informativas",
+      "Puntos de intervención",
+      "Contenido web",
+      "Boletines",
+      "Materiales de desarrollo de capacidades",
+      "Recursos de conocimiento"
+    ],
+    [
+      "Campaña de visibilidad del 20.º aniversario de la Convención (COP10)",
+      "Recopilación, visualización y narrativa de datos de impacto",
+      "Serie de entrevistas a las partes interesadas (concepto y edición)"
+    ],
+    [
+      "Infografías",
+      "Folletos y hojas informativas sobre el impacto",
+      "Publicaciones digitales",
+      "Carteles de eventos",
+      "Fondos para eventos",
+      "Logotipos",
+      "Certificados",
+      "Distintivos",
+      "Presentaciones",
+      "Cuestionarios en Mentimeter"
+    ],
+    [
+      "Panel de narrativa interactiva para la COP10",
+      "Paneles de visualización de datos",
+      "Gestión de páginas web de la UNESCO (Drupal)",
+      "Gestión de la plataforma de seguimiento ADLogic"
+    ],
+    [
+      "Vídeo del aniversario de la Convención para la COP10 (concepto, guion y edición)",
+      "Campaña de visibilidad del 20.º aniversario de la Convención (COP10)",
+      "Tutoriales en vídeo multilingües",
+      "Vídeos de momentos destacados de las COP (coedición)"
+    ],
+    [
+      "Contenido institucional en redes sociales (LinkedIn, YouTube)",
+      "Estrategia y contenido multiplataforma en WeChat, Weibo y RedNote"
+    ]
+  ],
+  "fr": [
+    [
+      "Notes conceptuelles",
+      "Notes d’information",
+      "Éléments de langage",
+      "Contenus web",
+      "Lettres d’information",
+      "Supports de renforcement des capacités",
+      "Ressources de connaissance"
+    ],
+    [
+      "Campagne de visibilité du 20e anniversaire de la Convention (COP10)",
+      "Collecte, visualisation et mise en récit des données d’impact",
+      "Série d’entretiens avec les parties prenantes (concept, montage)"
+    ],
+    [
+      "Infographies",
+      "Dépliants et feuilles d’information sur l’impact",
+      "Publications numériques",
+      "Affiches d’événements",
+      "Fonds visuels d’événements",
+      "Logos",
+      "Certificats",
+      "Badges",
+      "Présentations",
+      "Quiz Mentimeter"
+    ],
+    [
+      "Panneau de narration interactive pour la COP10",
+      "Tableaux de bord de visualisation de données",
+      "Gestion des pages web de l’UNESCO (Drupal)",
+      "Gestion de la plateforme de suivi ADLogic"
+    ],
+    [
+      "Vidéo anniversaire de la Convention pour la COP10 (concept, scénario, montage)",
+      "Campagne de visibilité du 20e anniversaire de la Convention (COP10)",
+      "Tutoriels vidéo multilingues",
+      "Vidéos des temps forts des COP (co-montage)"
+    ],
+    [
+      "Contenus institutionnels sur les réseaux sociaux (LinkedIn, YouTube)",
+      "Stratégie et contenus multiplateformes sur WeChat, Weibo et RedNote"
+    ]
+  ],
+  "zh": [
+    [
+      "概念说明",
+      "简报",
+      "发言要点",
+      "网页内容",
+      "通讯简报",
+      "能力建设材料",
+      "知识资源"
+    ],
+    [
+      "COP10 公约二十周年传播活动",
+      "影响力数据的收集、可视化与叙事",
+      "利益相关方访谈系列（策划、剪辑）"
+    ],
+    [
+      "信息图",
+      "项目成效宣传单与折页",
+      "数字出版物",
+      "活动海报",
+      "活动背景板",
+      "标识设计",
+      "证书",
+      "徽章",
+      "演示文稿",
+      "Mentimeter 互动问答"
+    ],
+    [
+      "COP10 交互式叙事展板",
+      "数据可视化仪表盘",
+      "教科文组织网页维护（Drupal）",
+      "ADLogic 监测平台管理"
+    ],
+    [
+      "COP10 公约周年短片（构思、脚本、剪辑）",
+      "COP10 公约二十周年传播活动",
+      "多语种视频教程",
+      "缔约国大会精彩集锦（联合剪辑）"
+    ],
+    [
+      "官方社交媒体内容（LinkedIn、YouTube）",
+      "微信、微博、小红书多平台策略与内容"
+    ]
+  ]
+};
 
-const READ_LABEL={en:'Reading',es:'Detalle',fr:'Aperçu',zh:'详情'};
+const READ_LABEL={
+  "en": "Reading",
+  "es": "Detalle",
+  "fr": "Aperçu",
+  "zh": "详情"
+};
 const READ_HINT={
- en:'Explore the map by hovering over a marker, starting the tour, or scrolling down to the mission notes below.',
- es:'Explora el mapa pasando el cursor sobre un marcador, iniciando el recorrido o desplazándote hasta las notas de misión.',
- fr:'Explorez la carte en survolant un marqueur, en lançant la visite ou en faisant défiler jusqu’aux notes de mission.',
- zh:'把鼠标移到标记上、点击自动巡览，或向下滚动查看出差记录。'};
+  "en": "Explore the map by hovering over a marker, starting the tour, or scrolling down to the mission notes below.",
+  "es": "Explora el mapa pasando el cursor sobre un marcador, iniciando el recorrido o bajando hasta las notas de las misiones.",
+  "fr": "Explorez la carte en survolant un repère, en lançant la visite ou en faisant défiler la page jusqu’aux notes de mission.",
+  "zh": "将鼠标移到地图标记上、启动自动浏览，或向下滚动查看出差记录。"
+};
 const SIDS_NOTE={
- en:'One of the SIDS supported through the Convention during this biennium. Eight of these countries are also featured in the SIDSight dashboard.',
- es:'Uno de los PEID acompañados a través de la Convención en este bienio. Ocho de estos países también aparecen en el panel SIDSight.',
- fr:'L’un des PEID accompagnés au titre de la Convention pendant cet exercice biennal. Huit de ces pays figurent également dans le tableau de bord SIDSight.',
- zh:"本两年期内通过公约援助的小岛屿发展中国家之一；其中的8个国家也出现在 SIDSight 仪表盘中。"};
+  "en": "One of the SIDS supported through the Convention during this biennium. Eight of these countries are also featured in the SIDSight dashboard.",
+  "es": "Uno de los PEID acompañados a través de la Convención en este bienio. Ocho de estos países también aparecen en el panel SIDSight.",
+  "fr": "L’un des PEID accompagnés au titre de la Convention pendant cet exercice biennal. Huit de ces pays figurent également dans le tableau de bord SIDSight.",
+  "zh": "本两年期内通过公约获得支持的小岛屿发展中国家之一。这些国家中有八个也出现在 SIDSight 数据看板中。"
+};
 const PARIS_NOTE={
- en:'UNESCO Headquarters — where most of this work happens.',
- es:'Sede de la UNESCO — donde ocurre la mayor parte de este trabajo.',
- fr:'Siège de l’UNESCO — là où se fait l’essentiel de ce travail.',
- zh:"联合国教科文组织总部——大部分工作都在这里发生。"};
-const TOUR_LABEL={en:'▶ Play tour',es:'▶ Ver recorrido',fr:'▶ Lancer la visite',zh:"▶ 自动浏览"};
-const STOP_LABEL={en:'■ Stop',es:'■ Detener',fr:'■ Arrêter',zh:"■ 停止"};
+  "en": "UNESCO Headquarters — where most of this work happens.",
+  "es": "Sede de la UNESCO — donde ocurre la mayor parte de este trabajo.",
+  "fr": "Siège de l’UNESCO — là où se fait l’essentiel de ce travail.",
+  "zh": "联合国教科文组织总部——我的大部分工作在这里开展。"
+};
+const TOUR_LABEL={
+  "en": "▶ Play tour",
+  "es": "▶ Ver recorrido",
+  "fr": "▶ Lancer la visite",
+  "zh": "▶ 自动浏览"
+};
+const STOP_LABEL={
+  "en": "■ Stop",
+  "es": "■ Detener",
+  "fr": "■ Arrêter",
+  "zh": "■ 停止"
+};
+
+const UI_T={
+  "en": {
+    "nav": "Main navigation",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "tour": "Play an automatic tour of the five missions",
+    "stopTour": "Stop the automatic tour",
+    "mapFrame": "Interactive map of missions and supported Small Island Developing States",
+    "map": "World map showing mission cities and supported Small Island Developing States",
+    "readout": "Map information panel",
+    "dutyStation": "Duty station",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "visits": "visits"
+  },
+  "es": {
+    "nav": "Navegación principal",
+    "openMenu": "Abrir navegación",
+    "closeMenu": "Cerrar navegación",
+    "tour": "Iniciar un recorrido automático por las cinco misiones",
+    "stopTour": "Detener el recorrido automático",
+    "mapFrame": "Mapa interactivo de misiones y pequeños Estados insulares en desarrollo que han recibido apoyo",
+    "map": "Mapa mundial con las ciudades de las misiones y los pequeños Estados insulares en desarrollo que han recibido apoyo",
+    "readout": "Panel de información del mapa",
+    "dutyStation": "Lugar de destino",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "visits": "visitas"
+  },
+  "fr": {
+    "nav": "Navigation principale",
+    "openMenu": "Ouvrir la navigation",
+    "closeMenu": "Fermer la navigation",
+    "tour": "Lancer une visite automatique des cinq missions",
+    "stopTour": "Arrêter la visite automatique",
+    "mapFrame": "Carte interactive des missions et des petits États insulaires en développement ayant reçu un appui",
+    "map": "Carte du monde indiquant les villes des missions et les petits États insulaires en développement ayant reçu un appui",
+    "readout": "Panneau d’information de la carte",
+    "dutyStation": "Lieu d’affectation",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière",
+    "visits": "visites"
+  },
+  "zh": {
+    "nav": "主导航",
+    "openMenu": "展开导航",
+    "closeMenu": "收起导航",
+    "tour": "启动五次出差的自动导览",
+    "stopTour": "停止自动导览",
+    "mapFrame": "展示出差地点与获支持小岛屿发展中国家的交互地图",
+    "map": "标注出差城市与获支持小岛屿发展中国家的世界地图",
+    "readout": "地图信息面板",
+    "dutyStation": "工作地点",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "visits": "次访问"
+  }
+};
+
+const REGION_T={
+  "es": {
+    "Pacific": "Región del Pacífico",
+    "Caribbean": "Región del Caribe",
+    "AIS": "Región AIS"
+  },
+  "fr": {
+    "Pacific": "Région du Pacifique",
+    "Caribbean": "Région des Caraïbes",
+    "AIS": "Région AIS"
+  },
+  "zh": {
+    "Pacific": "太平洋区域",
+    "Caribbean": "加勒比区域",
+    "AIS": "AIS 区域"
+  }
+};
+
+const SIDS_T={
+  "es": {
+    "Kiribati": "Kiribati",
+    "Marshall Islands": "Islas Marshall",
+    "Naoero": "Nauru",
+    "Papua New Guinea": "Papua Nueva Guinea",
+    "Tuvalu": "Tuvalu",
+    "Saint Kitts and Nevis": "Saint Kitts y Nevis",
+    "Saint Lucia": "Santa Lucía",
+    "Maldives": "Maldivas",
+    "Cook Islands": "Islas Cook",
+    "Fiji": "Fiji",
+    "Micronesia (Federated States of)": "Micronesia (Estados Federados de)",
+    "Palau": "Palau",
+    "Samoa": "Samoa",
+    "Solomon Islands": "Islas Salomón",
+    "Tonga": "Tonga",
+    "Vanuatu": "Vanuatu"
+  },
+  "fr": {
+    "Kiribati": "Kiribati",
+    "Marshall Islands": "Îles Marshall",
+    "Naoero": "Nauru",
+    "Papua New Guinea": "Papouasie-Nouvelle-Guinée",
+    "Tuvalu": "Tuvalu",
+    "Saint Kitts and Nevis": "Saint-Kitts-et-Nevis",
+    "Saint Lucia": "Sainte-Lucie",
+    "Maldives": "Maldives",
+    "Cook Islands": "Îles Cook",
+    "Fiji": "Fidji",
+    "Micronesia (Federated States of)": "Micronésie (États fédérés de)",
+    "Palau": "Palaos",
+    "Samoa": "Samoa",
+    "Solomon Islands": "Îles Salomon",
+    "Tonga": "Tonga",
+    "Vanuatu": "Vanuatu"
+  },
+  "zh": {
+    "Kiribati": "基里巴斯",
+    "Marshall Islands": "马绍尔群岛",
+    "Naoero": "瑙鲁",
+    "Papua New Guinea": "巴布亚新几内亚",
+    "Tuvalu": "图瓦卢",
+    "Saint Kitts and Nevis": "圣基茨和尼维斯",
+    "Saint Lucia": "圣卢西亚",
+    "Maldives": "马尔代夫",
+    "Cook Islands": "库克群岛",
+    "Fiji": "斐济",
+    "Micronesia (Federated States of)": "密克罗尼西亚联邦",
+    "Palau": "帕劳",
+    "Samoa": "萨摩亚",
+    "Solomon Islands": "所罗门群岛",
+    "Tonga": "汤加",
+    "Vanuatu": "瓦努阿图"
+  }
+};
+
+const META_T={
+  "es": {
+    "title": "Yuxi Zhou | Trabajo, lugares y curiosidades",
+    "description": "Profesional de la UNESCO que trabaja en comunicación institucional, seguimiento de los Estados Miembros y apoyo a los PEID, con fortalezas en narrativa digital, visualización de datos y coordinación entre ciencia y políticas públicas.",
+    "socialTitle": "Yuxi Zhou | Comunicación, políticas y programas multilaterales",
+    "socialDescription": "Trabajos seleccionados en comunicación, apoyo a los PEID y seguimiento.",
+    "imageAlt": "Yuxi Zhou — Comunicación, políticas y programas multilaterales"
+  },
+  "fr": {
+    "title": "Yuxi Zhou | Travaux, lieux et curiosités",
+    "description": "Professionnelle de l’UNESCO travaillant dans la communication institutionnelle, le suivi des États membres et l’appui aux PEID, avec des compétences en narration numérique, visualisation de données et coordination entre science et politiques publiques.",
+    "socialTitle": "Yuxi Zhou | Communication, politiques et programmes multilatéraux",
+    "socialDescription": "Une sélection de travaux en communication, appui aux PEID et suivi.",
+    "imageAlt": "Yuxi Zhou — Communication, politiques et programmes multilatéraux"
+  },
+  "zh": {
+    "title": "Yuxi Zhou | 工作、足迹与探索",
+    "description": "在联合国教科文组织从事机构传播、会员国监测与小岛屿发展中国家支持工作，擅长数字叙事、数据可视化，以及科学与政策衔接协调。",
+    "socialTitle": "Yuxi Zhou | 传播、政策与多边项目",
+    "socialDescription": "传播、小岛屿发展中国家支持与监测领域的精选工作成果。",
+    "imageAlt": "Yuxi Zhou — 传播、政策与多边项目"
+  }
+};
+
+// Page titles and accessibility text use the same selected language as the page.
+const ORIGINAL_PAGE_TITLE=document.title;
+const META_FIELDS=[
+  ['meta[name="description"]','description'],
+  ['meta[property="og:title"]','socialTitle'],
+  ['meta[property="og:description"]','socialDescription'],
+  ['meta[property="og:image:alt"]','imageAlt'],
+  ['meta[name="twitter:title"]','socialTitle'],
+  ['meta[name="twitter:description"]','socialDescription']
+].map(([selector,key])=>({selector,key,original:document.querySelector(selector)?.content||''}));
+let visitCount=null;
+function updateVisitCount(){
+  const hits=document.getElementById('hits');
+  if(hits&&visitCount!==null) hits.textContent=`${visitCount} ${UI_T[lang].visits}`;
+}
+function updateLanguageUI(){
+  const ui=UI_T[lang];
+  const meta=META_T[lang];
+  document.title=meta?meta.title:ORIGINAL_PAGE_TITLE;
+  META_FIELDS.forEach(({selector,key,original})=>{
+    const el=document.querySelector(selector);
+    if(el) el.content=meta?meta[key]:original;
+  });
+  const labels=[['#nav','nav'],['.map-frame','mapFrame'],['#map','map'],['#readout','readout']];
+  labels.forEach(([selector,key])=>document.querySelector(selector)?.setAttribute('aria-label',ui[key]));
+  const toggle=document.getElementById('menuToggle');
+  if(toggle) toggle.setAttribute('aria-label',ui[toggle.getAttribute('aria-expanded')==='true'?'closeMenu':'openMenu']);
+  const tour=document.getElementById('tour');
+  if(tour){
+    tour.textContent=touring?STOP_LABEL[lang]:TOUR_LABEL[lang];
+    tour.setAttribute('aria-label',ui[touring?'stopTour':'tour']);
+  }
+  [['.leaflet-control-zoom-in','zoomIn'],['.leaflet-control-zoom-out','zoomOut']].forEach(([selector,key])=>{
+    const el=document.querySelector(selector);
+    if(el){el.title=ui[key];el.setAttribute('aria-label',ui[key]);}
+  });
+  updateVisitCount();
+}
+
 
 function applyLang(l){
+  if(l!=='en' && !Object.prototype.hasOwnProperty.call(T,l)) l='en';
   lang=l;
   document.documentElement.lang = l;
   const dict = T[l] || null;
@@ -608,11 +1262,17 @@ function applyLang(l){
     if(EN_CACHE[k]===undefined) EN_CACHE[k]=el.innerHTML;
     el.innerHTML = (dict && dict[k]) ? dict[k] : EN_CACHE[k];
   });
-  document.querySelectorAll('.lg').forEach(b=>b.classList.toggle('on', b.dataset.lang===l));
+  document.querySelectorAll('.lg').forEach(b=>{
+    b.classList.toggle('on', b.dataset.lang===l);
+    b.setAttribute('aria-pressed',String(b.dataset.lang===l));
+  });
   renderExp(); renderMissions(); renderComms(); renderMore();
-  const tb=document.getElementById('tour');
-  if(tb && !touring) tb.textContent = TOUR_LABEL[l]||TOUR_LABEL.en;
-  reset();
+  updateLanguageUI();
+  localizeMap();
+  if(touring){
+    const current=missionText(MISSIONS[(tourIdx-1+MISSIONS.length)%MISSIONS.length]);
+    show(`${current.city}, ${current.country}`,current.when,current.body,false);
+  } else reset();
 }
 
 
@@ -747,6 +1407,10 @@ const reset=()=>readout.innerHTML=
 
 const groups={mission:L.layerGroup().addTo(map),sids:L.layerGroup().addTo(map)};
 const arcOf={}, rowOf={};
+const missionMarkers={}, sidsMarkers={};
+const missionText=m=>Object.assign({},m,(MIS_T[lang]||{})[m.id]||{});
+const sidsName=s=>(SIDS_T[lang]||{})[s.name]||s.name;
+const regionName=s=>(REGION_T[lang]||{})[s.region]||s.region+' region';
 
 function lightUp(id,on){
   const a=arcOf[id], r=rowOf[id];
@@ -761,23 +1425,36 @@ MISSIONS.forEach(m=>{
   if(flow.getElement()) flow.getElement().classList.add('flow');
   arcOf[m.id]=flow;
   const mk=L.marker(m.coords,{icon:icon(CLAY,26,m.city)}).addTo(groups.mission);
-  const tr=()=>{const t=MIS_T[lang]; return (t&&t[m.id])?Object.assign({},m,t[m.id]):m;};
-  mk.on('mouseover',()=>{const x=tr();show(`${m.city}, ${m.country}`,x.when,x.event,false);lightUp(m.id,true);});
+  missionMarkers[m.id]=mk;
+  const tr=()=>missionText(m);
+  mk.on('mouseover',()=>{const x=tr();show(`${x.city}, ${x.country}`,x.when,x.event,false);lightUp(m.id,true);});
   mk.on('mouseout',()=>{lightUp(m.id,false);if(!touring)reset();});
-  mk.on('click',()=>{const x=tr();map.flyTo(m.coords,4,{duration:1});show(`${m.city}, ${m.country}`,x.when,x.body,false);
+  mk.on('click',()=>{const x=tr();map.flyTo(m.coords,4,{duration:1});show(`${x.city}, ${x.country}`,x.when,x.body,false);
     rowOf[m.id]&&rowOf[m.id].scrollIntoView({behavior:'smooth',block:'center'});});
 });
-L.marker(BASE,{icon:icon('#16191B',20,'Paris')}).addTo(groups.mission)
-  .on('mouseover',()=>show('Paris','Duty station',(PARIS_NOTE[lang]||PARIS_NOTE.en),false))
+const baseMarker=L.marker(BASE,{icon:icon('#16191B',20,'Paris')}).addTo(groups.mission)
+  .on('mouseover',()=>show(missionText(MISSIONS[0]).city,UI_T[lang].dutyStation,(PARIS_NOTE[lang]||PARIS_NOTE.en),false))
   .on('mouseout',()=>{if(!touring)reset();});
 
 SIDS.forEach(s=>{
   const mk=L.marker(s.coords,{icon:icon(SEA,24,s.name)}).addTo(groups.sids);
-  mk.on('mouseover',()=>show(s.name,s.region+' region',
+  sidsMarkers[s.name]=mk;
+  mk.on('mouseover',()=>show(sidsName(s),regionName(s),
     (SIDS_NOTE[lang]||SIDS_NOTE.en),true));
   mk.on('mouseout',()=>{if(!touring)reset();});
   mk.on('click',()=>map.flyTo(s.coords,4.5,{duration:1}));
 });
+
+function localizeMap(){
+  function updateMarker(marker,label,color,size){
+    marker.setIcon(icon(color,size,label));
+    const el=marker.getElement();
+    if(el){el.setAttribute('aria-label',label);el.setAttribute('title',label);}
+  }
+  MISSIONS.forEach(m=>updateMarker(missionMarkers[m.id],missionText(m).city,CLAY,26));
+  SIDS.forEach(s=>updateMarker(sidsMarkers[s.name],sidsName(s),SEA,24));
+  updateMarker(baseMarker,missionText(MISSIONS[0]).city,'#16191B',20);
+}
 
 document.querySelectorAll('.f[data-f]').forEach(btn=>{
   btn.addEventListener('click',()=>{
@@ -799,13 +1476,14 @@ let touring=false,tourTimer=null,tourIdx=0;
 const tourBtn=document.getElementById('tour');
 function stopTour(){touring=false;clearTimeout(tourTimer);tourBtn.classList.remove('running');
   tourBtn.textContent=TOUR_LABEL[lang]||TOUR_LABEL.en;MISSIONS.forEach(m=>lightUp(m.id,false));
+  tourBtn.setAttribute('aria-label',UI_T[lang].tour);
   reset();map.flyTo([22,44],2.2,{duration:1.1});}
 function stepTour(){
   MISSIONS.forEach(m=>lightUp(m.id,false));
   const m=MISSIONS[tourIdx%MISSIONS.length];
   const t0=MIS_T[lang]; const x=(t0&&t0[m.id])?Object.assign({},m,t0[m.id]):m;
   map.flyTo(m.coords,4,{duration:1.4});
-  show(`${m.city}, ${m.country}`,x.when,x.body,false);
+  show(`${x.city}, ${x.country}`,x.when,x.body,false);
   lightUp(m.id,true);
   tourIdx++;
   tourTimer=setTimeout(()=>{if(touring){tourIdx%MISSIONS.length===0?stopTour():stepTour();}},4200);
@@ -813,6 +1491,7 @@ function stepTour(){
 tourBtn.addEventListener('click',()=>{
   if(touring){stopTour();return;}
   touring=true;tourIdx=0;tourBtn.classList.add('running');tourBtn.textContent=STOP_LABEL[lang]||STOP_LABEL.en;stepTour();
+  tourBtn.setAttribute('aria-label',UI_T[lang].stopTour);
 });
 
 /* ═══ 列表 ═══ */
@@ -851,11 +1530,11 @@ function renderMissions(){
     const d=document.createElement('div'); d.className='mission rev in';
     d.innerHTML=`<div class="when-top">${tr.when}</div>
       <h4>${tr.event}</h4>
-      <div class="place">${m.city}, ${m.country}</div>
+      <div class="place">${tr.city}, ${tr.country}</div>
       <p>${tr.body}</p>`;
     d.addEventListener('mouseenter',()=>{if(touring)stopTour();
       map.flyTo(m.coords,3.6,{duration:1});
-      show(`${m.city}, ${m.country}`,tr.when,tr.event,false);lightUp(m.id,true);});
+      show(`${tr.city}, ${tr.country}`,tr.when,tr.event,false);lightUp(m.id,true);});
     d.addEventListener('mouseleave',()=>lightUp(m.id,false));
     rowOf[m.id]=d;
     ml.appendChild(d);
@@ -867,80 +1546,308 @@ renderMissions();
 
 /* ═══ Communications outputs ═══ 改内容只动这个数组 */
 const MORE_CAT_T={
- es:['Ejecutivo y editorial','Digital y web','Eventos y difusión','Planificación y medición'],
- fr:['Exécutif et éditorial','Numérique et web','Événements et sensibilisation','Planification et mesure'],
- zh:['高层文稿与编辑','数字与网页','活动与外联','规划与效果衡量'],
+  "es": [
+    "Redacción para la dirección y edición",
+    "Digital y web",
+    "Eventos y difusión",
+    "Planificación y medición"
+  ],
+  "fr": [
+    "Rédaction pour la direction et édition",
+    "Numérique et web",
+    "Événements et sensibilisation",
+    "Planification et mesure"
+  ],
+  "zh": [
+    "高层文稿与编辑",
+    "数字与网页",
+    "活动与外联",
+    "规划与效果衡量"
+  ]
 };
 const MORE_ITEMS_T={
- es:[
-  [['Notas informativas','Para la alta dirección y encuentros de alto nivel, condensando contenido técnico en puntos claros y listos para decidir.'],
-   ['Puntos de intervención','Preparados para discursos, encuentros bilaterales y discusiones intergubernamentales.'],
-   ['Mensajes clave','Mensajes centrales verificados por su claridad y coherencia entre audiencias y canales.'],
-   ['Artículos','Redacción y estructuración de historias institucionales para la web y productos de información.'],
-   ['Presentaciones','Estructura visual y narrativa para informes, reuniones y eventos institucionales.'],
-   ['Informes','Síntesis de información técnica o de seguimiento en documentos estructurados y legibles.']],
-  [['Contenido en Drupal','Edición y publicación de contenido web institucional para el público y los Estados Miembros.'],
-   ['Boletines','Contenido editorial recurrente que combina redacción, maquetación y presentación centrada en la audiencia.'],
-   ['Visualización de datos','Convertir datos técnicos o de seguimiento en visuales que apoyan la comprensión y el diálogo.'],
-   ['Exposiciones','Estructurar historias institucionales y evidencia en formatos exploratorios basados en la web.'],
-   ['Redes sociales','Adaptar contenido institucional a formatos sociales breves y orientados a la audiencia.']],
-  [['Materiales de eventos','Visuales, presentaciones y contenido de apoyo para eventos intergubernamentales y de desarrollo de capacidades.'],
-   ['Vídeo y multimedia','Concepto, guion, edición y narrativa visual para la comunicación institucional.'],
-   ['Productos de conocimiento','Convertir aportes técnicos o de expertos en materiales de referencia accesibles y reutilizables.'],
-   ['Historias de actores clave','Convertir perspectivas de beneficiarios, expertos o socios en contenido conciso y centrado en las personas.'],
-   ['Coordinación con socios','Trabajar con socios gubernamentales, técnicos y de comunicación para llevar los productos del concepto a la entrega.']],
-  [['Campañas de comunicación','Traducir objetivos en audiencias, mensajes, canales, responsabilidades y plazos.'],
-   ['Segmentación de audiencias','Adaptar formato, tono y nivel de detalle para la alta dirección, los Estados Miembros y el público.'],
-   ['Calendario de contenidos','Secuenciar los productos de comunicación en torno a hitos, eventos y prioridades institucionales.'],
-   ['KPI','Definir indicadores prácticos para monitorear la entrega, el alcance y la interacción.'],
-   ['GA4','Usar analítica web para entender el tráfico y el comportamiento de la audiencia.']],
- ],
- fr:[
-  [['Notes d’information','Pour la haute direction et les rencontres de haut niveau, en condensant le contenu technique en points clairs et prêts pour la décision.'],
-   ['Éléments de langage','Préparés pour des discours, des échanges bilatéraux et des discussions intergouvernementales.'],
-   ['Messages clés','Messages centraux testés pour leur clarté et leur cohérence entre publics et canaux.'],
-   ['Articles','Rédaction et structuration de récits institutionnels pour le web et les produits d’information.'],
-   ['Présentations','Structure visuelle et narrative pour les briefings, réunions et événements institutionnels.'],
-   ['Rapports','Synthèse d’informations techniques ou de suivi en documents structurés et lisibles.']],
-  [['Contenu Drupal','Édition et publication de contenu web institutionnel pour le public et les États membres.'],
-   ['Lettres d’information','Contenu éditorial récurrent alliant rédaction, mise en page et présentation orientée public.'],
-   ['Visualisation de données','Transformer des données techniques ou de suivi en visuels favorisant la compréhension et le dialogue.'],
-   ['Expositions','Structurer récits institutionnels et données probantes en formats explorables sur le web.'],
-   ['Réseaux sociaux','Adapter le contenu institutionnel à des formats sociaux courts et orientés public.']],
-  [['Supports d’événements','Visuels, présentations et contenus d’appui pour des événements intergouvernementaux et de renforcement des capacités.'],
-   ['Vidéo et multimédia','Concept, scénario, montage et narration visuelle pour la communication institutionnelle.'],
-   ['Produits de connaissance','Transformer des contributions techniques ou d’experts en supports de référence accessibles et réutilisables.'],
-   ['Récits de parties prenantes','Transformer les points de vue de bénéficiaires, d’experts ou de partenaires en contenus concis et humains.'],
-   ['Coordination des partenaires','Travailler avec des partenaires gouvernementaux, techniques et de communication pour faire aboutir les produits.']],
-  [['Campagnes de communication','Traduire des objectifs en publics, messages, canaux, responsabilités et échéances.'],
-   ['Ciblage des publics','Adapter le format, le ton et le niveau de détail pour la haute direction, les États membres et le public.'],
-   ['Calendrier de contenu','Séquencer les productions de communication autour des jalons, événements et priorités institutionnelles.'],
-   ['KPI','Définir des indicateurs concrets pour suivre la livraison, la portée et l’engagement.'],
-   ['GA4','Utiliser l’analyse web pour comprendre le trafic et le comportement du public.']],
- ],
- zh:[
-  [['简报','面向高层管理与高级别会晤，把技术内容浓缩成清晰、可供决策的要点。'],
-   ['发言要点','为演讲、双边交流和政府间讨论准备的发言口径。'],
-   ['核心信息','经过检验、在不同受众和渠道间保持清晰一致的核心信息。'],
-   ['新闻稿','为网页和信息类产品撰写并组织机构新闻内容。'],
-   ['演示文稿','为简报、会议和机构活动搭建视觉与叙事结构。'],
-   ['报告','把技术或监测信息整理成结构清晰、易读的文件。']],
-  [['Drupal网页内容','为公众和会员国受众编辑并发布机构网页内容。'],
-   ['通讯','结合撰写、排版与受众导向呈现的常规编辑内容。'],
-   ['数据可视化','把技术或监测数据转化为有助于理解和讨论的可视化内容。'],
-   ['展览','把机构故事与证据组织成可探索的网页展示形式。'],
-   ['社交媒体','把机构内容改写成适合社交媒体的短篇、受众导向内容。']],
-  [['活动物料','为政府间会议和能力建设活动制作视觉、演示与配套内容。'],
-   ['视频与多媒体','为机构传播提供构思、脚本、剪辑与视觉叙事。'],
-   ['知识产品','把技术或专家意见转化为易于获取、可重复使用的参考材料。'],
-   ['利益相关方故事','把受益方、专家或合作伙伴的视角转化为简洁、以人为本的内容。'],
-   ['合作伙伴协调','与政府、技术和传播合作伙伴协作，把产品从构思推进到交付。']],
-  [['传播活动策划','把目标转化为受众、信息、渠道、责任分工与时间安排。'],
-   ['受众定位','根据高层管理人员、会员国和公众受众调整形式、语气与详略程度。'],
-   ['内容日历','围绕重要节点、活动与机构优先事项安排传播产出的节奏。'],
-   ['KPI','设定切实可行的指标，用于跟踪交付、触达与互动情况。'],
-   ['GA4','借助网站分析了解流量与受众行为。']],
- ],
+  "es": [
+    [
+      [
+        "Notas informativas",
+        "Notas para la alta dirección y reuniones de alto nivel que resumen el contenido técnico en puntos concisos para apoyar la toma de decisiones."
+      ],
+      [
+        "Puntos de intervención",
+        "Preparados para discursos, encuentros bilaterales y discusiones intergubernamentales."
+      ],
+      [
+        "Mensajes clave",
+        "Mensajes centrales verificados por su claridad y coherencia entre audiencias y canales."
+      ],
+      [
+        "Artículos informativos",
+        "Redactar y estructurar historias institucionales para la web y otros productos informativos."
+      ],
+      [
+        "Presentaciones",
+        "Estructura visual y narrativa para sesiones informativas, reuniones y eventos institucionales."
+      ],
+      [
+        "Informes",
+        "Síntesis de información técnica o de seguimiento en documentos estructurados y legibles."
+      ]
+    ],
+    [
+      [
+        "Contenido en Drupal",
+        "Edición y publicación de contenido web institucional para el público y los Estados Miembros."
+      ],
+      [
+        "Boletines",
+        "Contenido editorial recurrente que combina redacción, maquetación y presentación centrada en la audiencia."
+      ],
+      [
+        "Visualización de datos",
+        "Convertir datos técnicos o de seguimiento en visuales que apoyan la comprensión y el diálogo."
+      ],
+      [
+        "Exposiciones",
+        "Organizar historias institucionales e información probatoria en formatos web que el público pueda explorar."
+      ],
+      [
+        "Redes sociales",
+        "Adaptar contenido institucional a formatos sociales breves y orientados a la audiencia."
+      ]
+    ],
+    [
+      [
+        "Materiales de eventos",
+        "Visuales, presentaciones y contenido de apoyo para eventos intergubernamentales y de desarrollo de capacidades."
+      ],
+      [
+        "Vídeo y multimedia",
+        "Concepto, guion, edición y narrativa visual para la comunicación institucional."
+      ],
+      [
+        "Productos de conocimiento",
+        "Convertir aportes técnicos o de expertos en materiales de referencia accesibles y reutilizables."
+      ],
+      [
+        "Historias de las partes interesadas",
+        "Convertir perspectivas de beneficiarios, expertos o socios en contenido conciso y centrado en las personas."
+      ],
+      [
+        "Coordinación con socios",
+        "Trabajar con socios gubernamentales, técnicos y de comunicación para llevar los productos del concepto a la entrega."
+      ]
+    ],
+    [
+      [
+        "Campañas de comunicación",
+        "Traducir objetivos en audiencias, mensajes, canales, responsabilidades y plazos."
+      ],
+      [
+        "Segmentación de audiencias",
+        "Adaptar formato, tono y nivel de detalle para la alta dirección, los Estados Miembros y el público."
+      ],
+      [
+        "Calendario de contenidos",
+        "Secuenciar los productos de comunicación en torno a hitos, eventos y prioridades institucionales."
+      ],
+      [
+        "KPI",
+        "Definir indicadores prácticos para monitorear la entrega, el alcance y la interacción."
+      ],
+      [
+        "GA4",
+        "Usar analítica web para entender el tráfico y el comportamiento de la audiencia."
+      ]
+    ]
+  ],
+  "fr": [
+    [
+      [
+        "Notes d’information",
+        "Des notes pour la haute direction et les rencontres de haut niveau, qui résument le contenu technique en points concis pour éclairer les décisions."
+      ],
+      [
+        "Éléments de langage",
+        "Préparés pour des discours, des échanges bilatéraux et des discussions intergouvernementales."
+      ],
+      [
+        "Messages clés",
+        "Messages centraux testés pour leur clarté et leur cohérence entre publics et canaux."
+      ],
+      [
+        "Articles d’actualité",
+        "Rédiger et structurer des récits institutionnels pour le web et les supports d’information."
+      ],
+      [
+        "Présentations",
+        "Structure visuelle et narrative pour les briefings, réunions et événements institutionnels."
+      ],
+      [
+        "Rapports",
+        "Synthèse d’informations techniques ou de suivi en documents structurés et lisibles."
+      ]
+    ],
+    [
+      [
+        "Contenu Drupal",
+        "Édition et publication de contenu web institutionnel pour le public et les États membres."
+      ],
+      [
+        "Lettres d’information",
+        "Des contenus éditoriaux réguliers associant rédaction, mise en page et présentation adaptée au public."
+      ],
+      [
+        "Visualisation de données",
+        "Transformer des données techniques ou de suivi en visuels favorisant la compréhension et le dialogue."
+      ],
+      [
+        "Expositions",
+        "Organiser des récits institutionnels et des éléments probants dans des formats web que le public peut explorer."
+      ],
+      [
+        "Réseaux sociaux",
+        "Adapter les contenus institutionnels à des formats courts pour les réseaux sociaux, en fonction des publics."
+      ]
+    ],
+    [
+      [
+        "Supports d’événements",
+        "Visuels, présentations et contenus d’appui pour des événements intergouvernementaux et de renforcement des capacités."
+      ],
+      [
+        "Vidéo et multimédia",
+        "Concept, scénario, montage et narration visuelle pour la communication institutionnelle."
+      ],
+      [
+        "Produits de connaissance",
+        "Transformer des contributions techniques ou d’experts en supports de référence accessibles et réutilisables."
+      ],
+      [
+        "Récits de parties prenantes",
+        "Transformer les points de vue de bénéficiaires, d’experts ou de partenaires en contenus concis centrés sur les personnes."
+      ],
+      [
+        "Coordination avec les partenaires",
+        "Travailler avec des partenaires gouvernementaux, techniques et de communication pour faire avancer les productions de la conception à la livraison."
+      ]
+    ],
+    [
+      [
+        "Campagnes de communication",
+        "Traduire des objectifs en publics, messages, canaux, responsabilités et échéances."
+      ],
+      [
+        "Ciblage des publics",
+        "Adapter le format, le ton et le niveau de détail pour la haute direction, les États membres et le public."
+      ],
+      [
+        "Calendrier éditorial",
+        "Séquencer les productions de communication autour des jalons, événements et priorités institutionnelles."
+      ],
+      [
+        "Indicateurs clés de performance (KPI)",
+        "Définir des indicateurs concrets pour suivre les livrables, la portée et les interactions avec les publics."
+      ],
+      [
+        "GA4",
+        "Utiliser l’analyse web pour comprendre le trafic et le comportement du public."
+      ]
+    ]
+  ],
+  "zh": [
+    [
+      [
+        "简报",
+        "面向高层管理与高级别会晤，把技术内容浓缩成清晰、可供决策的要点。"
+      ],
+      [
+        "发言要点",
+        "为演讲、双边交流和政府间讨论准备的发言口径。"
+      ],
+      [
+        "核心信息",
+        "经过检验、在不同受众和渠道间保持清晰一致的核心信息。"
+      ],
+      [
+        "新闻报道",
+        "为网页和信息类产品撰写并组织机构新闻报道。"
+      ],
+      [
+        "演示文稿",
+        "为简报、会议和机构活动搭建视觉与叙事结构。"
+      ],
+      [
+        "报告",
+        "把技术或监测信息整理成结构清晰、易读的文件。"
+      ]
+    ],
+    [
+      [
+        "Drupal网页内容",
+        "为公众和会员国受众编辑并发布机构网页内容。"
+      ],
+      [
+        "通讯简报",
+        "定期发布的编辑内容，结合撰写、排版和适合受众的呈现方式。"
+      ],
+      [
+        "数据可视化",
+        "把技术或监测数据转化为有助于理解和讨论的可视化内容。"
+      ],
+      [
+        "展览",
+        "将机构故事与佐证材料组织成可供探索的网页展示。"
+      ],
+      [
+        "社交媒体",
+        "把机构内容改写成适合社交媒体的短篇、受众导向内容。"
+      ]
+    ],
+    [
+      [
+        "活动物料",
+        "为政府间会议和能力建设活动制作视觉、演示与配套内容。"
+      ],
+      [
+        "视频与多媒体",
+        "为机构传播提供构思、脚本、剪辑与视觉叙事。"
+      ],
+      [
+        "知识产品",
+        "把技术或专家意见转化为易于获取、可重复使用的参考材料。"
+      ],
+      [
+        "利益相关方故事",
+        "将受益人、专家或合作伙伴的视角转化为简洁、以人为本的内容。"
+      ],
+      [
+        "合作伙伴协调",
+        "与政府、技术和传播合作伙伴协作，把产品从构思推进到交付。"
+      ]
+    ],
+    [
+      [
+        "传播活动策划",
+        "把目标转化为受众、信息、渠道、责任分工与时间安排。"
+      ],
+      [
+        "受众定位",
+        "根据高层管理人员、会员国和公众受众调整形式、语气与详略程度。"
+      ],
+      [
+        "内容发布日历",
+        "围绕重要节点、活动与机构优先事项安排传播产出的节奏。"
+      ],
+      [
+        "关键绩效指标（KPI）",
+        "设定切实可行的指标，用于跟踪交付、触达与互动情况。"
+      ],
+      [
+        "GA4",
+        "借助网站分析了解流量与受众行为。"
+      ]
+    ]
+  ]
 };
 const MORE_WORK=[
  {cat:'Executive &amp; Editorial', items:[
@@ -1088,25 +1995,27 @@ addEventListener('scroll',()=>{
     const open=navList.classList.toggle('open');
     toggle.setAttribute('aria-expanded',open);
     toggle.textContent=open?'×':'☰';
+    toggle.setAttribute('aria-label',UI_T[lang][open?'closeMenu':'openMenu']);
   });
   navList.querySelectorAll('a').forEach(a=>{
     a.addEventListener('click',()=>{
       navList.classList.remove('open');
       toggle.setAttribute('aria-expanded','false');
       toggle.textContent='☰';
+      toggle.setAttribute('aria-label',UI_T[lang].openMenu);
     });
   });
 })();
 
-const toMap=document.querySelector('a.jump');
-if(toMap) toMap.addEventListener('click',()=>{
+document.addEventListener('click',event=>{
+  if(!event.target.closest('a.jump')) return;
   const fr=document.querySelector('.map-frame');
   setTimeout(()=>{fr.classList.add('pulse');setTimeout(()=>fr.classList.remove('pulse'),2500);},700);
 });
 
 (function(){
   const saved=(()=>{try{return localStorage.getItem('yz-lang')}catch(e){return null}})();
-  if(saved && saved!=='en') applyLang(saved);
+  applyLang(saved||'en');
   document.querySelectorAll('.lg').forEach(b=>{
     b.addEventListener('click',()=>{
       applyLang(b.dataset.lang);
@@ -1127,7 +2036,7 @@ document.querySelectorAll('nav ul a').forEach(a=>{
 fetch('https://yuxizhou.goatcounter.com/counter/TOTAL.json')
   .then(r=>r.json())
   .then(d=>{const h=document.getElementById('hits');
-    if(h&&d&&d.count) h.textContent=`${d.count} visits`;})
+    if(h&&d&&d.count){visitCount=d.count;updateVisitCount();}})
   .catch(()=>{});
 
 if(matchMedia('(pointer:fine)').matches){
